@@ -9,8 +9,6 @@ const isUkrainian =
 
 const lang = isUkrainian ? 'uk' : 'pl';
 
-// ============ DATA SOURCE ============
-const DATA_URL = `${isUkrainian ? '../' : ''}data/projects.${lang}.json`;
 
 // ============ DOM REFS ============
 const worksGrid = document.getElementById('worksGrid');
@@ -33,109 +31,6 @@ let currentProject = null;
 let currentImgIdx = 0;
 let currentFilter = 'all';
 
-// ============ SKELETON (на час завантаження) ============
-function renderSkeleton(count = 6) {
-  worksGrid.innerHTML = '';
-  for (let i = 0; i < count; i++) {
-    const skeleton = document.createElement('div');
-    skeleton.className = 'work-card work-card--skeleton';
-    skeleton.innerHTML = `
-      <div class="work-card__img">
-        <div class="work-card__img-inner work-card__skeleton-img"></div>
-      </div>
-      <div class="work-card__meta">
-        <div>
-          <div class="work-card__skeleton-line work-card__skeleton-line--title"></div>
-          <div class="work-card__skeleton-line work-card__skeleton-line--tag"></div>
-        </div>
-      </div>
-    `;
-    worksGrid.appendChild(skeleton);
-  }
-}
-
-// ============ RENDER CARDS ============
-function renderCards(data) {
-  worksGrid.innerHTML = '';
-
-  if (data.length === 0) {
-    worksGrid.innerHTML = `
-      <p class="works-grid__empty">
-        ${
-          isUkrainian
-            ? 'У цій категорії поки немає проєктів.'
-            : 'W tej kategorii nie ma jeszcze projektów.'
-        }
-      </p>
-    `;
-    return;
-  }
-
-  data.forEach((project, idx) => {
-    const article = document.createElement('article');
-    article.className = 'work-card';
-    article.dataset.cat = project.category;
-    article.dataset.projectId = project.id;
-    article.setAttribute('role', 'button');
-    article.setAttribute('tabindex', '0');
-    article.setAttribute(
-      'aria-label',
-      isUkrainian
-        ? `Відкрити проєкт: ${project.title}, ${project.cat}`
-        : `Otwórz projekt: ${project.title}, ${project.cat}`
-    );
-
-    // Затримка для стаггер-анімації появи
-    article.style.setProperty('--card-delay', `${idx * 40}ms`);
-
-    const overlayText = isUkrainian ? 'подивитись проєкт' : 'zobacz projekt';
-
-    article.innerHTML = `
-      <div class="work-card__img">
-        <div class="work-card__img-inner">
-          <img
-            src="${project.cover}"
-            alt="${project.coverAlt}"
-            loading="lazy"
-            decoding="async"
-            width="900"
-            height="675"
-          />
-        </div>
-        <div class="work-card__overlay">
-          ${overlayText}
-          <svg aria-hidden="true" width="14" height="14">
-            <use href="#i-arrow-right" />
-          </svg>
-        </div>
-      </div>
-      <div class="work-card__meta">
-        <div>
-          <h3 class="work-card__title">${project.title}</h3>
-          <div class="work-card__tag">${project.tagShort}</div>
-        </div>
-        <div class="work-card__arrow">
-          <svg aria-hidden="true" width="18" height="18">
-            <use href="#i-arrow-diag" />
-          </svg>
-        </div>
-      </div>
-    `;
-
-    const open = () => openModal(project);
-    article.addEventListener('click', open);
-    article.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        open();
-      }
-    });
-
-    worksGrid.appendChild(article);
-  });
-
-  worksGrid.setAttribute('aria-busy', 'false');
-}
 
 // ============ TABS / FILTERS ============
 function updateTabCounts() {
@@ -154,9 +49,9 @@ function updateTabCounts() {
 
 function applyFilter(filter) {
   currentFilter = filter;
-  const filtered =
-    filter === 'all' ? projects : projects.filter((p) => p.category === filter);
-  renderCards(filtered);
+  worksGrid.querySelectorAll('.work-card[data-project]').forEach((card) => {
+    card.style.display = (filter === 'all' || card.dataset.cat === filter) ? '' : 'none';
+  });
 }
 
 function setupTabs() {
@@ -170,31 +65,27 @@ function setupTabs() {
   });
 }
 
-// ============ LOAD DATA ============
-async function loadProjects() {
-  renderSkeleton(6);
-
-  try {
-    const response = await fetch(DATA_URL);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    projects = await response.json();
-
-    updateTabCounts();
-    applyFilter(currentFilter);
-    setupTabs();
-  } catch (err) {
-    console.error('Помилка завантаження проєктів:', err);
-    worksGrid.innerHTML = `
-      <p class="works-grid__error">
-        ${
-          isUkrainian
-            ? 'Не вдалося завантажити проєкти. Спробуйте оновити сторінку.'
-            : 'Nie udało się załadować projektów. Spróbuj odświeżyć stronę.'
-        }
-      </p>
-    `;
-    worksGrid.setAttribute('aria-busy', 'false');
-  }
+// ============ INIT FROM DOM ============
+function initFromDOM() {
+  worksGrid.querySelectorAll('.work-card[data-project]').forEach((card, idx) => {
+    const project = JSON.parse(card.dataset.project);
+    projects.push({ ...project, category: card.dataset.cat });
+    card.style.setProperty('--card-delay', `${idx * 40}ms`);
+    card.setAttribute('role', 'button');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', isUkrainian
+      ? `Відкрити проєкт: ${project.title}`
+      : `Otwórz projekt: ${project.title}`
+    );
+    const open = () => openModal(project);
+    card.addEventListener('click', open);
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+    });
+  });
+  worksGrid.setAttribute('aria-busy', 'false');
+  updateTabCounts();
+  setupTabs();
 }
 
 // ============ MODAL ============
@@ -376,4 +267,4 @@ modalGallery.addEventListener(
 );
 
 // ============ INIT ============
-loadProjects();
+initFromDOM();
