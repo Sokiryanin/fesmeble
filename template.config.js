@@ -20,8 +20,8 @@ export default {
     usetemplate: 'main'
   },
   git: {
-    repo: ``,
-    branch: `main`
+    repo: `https://github.com/Sokiryanin/fesmeble.git`,
+    branch: `gh-pages`
   },
   navpanel: {
     dev: true,
@@ -36,7 +36,7 @@ export default {
     showonbuild: true
   },
   server: {
-    path: '/',
+    path: process.argv.includes('--git') ? '/fesmeble/' : '/',
     isassets: false,
     buildforlocal: false,
     copyfiles: true,
