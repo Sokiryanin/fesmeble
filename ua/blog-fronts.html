@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>.header,
+    .mobile-cta:not(.is-ready) {
+      opacity: 0;
+    }</style>
+		<!-- Preconnect для Google Fonts — встановлюємо з'єднання до початку CSS-запиту -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<!-- DNS prefetch для Unsplash (hero-зображення) -->
+		<link rel="dns-prefetch" href="https://images.unsplash.com">
+		<!-- Google Fonts: завантажуємо non-blocking через media=print trick -->
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" media="print" onload="this.media = 'all'">
+		<noscript>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+		</noscript>
+		<link rel="shortcut icon" href="/fesmeble/assets/img/fesmeble.png">
+		<title>blog-fronts</title>
+		<script type="module" crossorigin="" src="/fesmeble/js/blog-fronts2.min.js?v=1779364657131"></script>
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779364657131">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779364657131">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779364657131">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/blog-fronts.min.css?v=1779364657131">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/blog.min.css?v=1779364657131">
+	</head>
+	<body>
+		<svg width="0" height="0" style="position: absolute; overflow: hidden" aria-hidden="true" focusable="false">
+			<symbol id="i-arrow-right" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M5 12h14M13 5l7 7-7 7"></path>
+			</symbol>
+			<symbol id="i-arrow-left" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M19 12H5M11 19l-7-7 7-7"></path>
+			</symbol>
+			<symbol id="i-arrow-diag" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M7 17L17 7M9 7h8v8"></path>
+			</symbol>
+		</svg>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<a href="./index.html" class="header__logo">
+							<span class="header__logo-mark">
+								<svg class="header__logo-svg" viewbox="272 277 480 459" width="46" height="46" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+									<path d="M486.5 286.1C392.4 296 311.7 365.3 288 456.5c-14 54-8.7 108.4 15.4 158 14.7 30.3 33.7 55.2 58.8 76.8l6.6 5.8 10.6-.3 10.7-.3-8.1-5.8c-10.4-7.6-31.1-27.6-39.9-38.6-53.8-67.7-63.9-157.8-26.1-233 15.9-31.8 37.6-57.5 66.1-78.8 4-2.9 7.4-5.3 7.6-5.3.1 0 .3 22.7.3 50.5V436l-2.7.6c-7.5 1.5-12.1 4.1-17.5 9.4-4.6 4.7-6 6.8-7.7 12.4-1.2 3.8-2.1 7.9-2.1 9.2 0 2.4.1 2.4 9.8 2.4h9.8l1.7 3.5c2.2 4.5 5.9 6.8 11.1 6.8s9.8-2.9 11.6-7.3l1.2-3h20l-.7-4.8c-.9-6.4-4.5-14.1-8.8-18.9-3.9-4.3-12-8.6-18-9.7l-3.7-.7.2-52.2.3-52.2 10-5.7c16.5-9.5 39.8-18.8 56.3-22.3l3.2-.7v69l-3.7.6c-6.3 1.2-14 5.5-18.2 10.3-4.7 5.3-8.3 14.1-7.9 19.2l.3 3.6 9.5.3c9.6.3 9.6.3 10.7 3.2 1.4 3.7 6.7 7 11.3 7 4.5 0 9.4-3 11.1-6.9l1.4-3.1h19.8l-.6-5.4c-1.4-13.3-12.8-25.6-25.9-28l-3.8-.7V337c0-32.3.1-34.9 1.8-35.4 12.7-3.9 52.9-5.1 72.7-2.2 58.7 8.9 110.3 39.7 145.6 86.9 21.9 29.3 35.4 62.8 41 101.7 1.9 13 1.6 43.2-.5 57.5-8.8 58.8-40 110.7-88 146.4l-6.9 5.1h21.8l10.5-9.3c32.2-28.6 56.6-67.3 68.5-108.6 10.2-35.6 11.8-70.4 4.9-107.9-8.1-44.2-32.4-88.8-65.5-120.7-37.4-36-86.2-58.9-137.1-64.4-11.2-1.3-38.6-1.2-50.3 0m-7.3 93.6c2.9 1.7 6.6 4.6 8.2 6.6 3.2 4 6.9 13.8 5.7 15-.9.9-53.6.5-54.5-.4-.3-.3.1-2.8.9-5.5 2.4-8.3 9.9-15.4 19.5-18.5 5-1.7 14.6-.3 20.2 2.8m-75.3 63.4c7.8 3.3 16 13.9 16.1 20.6v2.3h-55v-2.3c.1-5.7 7.4-16.3 13.4-19.4 9-4.7 16.6-5.1 25.5-1.2"></path>
+									<path d="m584.2 396.7.3 14.8 14.8.3 14.7.3V382h-30.1zM622 397v15h29v-30h-29zM584.7 419.7c-.4.3-.7 7.1-.7 15V449h30v-30h-14.3c-7.9 0-14.7.3-15 .7M622 434v15h29v-30h-29zM494 454.5c-30.5 6.5-55.2 26.8-67 55.1-4.1 10-5.9 18.4-6.7 32.2-.6 10.3-.7 11.1-2.2 9.8-.9-.8-4.2-2.7-7.4-4.1-24.1-11.1-52.5 2.4-59.1 28-6.7 25.5 10.5 52.3 50.7 79.1 8.3 5.6 32.7 18.9 37.5 20.5.8.3-1.7 7.1-7.5 20.2l-8.8 19.7H359v13h306v-13l-31.2-.2-31.3-.3-8.9-19.9c-6.7-15.1-8.6-20.1-7.5-20.5 5.2-1.7 24.7-12.4 34.6-19 21.8-14.4 35.2-26.7 44.1-40.4 7-10.9 8.7-16.4 8.7-28.8 0-10.2-.1-10.8-3.8-18.1-6.4-13-18.2-21.8-31.9-23.7-10.8-1.5-22.7 1.2-30.7 6.9-1.6 1.1-3.1 2-3.3 2s-.2-2 0-4.6l.4-4.5-6.3.3-6.4.3-.7 6.8c-3.9 39.8-38.8 71.7-78.3 71.7-30.5 0-57.5-16.9-71.1-44.5-6.3-12.9-7.9-19.6-7.9-34.5s1.6-21.6 8-34.5c21.1-42.8 74.1-57.3 113.8-31.2 3.4 2.2 9.4 7.4 13.4 11.4l7.2 7.3h7c3.9 0 7.1-.3 7.1-.6 0-1.1-4.2-6.8-9.9-13.3-10.3-11.9-26.7-22.1-43.7-27.2-9-2.7-32.7-3.5-42.4-1.4m-88.2 104.4c7.6 3.9 13.2 10.1 24 26.6 16.5 25.4 32.2 38.5 54 45.5 32.2 10.4 65.3 3 90.6-20.1 6.9-6.3 11.9-12.8 21-27.2 3.8-5.9 9-13.2 11.8-16.2 12.6-13.9 31.3-15.2 44.4-3.3 12.2 11.2 12.7 28.7 1.4 45.3-14 20.5-55.2 48.8-82.5 56.7-7.9 2.3-8.8 2.3-57.5 2.3-53.5 0-54.5-.1-69-5.6-9.7-3.7-27.5-13.6-38.9-21.7-19.6-13.8-31.4-26-38.2-39.2-3.1-6-3.4-7.2-3.4-15.5 0-7.5.4-9.7 2.4-13.5 4.1-7.9 10.5-13.3 19.1-16.1 4.6-1.5 16.2-.4 20.8 2M513 680.5c28.9 0 54.1-.3 56.1-.8 2.6-.5 3.8-.4 4.2.5.3.7 3.9 8.8 8 18l7.5 16.8h-75.4c-41.5 0-75.4-.3-75.4-.8 0-.4 3.4-8.4 7.6-17.9l7.6-17.1 3.6.6c2.1.4 27.3.7 56.2.7"></path>
+								</svg>
+							</span>
+							<span data-i18n="brand" class="header__logo-brand">FESMEBLE</span>
+						</a>
+						<div class="header__menu menu">
+							<nav class="menu__body" id="nav" aria-label="Основне меню">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="/ua/index.html" data-num="01" class="menu__link">головна</a>
+									</li>
+									<li class="menu__item">
+										<a href="/ua/works.html" data-num="02" class="menu__link">проєкти</a>
+									</li>
+									<li class="menu__item">
+										<a href="/ua/services-uk.html" data-num="03" class="menu__link">сервіси</a>
+									</li>
+									<li class="menu__item">
+										<a href="/ua/about.html" data-num="04" class="menu__link">про нас</a>
+									</li>
+									<li class="menu__item">
+										<a href="/ua/blog.html" data-num="05" class="menu__link menu__link--active">блог</a>
+									</li>
+								</ul>
+								<a href="/ua/contact.html" class="menu__cta">
+									<span class="menu__cta-dot"></span>
+									<span class="menu__cta-text">обговорити проєкт</span>
+									<span class="menu__cta-arrow" aria-hidden="true">→</span>
+								</a>
+							</nav>
+						</div>
+						<div class="header__buttons buttons-header">
+							<a href="" class="buttons-header__lang" aria-label="Переключити мову на польську">
+								<span class="buttons-header__lang-text" aria-hidden="true">PL</span>
+							</a>
+							<a href="/ua/contact.html" class="buttons-header__cta">
+								<span class="buttons-header__dot"></span>
+								<span>обговорити проєкт</span>
+							</a>
+							<button type="button" data-fls-menu="" class="icon-menu" aria-label="Меню" aria-expanded="false" aria-controls="mobile-menu">
+								<span aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Fixed bottom CTA -->
+			<a href="/ua/contact.html" class="mobile-cta" id="mobileCta">
+				<span class="dot"></span>
+				<span class="mobile-cta-text">обговорити проєкт</span>
+				<span class="mobile-cta-arrow">
+					<svg aria-hidden="true" width="16" height="16">
+						<use href="#i-arrow-right"></use>
+					</svg>
+				</span>
+			</a>
+			<main data-fls-blog-fronts="" class="page page--blog-fronts blog-fronts" id="page-article">
+				<article>
+					<section class="section blog-fronts__hero hero-fronts">
+						<div class="hero-fronts__container">
+							<a href="./blog.html" class="hero-fronts__back">
+								<span>До всіх статей</span>
+							</a>
+							<div class="hero-fronts__content content-fronts">
+								<div class="content-fronts__meta-top">
+									<span class="content-fronts__cat">фасади</span>
+									<span class="dot-sep" aria-hidden="true"></span>
+									<span>7 хв читання</span>
+								</div>
+								<h1 class="section-title content-fronts__title">
+									Які фасади обрати:
+									<br>
+									<span class="accent">ДСП, МДФ, акрил</span>
+									чи HPL?
+								</h1>
+							</div>
+						</div>
+					</section>
+					<section class="section blog-fronts__cover cover-fronts">
+						<div class="cover-fronts__container">
+							<div class="cover-fronts__wrap">
+								<img src="/fesmeble/assets/img/blog-fronts/hpl-2.jpg" alt="стільниця кухона">
+							</div>
+						</div>
+					</section>
+					<section class="section blog-fronts__article article-fronts">
+						<div class="article-fronts__container">
+							<div class="article-fronts__body">
+								<p>
+									Фасади — це те, що визначає вигляд меблів у перші п'ять секунд і
+            комфорт користування на роки вперед. Саме фасад щодня контактує з
+            руками, вологою, сонцем, побутовою хімією та механічними
+            навантаженнями. І саме на фасадах найчастіше економлять — а потім
+            отримують відколи, здуття, подряпини або поверхню, яку неможливо
+            нормально відмити.
+								</p>
+								<p>
+									За останні роки ринок меблів фактично сформував чотири основні
+            рішення для сучасних кухонь та корпусних меблів: ДСП, МДФ, акрилові
+            фасади та HPL компакт-плита. Кожен матеріал має свою задачу, свій
+            ресурс і свій сценарій використання. Проблема не в тому, що якийсь
+            із них «поганий». Проблема починається тоді, коли матеріал обирають
+            не під стиль життя, а лише під ціну або картинку в Pinterest.
+								</p>
+								<h2>1. ДСП — найдоступніше рішення, але з обмеженим ресурсом.</h2>
+								<p>
+									ДСП-фасади обирають тоді, коли потрібно отримати сучасний вигляд
+            меблів без великого бюджету. Це ламінована деревостружкова плита з
+            декоративним покриттям. Вона добре працює у спальнях, гардеробних,
+            офісних меблях та бюджетних кухнях.
+								</p>
+								<p>
+									Основний плюс — ціна. Сучасні декори ДСП можуть дуже точно імітувати
+            дерево, бетон, камінь або однотонні матові поверхні. Для багатьох
+            інтер'єрів цього більш ніж достатньо.
+								</p>
+								<p>
+									Але є нюанс: ДСП погано переносить пошкодження торців і тривалий
+            контакт із вологою. Якщо крайка відклеїлася або в стик регулярно
+            потрапляє вода — плита починає набухати. Саме тому найдешевші кухні
+            найчастіше втрачають вигляд біля мийки, посудомийки або варильної
+            поверхні.
+								</p>
+								<blockquote>
+									ДСП — це хороший вибір для сухих зон і помірного навантаження. Але
+            не той матеріал, який «пробачає» недбале користування.
+								</blockquote>
+								<h2>2. МДФ — універсальний варіант для більшості сучасних кухонь.</h2>
+								<p>
+									МДФ вважається золотою серединою між ціною, зовнішнім виглядом і
+            довговічністю. На відміну від ДСП, матеріал має щільнішу структуру,
+            краще тримає форму та значно стабільніше переносить вологу.
+								</p>
+								<p>
+									Саме МДФ використовують для фарбованих фасадів, фрезерування,
+            складних текстур та нестандартних дизайнів. Якщо потрібна кухня без
+            ручок, радіусні елементи або фасади складної форми — майже завжди це
+            буде МДФ.
+								</p>
+								<p>
+									Головна перевага — ремонтопридатність і візуальна гнучкість.
+            Фарбований МДФ дозволяє отримати практично будь-який колір, глибокий
+            мат або складні дизайнерські відтінки.
+								</p>
+								<p>
+									Але важливо розуміти: якість МДФ дуже залежить від виробника та
+            покриття. Дешеве фарбування швидко отримує мікроподряпини, а
+            неякісна плівка може відклеюватися біля тепла.
+								</p>
+								<blockquote>
+									МДФ — це вибір для тих, хто хоче баланс між естетикою, комфортом і
+            довговічністю без переходу в преміальний сегмент.
+								</blockquote>
+								<h2>3. Акрил — максимальна глибина кольору та сучасний вигляд.</h2>
+								<p>
+									Акрилові фасади — це про візуальний ефект. Саме вони дають той самий
+            «дорогий» глибокий колір, рівну поверхню та виражене відбиття
+            світла, яке часто бачать у сучасних мінімалістичних інтер'єрах.
+								</p>
+								<p>
+									Акрил створює дуже чисту, монолітну геометрію меблів. Особливо добре
+            він працює у світлих просторах, де важливі світловідбиття та
+            відчуття легкості.
+								</p>
+								<figure>
+									<img src="/fesmeble/assets/img/blog-fronts/acril.jpg" alt="Акрилові фасади на сучасній кухні" loading="lazy" decoding="async" width="1400" height="800">
+									<figcaption>Глянцеві акрилові фасади — характерне відбиття і глибина кольору.</figcaption>
+								</figure>
+								<p>
+									Основна перевага — стійкість кольору. Акрил довше зберігає
+            насиченість і менше вигорає на сонці, ніж багато інших покриттів.
+								</p>
+								<p>
+									Але є особливість: глянець показує все. Відбитки пальців, пил, сліди
+            від води — особливо на темних фасадах. Матові акрилові поверхні
+            практичніші, але також потребують правильного догляду.
+								</p>
+								<h2>4. HPL компакт-плита — матеріал для максимального навантаження.</h2>
+								<p>
+									HPL компакт-плита — один із найміцніших матеріалів, які сьогодні
+            використовують у меблевому виробництві. Це багатошаровий композит
+            високої щільності, який практично не боїться вологи, ударів,
+            температурних перепадів та інтенсивного щоденного використання.
+								</p>
+								<p>
+									Саме тому HPL часто використовують у преміальних кухнях, комерційних
+            просторах, ванних кімнатах та меблях для складних умов експлуатації.
+								</p>
+								<ul>
+									<li>
+										Значно стійкіший до подряпин і механічних пошкоджень, ніж
+              більшість стандартних фасадів.
+									</li>
+									<li>
+										Тонкий сучасний профіль — дозволяє робити візуально легкі фасади
+              без відчуття масивності.
+									</li>
+									<li>Не боїться вологи, агресивної хімії та перепадів температур.</li>
+								</ul>
+								<p>
+									Мінус лише один — ціна. HPL майже завжди дорожчий за МДФ і ДСП. Але
+            це той випадок, коли вартість напряму пов'язана з довговічністю
+            матеріалу.
+								</p>
+								<h2>5. Як зрештою правильно обрати фасади.</h2>
+								<p>
+									Правильний вибір фасадів починається не з кольору і не з
+            Instagram-референсів. Він починається з питання: як саме ви
+            користуєтеся меблями щодня.
+								</p>
+								<ol>
+									<li>
+										<strong>Бюджетне рішення для гардеробної або офісу</strong>
+										—
+              достатньо якісного ДСП.
+									</li>
+									<li>
+										<strong>Кухня «на кожен день» із балансом ціни та ресурсу</strong>
+										— найчастіше оптимальним буде МДФ.
+									</li>
+									<li>
+										<strong>Головне — візуальна естетика та сучасний мінімалізм</strong>
+										— варто дивитися в сторону акрилу.
+									</li>
+									<li>
+										<strong>Меблі мають пережити активне використання роками</strong>
+										— тоді HPL компакт-плита.
+									</li>
+								</ol>
+								<blockquote>
+									Хороші фасади — це не ті, що виглядають дорого в салоні. Це ті, які
+            через п'ять років виглядають так, ніби їх встановили вчора.
+								</blockquote>
+							</div>
+							<aside class="blog-post__related article-fronts__related" aria-label="Популярні статті">
+								<div class="blog-post__related-label article-fronts__related-label">Популярні статті</div>
+								<div class="blog-post__related-grid article-fronts__grid">
+									<a href="./blog-wardrobe.html" class="blog-card" role="button" tabindex="0" aria-label="Читати: 5 помилок при плануванні гардеробної">
+										<div class="blog-card__img">
+											<img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=600&q=80" alt="5 помилок при плануванні гардеробної" loading="lazy" decoding="async" width="600" height="450">
+										</div>
+										<div class="blog-card__cat">гардеробні</div>
+										<div class="blog-card__title">5 помилок при плануванні гардеробної, які видно лише через рік</div>
+										<div class="blog-card__meta">6 хв</div>
+									</a>
+									<div class="blog-card" data-slug="blum-hardware" role="button" tabindex="0" aria-label="Читати: Фурнітура Blum: за що ми платимо">
+										<div class="blog-card__img">
+											<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="Фурнітура Blum: за що ми платимо" loading="lazy" decoding="async" width="600" height="450">
+										</div>
+										<div class="blog-card__cat">техніка</div>
+										<div class="blog-card__title">Фурнітура Blum: за що ми платимо й коли переплачуємо</div>
+										<div class="blog-card__meta">7 хв</div>
+									</div>
+									<div class="blog-card" data-slug="teren-cafe" role="button" tabindex="0" aria-label="Читати: Кавʼярня «Терен»">
+										<div class="blog-card__img">
+											<img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=600&q=80" alt="Кавʼярня «Терен»: меблі для 200 гостей щодня" loading="lazy" decoding="async" width="600" height="450">
+										</div>
+										<div class="blog-card__cat">кейс</div>
+										<div class="blog-card__title">Кавʼярня «Терен»: меблі для 200 гостей щодня</div>
+										<div class="blog-card__meta">9 хв</div>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</section>
+				</article>
+				<section data-fls-cta="" class="section blog-fronts__cta cta">
+					<div class="cta__container">
+						<div class="cta__inner">
+							<div>
+								<h2 class="cta__title">
+									Готові
+									<span class="accent">почати</span>
+									?
+								</h2>
+								<p class="cta__sub">Від цього блогу до вашої особистої кухні кілька хвилин розмови.</p>
+								<div class="contact-info">
+									<div class="contact-info__row">
+										<span data-i18n="contact.phone">Телефон</span>
+										<a href="tel:+380671234567">+380 67 123 45 67</a>
+									</div>
+									<div class="contact-info__row">
+										<span>Email</span>
+										<a href="mailto:hello@fesmeble.com">hello@fesmeble.com</a>
+									</div>
+								</div>
+							</div>
+							<form class="form form--compact" onsubmit="event.preventDefault();
+ window.submitForm();">
+								<div class="form__row">
+									<div class="form__field">
+										<label data-i18n="form.name" for="text-field-1">Ваше імʼя</label>
+										<input type="text" required id="text-field-1" name="name" aria-required="true" autocomplete="name">
+									</div>
+									<div class="form__field">
+										<label data-i18n="form.phone" for="tel-field-2">Телефон</label>
+										<input type="tel" placeholder="+380" required id="tel-field-2" name="phone" aria-required="true" autocomplete="tel">
+									</div>
+								</div>
+								<div class="form__field">
+									<label for="message-cta" class="visually-hidden">Коротко про проєкт</label>
+									<textarea id="message-cta" name="message" placeholder="Коротко про проєкт" rows="4"></textarea>
+								</div>
+								<button type="submit" class="form__submit">
+									<span data-i18n="form.submit">отримати прорахунок</span>
+									<span class="form__submit-arrow" aria-hidden="true">
+										<svg width="20" height="20">
+											<use href="#i-arrow-right"></use>
+										</svg>
+									</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__top">
+						<div class="footer__brand">
+							<div class="footer__about">
+								<span class="accent">FESMEBLE</span>
+								— meble, które żyją z wami dłużej
+          niż trendy.
+							</div>
+							<div class="footer__contact">
+								<div class="footer__contact-wrap">
+									<div class="label">Telefon</div>
+									<a href="tel:+48570643528">+48 570 643 528</a>
+								</div>
+								<div class="footer__contact-wrap">
+									<div class="label">E-mail</div>
+									<a href="mailto:hello@fesmeble.com">hello@fesmeble.com</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__col">
+							<h5>Nawigacja</h5>
+							<ul>
+								<li>
+									<a href="/index.html">Strona główna</a>
+								</li>
+								<li>
+									<a href="/works.html">Projekty</a>
+								</li>
+								<li>
+									<a href="/services.html">Usługi</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h5>Firma</h5>
+							<ul>
+								<li>
+									<a href="/blog.html">Blog</a>
+								</li>
+								<li>
+									<a href="/contact.html">Kontakt</a>
+								</li>
+								<li>
+									<a href="/about.html">O nas</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h5>Showroom</h5>
+							<ul>
+								<li>
+									Jelcz-Laskowice,
+									<br>
+									ul. Wiśniowa 13
+								</li>
+								<li style="color: var(--ink-3)">
+									Pon.–sob.
+									<br>
+									08:00–16:00
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__mid">
+						<div class="footer__mid-title">
+							Gotowi zacząć?
+							<span class="accent">Oddzwonimy w 2 godziny.</span>
+						</div>
+						<a href="/contact.html" data-page="contact" class="footer__mid-cta">
+							<span>zamów wycenę</span>
+							<span class="footer__mid-cta-arrow">
+								<svg aria-hidden="true" width="16" height="16">
+									<use href="#i-arrow-right"></use>
+								</svg>
+							</span>
+						</a>
+					</div>
+					<div class="footer__bottom">
+						<div>© 2026 FESMEBLE</div>
+						<div class="footer__socials">
+							<a href="#" aria-label="Instagram" class="footer__social-icon">
+								<svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+									<rect x="3" y="3" width="18" height="18" rx="5"></rect>
+									<circle cx="12" cy="12" r="4"></circle>
+									<circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"></circle>
+								</svg>
+							</a>
+							<a href="#" aria-label="Facebook" class="footer__social-icon">
+								<svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+								</svg>
+							</a>
+							<a href="#" aria-label="Pinterest" class="footer__social-icon">
+								<svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+									<circle cx="12" cy="12" r="10"></circle>
+									<path d="M8 18l1.5-6.5"></path>
+									<path d="M9.5 11.5c0-2.2 1.6-4 3.8-4s3.7 1.5 3.7 3.6-1.3 3.9-3.2 3.9c-1 0-1.8-.5-2.1-1.1"></path>
+								</svg>
+							</a>
+							<a href="#" aria-label="Behance" class="footer__social-icon">
+								<svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M3 6h5.5a2.5 2.5 0 0 1 0 5H3z"></path>
+									<path d="M3 11h6a2.5 2.5 0 0 1 0 5H3z"></path>
+									<path d="M3 6v10"></path>
+									<path d="M15 9h6"></path>
+									<path d="M14 13.5h7a3 3 0 0 0-6 0v1a2.5 2.5 0 0 0 4.5 1.5"></path>
+								</svg>
+							</a>
+							<a href="#" aria-label="TikTok" class="footer__social-icon">
+								<svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M15 2v12a3 3 0 1 1-3-3"></path>
+									<path d="M15 2c0 2.5 2 4.5 4.5 4.5"></path>
+								</svg>
+							</a>
+						</div>
+						<div>Zrobione z szacunkiem dla drewna</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
