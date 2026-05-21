@@ -56,6 +56,18 @@
         transform: translateY(0);
       }
     }
+
+    &-sub {
+      max-width: 715px;
+      @include adaptiveValue('font-size', 18, 15);
+      line-height: 1.55;
+      color: var(--ink-2);
+      margin-bottom: 56px;
+
+      @media (max-width: toEm($tablet)) {
+        max-width: 100%;
+      }
+    }
   }
 
   // .services__label
