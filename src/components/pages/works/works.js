@@ -5,12 +5,12 @@ const htmlLang = (document.documentElement.lang || '').toLowerCase();
 const isUkrainian =
   htmlLang.startsWith('uk') ||
   htmlLang.startsWith('ua') ||
-  window.location.pathname.startsWith('/ua/');
+  window.location.pathname.includes('/ua/');
 
 const lang = isUkrainian ? 'uk' : 'pl';
 
 // ============ DATA SOURCE ============
-const DATA_URL = `/data/projects.${lang}.json`;
+const DATA_URL = `${isUkrainian ? '../' : ''}data/projects.${lang}.json`;
 
 // ============ DOM REFS ============
 const worksGrid = document.getElementById('worksGrid');

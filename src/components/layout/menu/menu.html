@@ -4,11 +4,11 @@
       <if condition="String('[[lang]]') === 'uk'">
         <each
           loop='item in [
-            {"href": "/ua/index.html", "ancor": "головна", "key": "home", "num": "01"},
-            {"href": "/ua/works.html", "ancor": "проєкти", "key": "works", "num": "02"},
-            {"href": "/ua/services-uk.html", "ancor": "сервіси", "key": "services", "num": "03"},
-            {"href": "/ua/about.html", "ancor": "про нас", "key": "about", "num": "04"},
-            {"href": "/ua/blog.html", "ancor": "блог", "key": "blog", "num": "05"}
+            {"href": "index.html", "ancor": "головна", "key": "home", "num": "01"},
+            {"href": "works.html", "ancor": "проєкти", "key": "works", "num": "02"},
+            {"href": "services-uk.html", "ancor": "сервіси", "key": "services", "num": "03"},
+            {"href": "about.html", "ancor": "про нас", "key": "about", "num": "04"},
+            {"href": "blog.html", "ancor": "блог", "key": "blog", "num": "05"}
           ]'
         >
           <if condition="'[[active]]' === '[[item.key]]'">
@@ -38,11 +38,11 @@
       <else>
         <each
           loop='item in [
-            {"href": "/index.html", "ancor": "strona główna", "key": "home", "num": "01"},
-            {"href": "/works.html", "ancor": "projekty", "key": "works", "num": "02"},
-            {"href": "/services.html", "ancor": "usługi", "key": "services", "num": "03"},
-            {"href": "/about.html", "ancor": "o nas", "key": "about", "num": "04"},
-            {"href": "/blog.html", "ancor": "blog", "key": "blog", "num": "05"}
+            {"href": "index.html", "ancor": "strona główna", "key": "home", "num": "01"},
+            {"href": "works.html", "ancor": "projekty", "key": "works", "num": "02"},
+            {"href": "services.html", "ancor": "usługi", "key": "services", "num": "03"},
+            {"href": "about.html", "ancor": "o nas", "key": "about", "num": "04"},
+            {"href": "blog.html", "ancor": "blog", "key": "blog", "num": "05"}
           ]'
         >
           <if condition="'[[active]]' === '[[item.key]]'">

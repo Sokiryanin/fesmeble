@@ -36,7 +36,7 @@ export default {
     showonbuild: true
   },
   server: {
-    path: process.argv.includes('--git') ? '/fesmeble/' : '/',
+    path: (process.argv.includes('--git') || process.env.GH_PAGES === 'true') ? '/fesmeble/' : '/',
     isassets: false,
     buildforlocal: false,
     copyfiles: true,
