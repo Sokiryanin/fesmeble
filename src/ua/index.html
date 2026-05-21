@@ -1,0 +1,30 @@
+<template
+  src="@components/templates/main/main.html"
+  locals='{
+	  "title":"Меблі на замовлення у Вроцлаві — кухні, шафи, HORECA | Fesmeble", 
+		"lang":"uk",
+		"preloader": {
+			"enable":"false",
+			"once":"false"
+		},
+		"keywords":"", 
+		"description":"Виготовляємо меблі на замовлення у Вроцлаві: кухні, шафи, гардеробні, стільниці, інтерʼєри HORECA. Безкоштовний обмір, проєкт 3D, монтаж по всій Польщі."
+	}'
+>
+  <block name="header">
+    <include
+      src="@components/layout/header/header.html"
+      locals='{"active":"home", "lang":"uk", "altHref":"../index.html"}'
+    ></include>
+  </block>
+  <block name="main">
+    <include src="@components/pages/home/home-uk.html" locals="{}"></include>
+  </block>
+  <block name="footer">
+    <include
+      src="@components/layout/footer/footer-uk.html"
+      locals="{}"
+    ></include>
+  </block>
+  <block name="popup"> </block>
+</template>

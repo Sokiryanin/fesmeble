@@ -1,0 +1,89 @@
+<div class="header__menu menu">
+  <nav class="menu__body" id="nav" aria-label="Основне меню">
+    <ul class="menu__list">
+      <if condition="String('[[lang]]') === 'uk'">
+        <each
+          loop='item in [
+            {"href": "/ua/index.html", "ancor": "головна", "key": "home", "num": "01"},
+            {"href": "/ua/works.html", "ancor": "проєкти", "key": "works", "num": "02"},
+            {"href": "/ua/services-uk.html", "ancor": "сервіси", "key": "services", "num": "03"},
+            {"href": "/ua/about.html", "ancor": "про нас", "key": "about", "num": "04"},
+            {"href": "/ua/blog.html", "ancor": "блог", "key": "blog", "num": "05"}
+          ]'
+        >
+          <if condition="'[[active]]' === '[[item.key]]'">
+            <li class="menu__item">
+              <a
+                href="[[item.href]]"
+                data-num="[[item.num]]"
+                class="menu__link menu__link--active"
+              >
+                [[item.ancor]]
+              </a>
+            </li>
+          </if>
+          <else>
+            <li class="menu__item">
+              <a
+                href="[[item.href]]"
+                data-num="[[item.num]]"
+                class="menu__link"
+              >
+                [[item.ancor]]
+              </a>
+            </li>
+          </else>
+        </each>
+      </if>
+      <else>
+        <each
+          loop='item in [
+            {"href": "/index.html", "ancor": "strona główna", "key": "home", "num": "01"},
+            {"href": "/works.html", "ancor": "projekty", "key": "works", "num": "02"},
+            {"href": "/services.html", "ancor": "usługi", "key": "services", "num": "03"},
+            {"href": "/about.html", "ancor": "o nas", "key": "about", "num": "04"},
+            {"href": "/blog.html", "ancor": "blog", "key": "blog", "num": "05"}
+          ]'
+        >
+          <if condition="'[[active]]' === '[[item.key]]'">
+            <li class="menu__item">
+              <a
+                href="[[item.href]]"
+                data-num="[[item.num]]"
+                class="menu__link menu__link--active"
+              >
+                [[item.ancor]]
+              </a>
+            </li>
+          </if>
+          <else>
+            <li class="menu__item">
+              <a
+                href="[[item.href]]"
+                data-num="[[item.num]]"
+                class="menu__link"
+              >
+                [[item.ancor]]
+              </a>
+            </li>
+          </else>
+        </each>
+      </else>
+    </ul>
+
+    <if condition="String('[[lang]]') === 'uk'">
+      <a href="/ua/contact.html" class="menu__cta">
+        <span class="menu__cta-dot"></span>
+        <span class="menu__cta-text">обговорити проєкт</span>
+        <span class="menu__cta-arrow" aria-hidden="true">→</span>
+      </a>
+    </if>
+    <else>
+      <a href="/contact.html" class="menu__cta">
+        <span class="menu__cta-dot"></span>
+        <span class="menu__cta-text">omów projekt</span>
+        <span class="menu__cta-arrow" aria-hidden="true">→</span>
+      </a>
+    </else>
+  </nav>
+</div>

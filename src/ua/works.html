@@ -1,0 +1,27 @@
+<template
+  src="@components/templates/main/main.html"
+  locals='{
+		"title":"Реалізації меблів на замовлення у Вроцлаві — портфоліо | Fesmeble", 
+		"lang":"uk",
+		"preloader": {
+			"enable":"false",
+			"once":"false"
+		},
+		"keywords":"", 
+		"description":"Понад 240 виконаних проєктів меблів на замовлення у Вроцлаві та по всій Польщі. Кухні, шафи, гардеробні, стільниці, інтерʼєри для бізнесу та HORECA. Дивіться роботи."
+	}'
+>
+  <block name="header">
+    <include
+      src="@components/layout/header/header.html"
+      locals='{"active":"works", "lang":"uk", "altHref":"../works.html"}'
+    ></include>
+  </block>
+  <block name="main">
+    <include src="@components/pages/works/works-uk.html" locals="{}"></include>
+  </block>
+  <block name="footer">
+    <include src="@components/layout/footer/footer.html" locals="{}"></include>
+  </block>
+  <block name="popup"></block>
+</template>

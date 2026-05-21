@@ -1,0 +1,706 @@
+<script type="module" src="@components/pages/home/home.js"></script>
+<link rel="stylesheet" href="@components/pages/home/home.scss" />
+
+<!-- ============ HOME ============ -->
+
+<script type="module" src="@components/pages/home/home.js"></script>
+<link rel="stylesheet" href="@components/pages/home/home.scss" />
+
+<main class="page page--home" id="page-home" tabindex="-1">
+  <section class="section home__hero hero-home">
+    <div class="hero-home__container">
+      <div class="hero-home__top">
+        <div class="badge">
+          <span class="dot"></span>
+          <span>przyjmujemy zamówienia · kolejka 3 tygodnie</span>
+        </div>
+        <div>Wrocław · 2021—26</div>
+      </div>
+
+      <div class="hero-home__middle">
+        <h1 class="hero-home__title">
+          Meble na wymiar <br />
+          <span class="accent">we Wroclawiu</span
+          ><span class="accent-circle"></span>
+        </h1>
+
+        <div class="hero-home__collage">
+          <div class="hero-home__collage-item c1">
+            <img
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80"
+              alt="Nowoczesna kuchnia od Fesmeble"
+              width="1200"
+              height="900"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </div>
+          <div class="hero-home__collage-item c2">
+            <img
+              src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=900&q=80"
+              alt="System garderobowy z frontami z drewna dębowego"
+              width="900"
+              height="675"
+              decoding="async"
+            />
+          </div>
+          <div class="hero-home__collage-item c3">
+            <img
+              src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&q=80"
+              alt="szafka przyłóżkowa"
+              width="600"
+              height="450"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-home__marquee">
+      <div class="hero-home__marquee-track">
+        <span class="hero-home__marquee-item">kuchnie na zamówienie</span>
+        <span class="hero-home__marquee-item">systemy garderobiane</span>
+        <span class="hero-home__marquee-item">szafy na zabudowę</span>
+        <span class="hero-home__marquee-item">gabinety</span>
+        <span class="hero-home__marquee-item">wnętrza komercyjne</span>
+        <span class="hero-home__marquee-item">meble łazienkowe</span>
+        <span class="hero-home__marquee-item">kuchnie na zamówienie</span>
+        <span class="hero-home__marquee-item">systemy garderobiane</span>
+        <span class="hero-home__marquee-item">szafy na zabudowę</span>
+        <span class="hero-home__marquee-item">gabinety</span>
+        <span class="hero-home__marquee-item">wnętrza komercyjne</span>
+        <span class="hero-home__marquee-item">meble łazienkowe</span>
+      </div>
+    </div>
+
+    <div class="hero-home__container">
+      <div class="hero-home__bottom">
+        <p class="hero-home__sub">
+          Projektujemy i robimy meble na zabudowę pod waszą przestrzeń — od
+          pierwszego szkicu po montaż. Pracujemy z drewnem litym, fornirowanym
+          MDF-em, sklejką oraz powierzchniami Corian i HPL. Współpracujemy z
+          architektami wnętrz i wykonujemy zlecenia bezpośrednio dla klientów
+          prywatnych, biur, kawiarni, restauracji i hoteli.
+        </p>
+        <div class="hero-home__stats">
+          <div class="hero-home__stat">
+            <div class="hero-home__stat-num">
+              240<span style="color: var(--accent)">+</span>
+            </div>
+            <div class="hero-home__stat-label">projektów</div>
+          </div>
+          <div class="hero-home__stat">
+            <div class="hero-home__stat-num">7</div>
+            <div class="hero-home__stat-label">lat doświadczenia</div>
+          </div>
+          <div class="hero-home__stat">
+            <div class="hero-home__stat-num">12</div>
+            <div class="hero-home__stat-label">mistrzów</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTNERS / MATERIALS ============ -->
+  <section class="home__partners partners">
+    <div class="partners__container">
+      <div class="partners__head">
+        <h2>Materiały,<br />którym <span class="accent">ufamy</span>.</h2>
+        <p>
+          Europejscy producenci płyt, okuć i powierzchni z wieloletnią
+          gwarancją. Egger, Kronospan, Swiss Krono, Blum, Häfele, Corian. Nie
+          oszczędzamy na tym, co widzicie i czego dotykacie każdego dnia.
+        </p>
+      </div>
+
+      <div data-fls-watcher class="partners__grid">
+        <div
+          class="partners__item"
+          title="Egger — płyty wiórowe, płyty MDF, powierzchnie laminowane (Austria)"
+        >
+          <img
+            class="partners__logo partners__logo--wide"
+            src="@img/partners/egger.svg"
+            alt="Egger"
+            loading="lazy"
+            width="160"
+            height="36"
+          />
+        </div>
+        <div
+          class="partners__item"
+          title="Kronospan — płyty drewnopochodne, laminat (Austria/Polska)"
+        >
+          <img
+            class="partners__logo partners__logo--wide"
+            src="@img/partners/kronospan.svg"
+            alt="Kronospan"
+            loading="lazy"
+            width="160"
+            height="32"
+          />
+        </div>
+
+        <div
+          class="partners__item"
+          title="Blum — austriackie okucia: samozamykacze, mechanizmy"
+        >
+          <img
+            class="partners__logo"
+            src="@img/partners/blum.svg"
+            alt="Blum"
+            loading="lazy"
+            width="100"
+            height="50"
+          />
+        </div>
+        <div
+          class="partners__item"
+          title="Swiss Krono — płyty drewnopochodne (Szwajcaria)"
+        >
+          <img
+            class="partners__logo partners__logo--wide"
+            src="@img/partners/swiss-krono.svg"
+            alt="Swiss Krono"
+            loading="lazy"
+            width="160"
+            height="24"
+          />
+        </div>
+        <div class="partners__item" title="Häfele — німецькі меблеві системи">
+          <img
+            class="partners__logo partners__logo--mark"
+            src="@img/partners/hafele.svg"
+            alt="Häfele"
+            loading="lazy"
+            width="64"
+            height="64"
+          />
+        </div>
+        <div
+          class="partners__item"
+          title="Corian — kamień akrylowy firmy DuPont (USA)"
+        >
+          <img
+            class="partners__logo partners__logo--mark"
+            src="@img/partners/corian.svg"
+            alt="Corian"
+            loading="lazy"
+            width="60"
+            height="64"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home__services-preview services-preview">
+    <div data-fls-watcher class="services-preview__container">
+      <div class="services-preview__header">
+        <div class="section-label">сzym się zajmujemy</div>
+        <h2 class="section-title">Usługi</h2>
+      </div>
+      <div class="services-preview__list">
+        <a href="/kitchen-service.html" class="services-preview__row">
+          <div class="services-preview__num">01</div>
+          <h2 class="services-preview__name">Kuchnie na zamówienie</h2>
+          <div class="services-preview__desc">
+            <p>
+              Kuchnie szyte pod konkretne wnętrze: trójkąt roboczy, wnęki,
+              sprzęt AGD, blat z kamienia, płyty kompaktową HPL albo drewna.
+              Pracujemy od projektu 3D po montaż sprzętu.
+            </p>
+          </div>
+          <div class="services-preview__arrow-wrap">
+            <svg aria-hidden="true" width="20" height="20">
+              <use href="#i-arrow-diag" />
+            </svg>
+          </div>
+        </a>
+        <a href="/countertops.html" class="services-preview__row">
+          <div class="services-preview__num">02</div>
+          <h2 class="services-preview__name">Blaty</h2>
+          <div class="services-preview__desc">
+            <p>
+              Sztuczny kamień, HPL, drewno, płyta wiórowa — do Twoich kuchni,
+              barów i restauracji.
+            </p>
+          </div>
+          <div class="services-preview__arrow-wrap">
+            <svg aria-hidden="true" width="20" height="20">
+              <use href="#i-arrow-diag" />
+            </svg>
+          </div>
+        </a>
+        <a href="./wardrobe.html" class="services-preview__row">
+          <div class="services-preview__num">03</div>
+          <h2 class="services-preview__name">Szafy i garderoby</h2>
+          <div class="services-preview__desc">
+            <p>
+              Zabudowa wnęk, garderoby, szafy przesuwne i otwarte. Oświetlenie
+              LED, mechanizmy Blum i Häfele, podział wnętrza pod wasze rzeczy i
+              nawyki
+            </p>
+          </div>
+          <div class="services-preview__arrow-wrap">
+            <svg aria-hidden="true" width="20" height="20">
+              <use href="#i-arrow-diag" />
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="services-preview__row">
+          <div class="services-preview__num">04</div>
+          <h3 class="services-preview__name">Wnętrza korporacyjne</h3>
+          <div class="services-preview__desc">
+            <p>
+              Biura, kawiarnie, salony wystawowe. Współpracujemy również
+              bezpośrednio z architektami.
+            </p>
+          </div>
+          <div class="services-preview__arrow-wrap">
+            <svg aria-hidden="true" width="20" height="20">
+              <use href="#i-arrow-diag" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home__works-preview works-preview">
+    <div class="works-preview__container">
+      <div data-fls-watcher class="works-preview__header">
+        <div class="section-label">wybrane realizacje</div>
+        <h2 class="section-title">
+          Każdy element drewna <br /><span class="accent"
+            >ma swoje idealne miejsce.</span
+          >
+        </h2>
+      </div>
+      <div
+        data-fls-watcher
+        data-fls-watcher-once
+        class="works-preview__wrapper"
+      >
+        <div class="works-items">
+          <a href="/works.html" class="work-card">
+            <div class="work-card__img">
+              <div class="work-card__img-inner">
+                <img
+                  src="@img/home/1.jpeg"
+                  alt="kuchnia 18 m²"
+                  decoding="async"
+                  width="900"
+                  height="675"
+                />
+              </div>
+              <div class="work-card__overlay">
+                zobaczyć projekt
+                <svg aria-hidden="true" width="14" height="14">
+                  <use href="#i-arrow-right" />
+                </svg>
+              </div>
+            </div>
+            <div class="work-card__meta">
+              <div>
+                <div class="work-card__title">Kuchnia 18 m²</div>
+                <div class="work-card__tag">kuchnia · orzech · 18 m²</div>
+              </div>
+              <div class="work-card__arrow">
+                <svg aria-hidden="true" width="18" height="18">
+                  <use href="#i-arrow-diag" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a data-fls-watcher href="/works.html" class="work-card">
+            <div class="work-card__img">
+              <div class="work-card__img-inner">
+                <img
+                  src="@img/home/2.jpeg"
+                  alt="Garderoba – dąb"
+                  loading="lazy"
+                  decoding="async"
+                  width="900"
+                  height="675"
+                />
+              </div>
+              <div class="work-card__overlay">
+                zobaczyć projekt
+                <svg aria-hidden="true" width="14" height="14">
+                  <use href="#i-arrow-right" />
+                </svg>
+              </div>
+            </div>
+            <div class="work-card__meta">
+              <div>
+                <div class="work-card__title">Garderoba</div>
+                <div class="work-card__tag">Garderoba · dąb</div>
+              </div>
+              <div class="work-card__arrow">
+                <svg aria-hidden="true" width="18" height="18">
+                  <use href="#i-arrow-diag" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a data-fls-watcher href="/works.html" class="work-card">
+            <div class="work-card__img">
+              <div class="work-card__img-inner">
+                <img
+                  src="@img/home/3.jpeg"
+                  alt="Кабінет OPE — ясен"
+                  loading="lazy"
+                  decoding="async"
+                  width="900"
+                  height="675"
+                />
+              </div>
+              <div class="work-card__overlay">
+                zobaczyć projekt
+                <svg aria-hidden="true" width="14" height="14">
+                  <use href="#i-arrow-right" />
+                </svg>
+              </div>
+            </div>
+            <div class="work-card__meta">
+              <div>
+                <div class="work-card__title">Gabinet</div>
+                <div class="work-card__tag">biuro · jasen</div>
+              </div>
+              <div class="work-card__arrow">
+                <svg aria-hidden="true" width="18" height="18">
+                  <use href="#i-arrow-diag" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a data-fls-watcher href="/works.html" class="work-card">
+            <div class="work-card__img">
+              <div class="work-card__img-inner">
+                <img
+                  src="@img/home/4.jpeg"
+                  alt="Sypialnia - buk"
+                  loading="lazy"
+                  decoding="async"
+                  width="900"
+                  height="675"
+                />
+              </div>
+              <div class="work-card__overlay">
+                zobaczyć projekt
+                <svg aria-hidden="true" width="14" height="14">
+                  <use href="#i-arrow-right" />
+                </svg>
+              </div>
+            </div>
+            <div class="work-card__meta">
+              <div>
+                <div class="work-card__title">Sypialnia</div>
+                <div class="work-card__tag">ыypialnia · buk</div>
+              </div>
+              <div class="work-card__arrow">
+                <svg aria-hidden="true" width="18" height="18">
+                  <use href="#i-arrow-diag" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home__faq faq-home">
+    <div class="section faq-home__container">
+      <div data-fls-watcher class="works-preview__header"></div>
+
+      <div class="faq-home__layout">
+        <div class="faq-home__header">
+          <div class="section-label faq-home__label">częste pytania</div>
+          <h2 class="section-title faq-home__title">
+            Najczęstsze<br /><span class="accent">pytania</span>
+          </h2>
+
+          <p class="faq-home__tagline">
+            Krótko o terminach, cenach i materiałach. Jeśli czegoś tu brakuje —
+            zadzwoń lub napisz, odpowiemy konkretnie.
+          </p>
+        </div>
+
+        <div
+          class="faq-home__list spollers"
+          data-fls-spollers-one
+          data-fls-spollers
+        >
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Ile trwa wykonanie kuchni na wymiar?
+            </summary>
+            <div class="spollers__body">
+              Standardowo 4–6 tygodni od podpisania umowy: tydzień na projekt i
+              wycenę, 3–4 tygodnie na produkcję, 2–3 dni na montaż. Przy
+              bardziej skomplikowanych projektach z nietypowymi materiałami czas
+              wydłuża się do 8 tygodni. Aktualna kolejka u nas to 3 tygodnie do
+              startu produkcji.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Ile kosztują meble na wymiar we Wrocławiu?
+            </summary>
+            <div class="spollers__body">
+              Cena zależy od materiałów, okuć i metrażu. Kuchnia z płyty
+              laminowanej i okuciami Blum zaczyna się od kilkunastu tysięcy
+              złotych. Kuchnia z fornirem, blatem ze spieku i mechanizmami
+              premium to przedział wyższy. Po pomiarze podajemy konkretną wycenę
+              w 48 godzin — bez ukrytych kosztów.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Czy wykonujecie meble poza Wrocławiem?
+            </summary>
+            <div class="spollers__body">
+              Tak. Pracownię mamy w Jelczu-Laskowicach pod Wrocławiem, a montaże
+              robimy w całej Polsce. Najczęściej jeździmy po Dolnym Śląsku, ale
+              realizowaliśmy projekty w Warszawie, Krakowie i Poznaniu. Dojazd
+              poza Wrocław kalkulujemy indywidualnie.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Czy robicie meble dla restauracji i hoteli?
+            </summary>
+            <div class="spollers__body">
+              Tak, segment HORECA to nasza druga główna specjalizacja obok
+              mieszkań prywatnych. Wykonujemy bary, recepcje, zabudowy kuchni,
+              meble do pokoi hotelowych, witryny i zabudowy ekspozycyjne.
+              Pracujemy bezpośrednio z architektami wnętrz i biurami
+              projektowymi.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">Czy projekt jest płatny?</summary>
+            <div class="spollers__body">
+              Pierwsza wizualizacja 3D i wycena są bezpłatne. Płacicie dopiero
+              przy podpisaniu umowy. W cenie projektu są dwie poprawki — kolejne
+              zmiany konkretnych elementów uzgadniamy osobno.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Z jakich materiałów robicie meble?
+            </summary>
+            <div class="spollers__body">
+              Pracujemy z płytami laminowanymi i fornirowanymi (Egger,
+              Kronospan, Swiss Krono), MDF-em lakierowanym, sklejką brzozową,
+              drewnem litym (dąb, jesion, buk, orzech), powierzchniami Corian,
+              spiekami kwarcowymi i HPL. Okucia: Blum i Häfele.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Czy rozmawiacie po ukraińsku?
+            </summary>
+            <div class="spollers__body">
+              Tak. Wersja ukraińska strony jest dostępna pod linkiem „UA” w
+              menu. Z klientami z Ukrainy rozmawiamy w ich języku, dokumenty
+              wystawiamy po polsku lub w wersji dwujęzycznej.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">Jak wygląda gwarancja?</summary>
+            <div class="spollers__body">
+              Na konstrukcję mebli dajemy gwarancję 24 miesiące. Okucia Blum
+              mają osobną gwarancję producenta. Jeśli coś po latach przestaje
+              działać — okucie, zawias, podświetlenie — wymieniamy odpłatnie,
+              ale szybko, bo mamy własną pracownię.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-fls-cta class="home__cta cta">
+    <div class="cta__container">
+      <div class="cta__inner">
+        <div>
+          <h2 class="cta__title">
+            Zróbmy wycenę<br /><span class="accent">waszych</span><br />mebli.
+          </h2>
+          <p class="cta__sub">
+            Zostawcie numer — oddzwonimy w ciągu 2 godzin w godzinach pracy.
+            Pomiar w obrębie Wrocławia bezpłatny.
+          </p>
+          <div class="contact-info">
+            <div class="contact-info__row">
+              <span>Telefon</span>
+              <a href="tel:+48570643528">+48 570 643 528</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Email</span>
+              <a href="mailto:hello@fesmeble.com">hello@fesmeble.com</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Biuro</span>
+              <span>Jelcz-Laskowice, Wiśniowa 13, 55-220</span>
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="form form--compact"
+          onsubmit="
+            event.preventDefault();
+            window.submitForm();
+          "
+        >
+          <div class="form__row">
+            <div class="form__field">
+              <label for="text-field-1">Imię</label>
+              <input
+                type="text"
+                required
+                id="text-field-1"
+                name="name"
+                aria-required="true"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form__field">
+              <label for="tel-field-2">Telefon</label>
+              <input
+                type="tel"
+                placeholder="+380"
+                required
+                id="tel-field-2"
+                name="phone"
+                aria-required="true"
+                autocomplete="tel"
+              />
+            </div>
+          </div>
+
+          <fieldset class="form__field form__fieldset">
+            <legend>Co Państwa interesuje?</legend>
+            <div class="form__chips">
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="kitchen"
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Kuchnia
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="wardrobe"
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Garderoba
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="closet"
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Szafa
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="office"
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Biuro
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="other"
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Inne
+              </button>
+            </div>
+          </fieldset>
+
+          <div class="form__field">
+            <label for="select-field-3"> Kiedy najlepiej oddzwonić? </label>
+            <select id="select-field-3" name="when">
+              <option value="asap">Jak najszybciej</option>
+              <option value="today">Dzisiaj do godziny 17:00</option>
+              <option value="tomorrow-am">Jutro rano</option>
+              <option value="tomorrow-pm">Jutro po południu</option>
+            </select>
+          </div>
+
+          <div class="form__field">
+            <label for="message-cta" class="visually-hidden">
+              Krótko o projekcie
+            </label>
+            <textarea
+              id="message-cta"
+              name="message"
+              placeholder="Krótko o projekcie"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="form__submit">
+            <span>otrzymać wycenę</span>
+            <span class="form__submit-arrow" aria-hidden="true"
+              ><svg width="20" height="20"><use href="#i-arrow-right" /></svg
+            ></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

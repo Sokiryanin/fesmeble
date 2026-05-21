@@ -1,0 +1,51 @@
+<head>
+  <if condition="'[[preloader.enable]]' === 'true'">
+    <include
+      src="@components/effects/preloader/preloader.html"
+      locals='{"once":"[[preloader.once]]"}'
+    ></include>
+  </if>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .header,
+    .mobile-cta:not(.is-ready) {
+      opacity: 0;
+    }
+  </style>
+  <!-- Preconnect для Google Fonts — встановлюємо з'єднання до початку CSS-запиту -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- DNS prefetch для Unsplash (hero-зображення) -->
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+  <!-- Google Fonts: завантажуємо non-blocking через media=print trick -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    media="print"
+    onload="this.media = 'all'"
+  />
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+  </noscript>
+  <include src="@components/layout/head/fonts-preload.html"></include>
+  <link rel="stylesheet" href="@styles/fonts/fonts.css" />
+  <link rel="stylesheet" href="@styles/fonts/iconfont.css" />
+  <link rel="stylesheet" href="@styles/style.scss" />
+  <link rel="shortcut icon" href="@img/fesmeble.png" />
+  <if condition="'[[keywords]]' !== ''">
+    <meta name="keywords" content="[[keywords]]" />
+  </if>
+  <if condition="'[[description]]' !== ''">
+    <meta name="description" content="[[description]]" />
+  </if>
+  <title>[[title]]</title>
+</head>

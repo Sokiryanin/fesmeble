@@ -1,0 +1,452 @@
+{
+  "statistics": {
+    "sessions": [
+      {
+        "date": "23.04.2026",
+        "start": 1776962315162,
+        "end": 1776966982655
+      },
+      {
+        "date": "23.04.2026",
+        "start": 1776968397573,
+        "end": 1776968429986
+      },
+      {
+        "date": "27.04.2026",
+        "start": 1777306499485,
+        "end": 1777307716574
+      },
+      {
+        "date": "27.04.2026",
+        "start": 1777308840651,
+        "end": 1777314469216
+      },
+      {
+        "date": "28.04.2026",
+        "start": 1777388577758,
+        "end": 1777447451431
+      },
+      {
+        "date": "29.04.2026",
+        "start": 1777447504049,
+        "end": 1777479015520
+      },
+      {
+        "date": "29.04.2026",
+        "start": 1777479071038,
+        "end": 1777481980104
+      },
+      {
+        "date": "30.04.2026",
+        "start": 1777537147455,
+        "end": 1777537163753
+      },
+      {
+        "date": "30.04.2026",
+        "start": 1777538041150,
+        "end": 1777539883521
+      },
+      {
+        "date": "30.04.2026",
+        "start": 1777541094280,
+        "end": 1777625376526
+      },
+      {
+        "date": "01.05.2026",
+        "start": 1777625381722,
+        "end": 1777625381722
+      },
+      {
+        "date": "01.05.2026",
+        "start": 1777628521380,
+        "end": 1777632164149
+      },
+      {
+        "date": "01.05.2026",
+        "start": 1777632167829,
+        "end": 1777809919873
+      },
+      {
+        "date": "03.05.2026",
+        "start": 1777809957653,
+        "end": 1777810495819
+      },
+      {
+        "date": "04.05.2026",
+        "start": 1777891704300,
+        "end": 1777892360611
+      },
+      {
+        "date": "04.05.2026",
+        "start": 1777894098684,
+        "end": 1777904971370
+      },
+      {
+        "date": "04.05.2026",
+        "start": 1777904975681,
+        "end": 1777926812145
+      },
+      {
+        "date": "04.05.2026",
+        "start": 1777926816568,
+        "end": 1777926918956
+      },
+      {
+        "date": "04.05.2026",
+        "start": 1777926922159,
+        "end": 1777926989693
+      },
+      {
+        "date": "04.05.2026",
+        "start": 1777928005055,
+        "end": 1777928092580
+      },
+      {
+        "date": "04.05.2026",
+        "start": 1777928100321,
+        "end": 1777970954771
+      },
+      {
+        "date": "05.05.2026",
+        "start": 1777970978066,
+        "end": 1777971096514
+      },
+      {
+        "date": "05.05.2026",
+        "start": 1777971118769,
+        "end": 1777971272896
+      },
+      {
+        "date": "05.05.2026",
+        "start": 1777971276261,
+        "end": 1777974714519
+      },
+      {
+        "date": "05.05.2026",
+        "start": 1777974717804,
+        "end": 1777980013101
+      },
+      {
+        "date": "05.05.2026",
+        "start": 1777980152661,
+        "end": 1777988372203
+      },
+      {
+        "date": "05.05.2026",
+        "start": 1777988375978,
+        "end": 1778005162410
+      },
+      {
+        "date": "06.05.2026",
+        "start": 1778054020255,
+        "end": 1778090228210
+      },
+      {
+        "date": "07.05.2026",
+        "start": 1778139046868,
+        "end": 1778173104418,
+        "type": "build"
+      },
+      {
+        "date": "07.05.2026",
+        "start": 1778173119972,
+        "end": 1778173769591
+      },
+      {
+        "date": "08.05.2026",
+        "start": 1778230529618,
+        "end": 1778230529618
+      },
+      {
+        "date": "09.05.2026",
+        "start": 1778331152458,
+        "end": 1778340972499
+      },
+      {
+        "date": "11.05.2026",
+        "start": 1778490367900,
+        "end": 1778567437030
+      },
+      {
+        "date": "12.05.2026",
+        "start": 1778574499368,
+        "end": 1778602116276
+      },
+      {
+        "date": "12.05.2026",
+        "start": 1778602121169,
+        "end": 1778602121169
+      },
+      {
+        "date": "13.05.2026",
+        "start": 1778657888923,
+        "end": 1778657923357
+      },
+      {
+        "date": "13.05.2026",
+        "start": 1778663116954,
+        "end": 1778664309170
+      },
+      {
+        "date": "13.05.2026",
+        "start": 1778664313571,
+        "end": 1778670979823
+      },
+      {
+        "date": "13.05.2026",
+        "start": 1778670983518,
+        "end": 1778681468889
+      },
+      {
+        "date": "13.05.2026",
+        "start": 1778681476523,
+        "end": 1778688060177
+      },
+      {
+        "date": "14.05.2026",
+        "start": 1778746297673,
+        "end": 1778746297673
+      },
+      {
+        "date": "18.05.2026",
+        "start": 1779091025156,
+        "end": 1779091025156
+      },
+      {
+        "date": "18.05.2026",
+        "start": 1779117145052,
+        "end": 1779131828588
+      },
+      {
+        "date": "18.05.2026",
+        "start": 1779131832514,
+        "end": 1779132610959
+      },
+      {
+        "date": "18.05.2026",
+        "start": 1779132614631,
+        "end": 1779133599041
+      },
+      {
+        "date": "18.05.2026",
+        "start": 1779133602838,
+        "end": 1779134617131
+      },
+      {
+        "date": "18.05.2026",
+        "start": 1779134621005,
+        "end": 1779135203797
+      },
+      {
+        "date": "18.05.2026",
+        "start": 1779135207177,
+        "end": 1779135753435
+      },
+      {
+        "date": "18.05.2026",
+        "start": 1779135756896,
+        "end": 1779136436101
+      },
+      {
+        "date": "18.05.2026",
+        "start": 1779136439525,
+        "end": 1779136672112
+      },
+      {
+        "date": "18.05.2026",
+        "start": 1779136675542,
+        "end": 1779138369511
+      },
+      {
+        "date": "19.05.2026",
+        "start": 1779184223031,
+        "end": 1779193640266
+      },
+      {
+        "date": "19.05.2026",
+        "start": 1779194260955,
+        "end": 1779202974801
+      },
+      {
+        "date": "19.05.2026",
+        "start": 1779202978265,
+        "end": 1779211076022
+      },
+      {
+        "date": "19.05.2026",
+        "start": 1779211385556,
+        "end": 1779211385556
+      },
+      {
+        "date": "21.05.2026",
+        "start": 1779351707668,
+        "end": 1779352030560
+      },
+      {
+        "date": "21.05.2026",
+        "start": 1779352033686,
+        "end": 1779352081315
+      },
+      {
+        "date": "21.05.2026",
+        "start": 1779353058643,
+        "end": 1779354137888
+      },
+      {
+        "date": "21.05.2026",
+        "start": 1779354141239,
+        "end": 1779354298107
+      },
+      {
+        "date": "21.05.2026",
+        "start": 1779354300955,
+        "end": 1779354350034
+      },
+      {
+        "date": "21.05.2026",
+        "start": 1779354351997,
+        "end": 1779354413027
+      },
+      {
+        "date": "21.05.2026",
+        "start": 1779354415933,
+        "end": 1779356987744,
+        "type": "build"
+      },
+      {
+        "date": "21.05.2026",
+        "start": 1779359874685,
+        "end": 1779360551070
+      },
+      {
+        "date": "21.05.2026",
+        "start": 1779363405021,
+        "end": 1779363492264
+      }
+    ],
+    "files": [
+      "header.css",
+      "header.html",
+      "variables.css",
+      "style.scss",
+      "reset.css",
+      "settings.scss",
+      "header.scss",
+      "header.js",
+      "menu.html",
+      "menu.scss",
+      "menu.js",
+      "footer.html",
+      "footer.scss",
+      "index.html",
+      "home.html",
+      "home.scss",
+      "main.html",
+      "translator.js",
+      "langSwitcher.js",
+      "app.js",
+      "fesmeble.svg",
+      "head.html",
+      ".DS_Store",
+      "swiss-krono.svg",
+      "blum.svg",
+      "corian.svg",
+      "egger.svg",
+      "forma-furniture-v30.html",
+      "hafele.svg",
+      "hettich.svg",
+      "kronospan.svg",
+      "reveal.js",
+      "works.html",
+      "works.scss",
+      "works.js",
+      "menu.json",
+      "cta.html",
+      "cta.scss",
+      "services.html",
+      "services.scss",
+      "blog-posts.js",
+      "translations.js",
+      "i18n.js",
+      "functions.js",
+      "about.html",
+      "about.scss",
+      "tabs.js",
+      "blogs.html",
+      "blogs.scss",
+      "blog.html",
+      "blog.scss",
+      "contact.html",
+      "contact.scss",
+      "blog.js",
+      "kitchen-service.html",
+      "kitchen-service.js",
+      "kitchen-service.scss",
+      "test.scss",
+      "dane-deaner-1WFXk3WJXZU-unsplash.jpg",
+      "darren-ahmed-arceo-Te24lXdBhxc-unsplash.jpg",
+      "immo-renovation-NlXOCFMt3c8-unsplash.jpg",
+      "jason-briscoe-GliaHAJ3_5A-unsplash.jpg",
+      "jason-briscoe-VfKK1PPoIBA-unsplash.jpg",
+      "jason-briscoe-VBsG1VOgLIU-unsplash.jpg",
+      "Не підтверджено 684954.crdownload",
+      "le-creuset-LJ8OnqaYUqw-unsplash.jpg",
+      "lisa-anna-D2CfMG41IAs-unsplash.jpg",
+      "lotus-design-n-print--iQYdCr4EpE-unsplash.jpg",
+      "1.jpg",
+      "2.jpg",
+      "3.jpg",
+      "4.jpg",
+      "5.jpg",
+      "Не підтверджено 197266.crdownload",
+      "6",
+      "7.jpg",
+      "6.jpg",
+      "8.jpg",
+      "Не підтверджено 505398.crdownload",
+      "1",
+      "countertops.html",
+      "countertops.scss",
+      "wardrobe.html",
+      "wardrobe.scss",
+      "blog-fronts.html",
+      "blog-fronts.js",
+      "blog-fronts.scss",
+      "blog-countertops.js",
+      "blog-countertops.html",
+      "blog-countertops.scss",
+      "sprite.html",
+      "Не підтверджено 110807.crdownload",
+      "hpl.jpeg",
+      "acril.jpg",
+      "hpl-2.jpg",
+      "blog-ward.js",
+      "blog-ward.html",
+      "blog-ward.scss",
+      "Не підтверджено 622128.crdownload",
+      "blog-sink.html",
+      "blog-sink.scss",
+      "blog-sink.js",
+      "corner.jpg",
+      "linear.jpg",
+      "iceland.jpg",
+      "blogergo.js",
+      "blog-ergo.html",
+      "blogergo.scss",
+      "blog-ergo.scss",
+      "watcher.scss",
+      "watcher.js",
+      "inner.html",
+      "preloader.html",
+      "scroll.scss",
+      "home-uk.html",
+      "works-uk.html",
+      "projectpage.html",
+      "footer-uk.html",
+      "spollers.scss",
+      "projects.pl.json",
+      "projects.uk.json",
+      "services-uk.html"
+    ]
+  }
+}

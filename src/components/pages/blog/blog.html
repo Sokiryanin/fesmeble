@@ -1,0 +1,159 @@
+<script type="module" src="@components/pages/blog/blog.js"></script>
+<link rel="stylesheet" href="@components/pages/blog/blog.scss" />
+
+<main data-fls-blogs class="page page--blog blog" id="page-blog">
+  <section class="section blog__section">
+    <div class="blog__container">
+      <div class="blog__header">
+        <div class="section-label blog__label">блог · журнал</div>
+        <h1 class="section-title blog__title">
+          Що ми знаємо про<br /><span class="accent"
+            >меблі, простір і людей</span
+          >.
+        </h1>
+      </div>
+
+      <div class="blog__grid">
+        <a href="./blog-ergo.html" class="blog-card" data-slug="blum-hardware">
+          <div class="blog-card__img">
+            <img
+              src="@img/blog-ergo/1.jpg"
+              alt="Ілюстрація до статті: Фурнітура Blum: за що ми платимо"
+              decoding="async"
+              width="600"
+              height="450"
+            />
+          </div>
+          <div class="blog-card__cat">техніка</div>
+          <div class="blog-card__title">
+            Ергономіка кухні: як облаштувати робочу зону.
+          </div>
+        </a>
+        <a href="./blog-countertops.html" class="blog-card">
+          <div class="blog-card__img">
+            <img
+              src="@img/countertop/4.jpg"
+              alt="Ілюстрація до статті: МДФ, ДСП, масив: чесне порівняння без маркетингу"
+              decoding="async"
+              width="600"
+              height="450"
+            />
+          </div>
+          <div class="blog-card__cat">стільниці</div>
+          <div class="blog-card__title">
+            HPL чи штучний камінь: як обрати стільницю і не пожалкувати.
+          </div>
+        </a>
+        <a href="./blog-sink" class="blog-card">
+          <div class="blog-card__img">
+            <img
+              src="@img/blog-sink/3.jpg"
+              alt="кухонна мийка"
+              decoding="async"
+              width="600"
+              height="450"
+            />
+          </div>
+          <div class="blog-card__cat">кухонні мийки</div>
+          <div class="blog-card__title">Які є види мийок на кухню?</div>
+        </a>
+        <a href="./blog-fronts" class="blog-card">
+          <div class="blog-card__img">
+            <img
+              src="@img/kitchen-service/cozy-kitchen.jpg"
+              alt="Ілюстрація до статті: Робочий стіл, за яким не болить спина"
+              decoding="async"
+              width="600"
+              height="450"
+            />
+          </div>
+          <div class="blog-card__cat">фасади</div>
+          <div class="blog-card__title">
+            Які фасади обрати: ДСП, МДФ, акрил чи HPL?
+          </div>
+        </a>
+        <a href="./blog-ward.html" class="blog-card">
+          <div class="blog-card__img">
+            <img
+              src="@img/wardrobes/7.jpg"
+              alt="Ілюстрація до статті: 5 помилок при плануванні гардеробної"
+              decoding="async"
+              width="600"
+              height="450"
+            />
+          </div>
+          <div class="blog-card__cat">гардеробні</div>
+          <div class="blog-card__title">
+            5 помилок при плануванні гардеробної
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section data-fls-cta class="blog__cta cta">
+    <div class="cta__container">
+      <div class="cta__inner">
+        <div>
+          <h2 class="cta__title">
+            Готові<br /><span class="accent">почати</span>?
+          </h2>
+          <p class="cta__sub">
+            Від читання про меблі до своїх меблів — кілька хвилин розмови.
+          </p>
+          <div class="contact-info">
+            <div class="contact-info__row">
+              <span>Телефон</span>
+              <a href="tel:+380671234567">+380 67 123 45 67</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Email</span>
+              <a href="mailto:hello@fesmeble.com">hello@fesmeble.com</a>
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="form form--compact"
+          onsubmit="
+            event.preventDefault();
+            window.submitForm();
+          "
+        >
+          <div class="form__row">
+            <div class="form__field">
+              <label for="text-field-1">Ваше імʼя</label>
+              <input
+                type="text"
+                required
+                id="text-field-1"
+                name="name"
+                aria-required="true"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form__field">
+              <label for="tel-field-2">Телефон</label>
+              <input
+                type="tel"
+                placeholder="+380"
+                required
+                id="tel-field-2"
+                name="phone"
+                aria-required="true"
+                autocomplete="tel"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="form__submit">
+            <span>подзвоніть мені</span>
+            <span class="form__submit-arrow" aria-hidden="true"
+              ><svg width="20" height="20"><use href="#i-arrow-right" /></svg
+            ></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

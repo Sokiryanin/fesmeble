@@ -1,0 +1,74 @@
+.contact {
+  // .contact__section
+
+  &__section {
+    @include adaptiveValue('padding-top', 160, 100);
+    @include adaptiveValue('padding-bottom', 100, 60);
+    text-align: center;
+    position: relative;
+  }
+
+  // .contact__container
+
+  &__container {
+    width: 100%;
+    @media (max-width: toEm($mobile)) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  // .contact__hero
+
+  &__hero {
+  }
+
+  &__hero .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: var(--accent);
+    color: var(--bg);
+    border-radius: 100px;
+    font-size: 13px;
+    margin-bottom: 30px;
+    animation: bounce 2.4s infinite;
+  }
+
+  &__hero .badge .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  &__hero h1 {
+    font-size: clamp(52px, 9vw, 140px);
+    font-weight: 350;
+    line-height: 0.92;
+    letter-spacing: -0.045em;
+    max-width: 1100px;
+    margin: 0 auto 30px;
+  }
+  &__hero h1 .accent {
+    color: var(--accent);
+  }
+  &__hero p {
+    font-size: 18px;
+    color: var(--ink-2);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  &__cta {
+    padding: 100px 0;
+    background: var(--ink);
+    color: var(--bg);
+
+    @media (max-width: toEm($tablet)) {
+      padding: 70px 0;
+    }
+  }
+}

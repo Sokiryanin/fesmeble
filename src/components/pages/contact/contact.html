@@ -1,0 +1,237 @@
+<main data-fls-contact class="page page--contact contact" id="page-contact">
+  <section class="contact__section contact__hero contact-hero">
+    <div class="contact__container">
+      <div class="badge">
+        <span class="dot"></span>
+        відповідаємо протягом 2 годин
+      </div>
+      <h1>
+        Давайте<br />порахуємо<br /><span class="accent">ваші меблі</span>.
+      </h1>
+      <p>
+        Безкоштовний виїзд на обмір у межах Львова. Для інших міст —
+        онлайн-консультація та детальний прорахунок за фото й розмірами.
+      </p>
+    </div>
+  </section>
+
+  <section data-fls-cta class="contact__cta cta">
+    <div class="cta__container">
+      <div class="cta__inner">
+        <div>
+          <h2 class="cta__title">
+            Давайте<br />порахуємо <span class="accent">ваші</span><br />меблі.
+          </h2>
+
+          <div class="contact-info">
+            <div class="contact-info__row">
+              <span>Телефон</span>
+              <a href="tel:+380671234567">+380 67 123 45 67</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Telegram</span>
+              <a href="#">@fesmeble</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Email</span>
+              <a href="mailto:hello@fesmeble.com">hello@fesmeble.com</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Шоурум</span>
+              <span>Вроцлав, вул. Легницка 55</span>
+            </div>
+            <div class="contact-info__row">
+              <span>Графік</span>
+              <p>Пн—Сб · 10:00—19:00</p>
+            </div>
+          </div>
+
+          <div class="cta__info">
+            <div class="cta__info-label">зараз у черзі</div>
+            <div class="cta__info-text">3 тижні до старту виробництва</div>
+            <div class="cta__info-bottom">
+              Запис на обмір — доступний цього тижня
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="form form--compact"
+          onsubmit="
+            event.preventDefault();
+            window.submitForm();
+          "
+        >
+          <div class="form__row">
+            <div class="form__field">
+              <label for="text-field-1"
+                >Ваше імʼя *</label
+              >
+              <input
+                type="text"
+                required
+                id="text-field-1"
+                name="name"
+                aria-required="true"
+                autocomplete="name"
+                placeholder="Як до вас звертатись"
+              />
+            </div>
+            <div class="form__field">
+              <label for="tel-field-2">Телефон *</label>
+              <input
+                type="tel"
+                placeholder="+48"
+                required
+                id="tel-field-2"
+                name="phone"
+                aria-required="true"
+                autocomplete="tel"
+              />
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="email-email-18">Email (необовʼязково)</label
+            ><input
+              type="email"
+              placeholder="name@email.com"
+              id="email-email-18"
+              autocomplete="email"
+            />
+          </div>
+
+          <fieldset class="form__field form__fieldset">
+            <legend>Тип меблів</legend>
+            <div class="form__chips">
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="kitchen"
+               
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Кухня
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="wardrobe"
+               
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Гардероб
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="closet"
+               
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Шафа
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="office"
+               
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Офіс
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="other"
+               
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Інше
+              </button>
+            </div>
+          </fieldset>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label for="select-field-19">Орієнтовний бюджет</label
+              ><select>
+                <option>Ще не визначився</option>
+                <option>до 80 000 грн</option>
+                <option>80 000 — 200 000 грн</option>
+                <option>200 000 — 500 000 грн</option>
+                <option>500 000+ грн</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label for="select-field-20">Коли хочете готові меблі</label
+              ><select>
+                <option>Немає жорсткого терміну</option>
+                <option>Протягом місяця</option>
+                <option>За 2—3 місяці</option>
+                <option>Пізніше</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="message-cta" class="visually-hidden">
+              Розкажіть коротко про проєкт
+            </label>
+            <textarea
+              id="message-cta"
+              name="message"
+              placeholder="Коротко про проєкт"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="form__submit">
+            <span>отримати прорахунок</span>
+            <span class="form__submit-arrow" aria-hidden="true"><svg width="20" height="20"><use href="#i-arrow-right"/></svg></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

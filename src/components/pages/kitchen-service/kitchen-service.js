@@ -1,0 +1,1 @@
+import './kitchen-service.scss';

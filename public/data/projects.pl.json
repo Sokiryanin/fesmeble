@@ -1,0 +1,223 @@
+[
+  {
+    "id": "brama",
+    "cat": "Kuchnia",
+    "category": "kitchen",
+    "title": "Kuchnia „Brama",
+    "tag": "orzech · 18 m² · 2025",
+    "tagShort": "kuchnia · orzech · 18 m²",
+    "desc": "Kuchnia dla rodziny trzech pokoleń. Główne zadanie — zmieścić pełnoprawną strefę roboczą, stół śniadaniowy i ukryty kredens w 18 m². Fronty z orzecha amerykańskiego, blat z konglomeratu kwarcowego.",
+    "specs": {
+      "Powierzchnia": "18 m²",
+      "Materiał": "Orzech amerykański",
+      "Okucia": "Blum TIP-ON",
+      "Termin": "6 tygodni"
+    },
+    "cover": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80",
+    "coverAlt": "Kuchnia na wymiar Brama — orzech amerykański, 18 m², Wrocław",
+    "images": [
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
+      "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&q=80"
+    ]
+  },
+  {
+    "id": "cisza",
+    "cat": "Garderoba",
+    "category": "wardrobe",
+    "title": "Garderoba „Cisza",
+    "tag": "dąb · 12 m² · 2025",
+    "tagShort": "garderoba · dąb",
+    "desc": "Wydzielona garderoba z centralną wyspą. Ciche domyki, oświetlenie drążków z czujnikiem ruchu, systemy na buty i torebki.",
+    "specs": {
+      "Powierzchnia": "12 m²",
+      "Materiał": "Dąb naturalny",
+      "Oświetlenie": "LED z czujnikiem",
+      "Termin": "5 tygodni"
+    },
+    "cover": "https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=900&q=80",
+    "coverAlt": "Garderoba na wymiar Cisza — dąb naturalny, 12 m², Wrocław",
+    "images": [
+      "https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=1200&q=80",
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=1200&q=80",
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80"
+    ]
+  },
+  {
+    "id": "pauza",
+    "cat": "Salon",
+    "category": "commercial",
+    "title": "Salon „Pauza",
+    "tag": "jesion · 22 m² · 2024",
+    "tagShort": "salon · jesion",
+    "desc": "Zabudowa salonu: ściana TV, regały na książki, ukryta strefa barowa. Jesion w litej desce i fornirze.",
+    "specs": {
+      "Powierzchnia": "22 m²",
+      "Materiał": "Jesion",
+      "Dodatkowo": "Zabudowana akustyka",
+      "Termin": "7 tygodni"
+    },
+    "cover": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80",
+    "coverAlt": "Zabudowa salonu Pauza — jesion, 22 m², Wrocław",
+    "images": [
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80",
+      "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=1200&q=80"
+    ]
+  },
+  {
+    "id": "ope",
+    "cat": "Biuro",
+    "category": "office",
+    "title": "Gabinet OPE",
+    "tag": "jesion · mosiądz · 2024",
+    "tagShort": "biuro · jesion · mosiądz",
+    "desc": "Domowy gabinet dla prawnika. Biurko-transformer z ukrytymi gniazdkami, zamykana szafa na dokumenty, panele akustyczne.",
+    "specs": {
+      "Powierzchnia": "14 m²",
+      "Materiał": "Jesion · mosiądz",
+      "Detal": "Panele akustyczne",
+      "Termin": "5 tygodni"
+    },
+    "cover": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=900&q=80",
+    "coverAlt": "Gabinet na wymiar OPE — jesion z mosiądzem, Wrocław",
+    "images": [
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&q=80",
+      "https://images.unsplash.com/photo-1505409859467-3a796fd5798e?w=1200&q=80",
+      "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=1200&q=80"
+    ]
+  },
+  {
+    "id": "len",
+    "cat": "Sypialnia",
+    "category": "closet",
+    "title": "Sypialnia „Len",
+    "tag": "buk · tkanina · 2024",
+    "tagShort": "sypialnia · buk",
+    "desc": "Szafa przesuwna na całą ścianę i szafki przyłóżkowe z wbudowanym oświetleniem. Buk połączony z naturalnym lnem.",
+    "specs": {
+      "Powierzchnia": "16 m²",
+      "Materiał": "Buk · len",
+      "Lustra": "Antyrefleksyjne",
+      "Termin": "4 tygodnie"
+    },
+    "cover": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=900&q=80",
+    "coverAlt": "Sypialnia Len — buk z lnem, 16 m², Wrocław",
+    "images": [
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=80",
+      "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1200&q=80",
+      "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1200&q=80"
+    ]
+  },
+  {
+    "id": "teren",
+    "cat": "HORECA",
+    "category": "commercial",
+    "title": "Kawiarnia „Tereń",
+    "tag": "metal · dąb · 2025",
+    "tagShort": "HORECA · metal · dąb",
+    "desc": "Wnętrze kawiarni na 40 miejsc. Bar o długości 6 metrów, witryna na ciastka, półki na zastawę. Materiały, które wytrzymują 200 gości dziennie.",
+    "specs": {
+      "Pojemność": "40 miejsc",
+      "Materiał": "Dąb · stal",
+      "Wytrzymałość": "Klasa komercyjna",
+      "Termin": "8 tygodni"
+    },
+    "cover": "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=900&q=80",
+    "coverAlt": "Wyposażenie kawiarni Tereń — dąb i stal, 40 miejsc, Wrocław",
+    "images": [
+      "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=1200&q=80",
+      "https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1200&q=80"
+    ]
+  },
+  {
+    "id": "mieta",
+    "cat": "Kuchnia",
+    "category": "kitchen",
+    "title": "Kuchnia „Mięta",
+    "tag": "MDF · zielony · 2025",
+    "tagShort": "kuchnia · MDF · 9 m²",
+    "desc": "Kompaktowa kuchnia w mieszkaniu typu studio. Miętowy MDF w macie, mosiężne uchwyty, zabudowany sprzęt Miele.",
+    "specs": {
+      "Powierzchnia": "9 m²",
+      "Materiał": "MDF matowy",
+      "Sprzęt": "Miele",
+      "Termin": "5 tygodni"
+    },
+    "cover": "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=900&q=80",
+    "coverAlt": "Kuchnia na wymiar Mięta — miętowy MDF, 9 m², Wrocław",
+    "images": [
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80"
+    ]
+  },
+  {
+    "id": "kamien",
+    "cat": "Łazienka",
+    "category": "bathroom",
+    "title": "Łazienka „Kamień",
+    "tag": "dąb wodoodporny · 2025",
+    "tagShort": "łazienka · dąb",
+    "desc": "Meble łazienkowe z dębu wodoodpornego. Szafka pod umywalkę, lustro-szafka, wysoki słupek. Wszystko na ukrytych mechanizmach.",
+    "specs": {
+      "Powierzchnia": "8 m²",
+      "Materiał": "Dąb wodoodporny",
+      "Wykończenie": "Olej naturalny",
+      "Termin": "4 tygodnie"
+    },
+    "cover": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=80",
+    "coverAlt": "Łazienka na wymiar Kamień — dąb wodoodporny, 8 m², Wrocław",
+    "images": [
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+      "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200&q=80",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=80"
+    ]
+  },
+  {
+    "id": "album",
+    "cat": "Garderoba",
+    "category": "wardrobe",
+    "title": "Garderoba „Album",
+    "tag": "biała emalia · 2024",
+    "tagShort": "garderoba · emalia",
+    "desc": "Minimalistyczna garderoba w białej emalii. Uchwyty profilowane bez widocznych okuć, ścianka lustrzana, wysuwane półki.",
+    "specs": {
+      "Powierzchnia": "10 m²",
+      "Wykończenie": "Biała emalia",
+      "Otwieranie": "Push-to-open",
+      "Termin": "5 tygodni"
+    },
+    "cover": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=80",
+    "coverAlt": "Garderoba na wymiar Album — biała emalia, 10 m², Wrocław",
+    "images": [
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80",
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=1200&q=80",
+      "https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=1200&q=80"
+    ]
+  },
+  {
+    "id": "sroka",
+    "cat": "Kuchnia",
+    "category": "kitchen",
+    "title": "Kuchnia „Sroka",
+    "tag": "czarny dąb · wyspa · 2025",
+    "tagShort": "kuchnia · czarny dąb",
+    "desc": "Kuchnia w loftowym wnętrzu o powierzchni 40 m². Masywna wyspa 3,2 metra, indukcja, zabudowane kolumny chłodzące. Czarny barwiony dąb.",
+    "specs": {
+      "Powierzchnia": "40 m²",
+      "Materiał": "Dąb barwiony",
+      "Wyspa": "3,2 m",
+      "Termin": "9 tygodni"
+    },
+    "cover": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=900&q=80",
+    "coverAlt": "Kuchnia na wymiar Sroka — czarny dąb barwiony, wyspa 3,2 m, Wrocław",
+    "images": [
+      "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&q=80",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80"
+    ]
+  }
+]

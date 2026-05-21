@@ -1,0 +1,699 @@
+<script type="module" src="@components/pages/home/home.js"></script>
+<link rel="stylesheet" href="@components/pages/home/home.scss" />
+
+<!-- ============ HOME ============ -->
+<main class="page page--home" id="page-home" tabindex="-1">
+  <section class="section home__hero hero-home">
+    <div class="hero-home__container">
+      <div class="hero-home__top">
+        <div class="badge">
+          <span class="dot"></span>
+          <span>приймаємо замовлення · черга 3 тижні</span>
+        </div>
+        <div>вроцлав · 2021—26</div>
+      </div>
+
+      <div class="hero-home__middle">
+        <h1 class="hero-home__title">
+          Меблі під замовлення<br />
+          <span class="accent">у Вроцлаві</span
+          ><span class="accent-circle"></span><br />
+        </h1>
+
+        <div class="hero-home__collage">
+          <div class="hero-home__collage-item c1">
+            <img
+              src="@img/home/1.jpeg"
+              alt="Сучасна кухня від Fesmeble"
+              width="1200"
+              height="900"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </div>
+          <div class="hero-home__collage-item c2">
+            <img
+              src="@img/home/2.jpeg"
+              alt="Гардеробна система з дубовими фасадами"
+              width="900"
+              height="675"
+              decoding="async"
+            />
+          </div>
+          <div class="hero-home__collage-item c3">
+            <img
+              src="@img/home/3.jpeg"
+              alt="тумба прикроватна"
+              width="600"
+              height="450"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-home__marquee">
+      <div class="hero-home__marquee-track">
+        <span class="hero-home__marquee-item">кухні на замовлення</span>
+        <span class="hero-home__marquee-item">гардеробні системи</span>
+        <span class="hero-home__marquee-item">вбудовані шафи</span>
+        <span class="hero-home__marquee-item">кабінети</span>
+        <span class="hero-home__marquee-item">комерційні інтерʼєри</span>
+        <span class="hero-home__marquee-item">меблі для ванних</span>
+        <span class="hero-home__marquee-item">кухні на замовлення</span>
+        <span class="hero-home__marquee-item">гардеробні системи</span>
+        <span class="hero-home__marquee-item">вбудовані шафи</span>
+        <span class="hero-home__marquee-item">кабінети</span>
+        <span class="hero-home__marquee-item">комерційні інтерʼєри</span>
+        <span class="hero-home__marquee-item">меблі для ванних</span>
+      </div>
+    </div>
+
+    <div class="hero-home__container">
+      <div class="hero-home__bottom">
+        <p class="hero-home__sub">
+          Ми проектуємо та виготовляємо вбудовані меблі під ваші приміщення —
+          від першого ескізу до монтажу. Ми працюємо з масивом дерева,
+          шпонованим МДФ, фанерою, а також поверхнями Corian та HPL. Ми
+          співпрацюємо з архітекторами інтер'єрів та виконуємо замовлення
+          безпосередньо для приватних клієнтів, офісів, кав'ярень, ресторанів та
+          готелів.
+        </p>
+        <div class="hero-home__stats">
+          <div class="hero-home__stat">
+            <div class="hero-home__stat-num">
+              240<span style="color: var(--accent)">+</span>
+            </div>
+            <div class="hero-home__stat-label">проєктів</div>
+          </div>
+          <div class="hero-home__stat">
+            <div class="hero-home__stat-num">7</div>
+            <div class="hero-home__stat-label">років досвіду</div>
+          </div>
+          <div class="hero-home__stat">
+            <div class="hero-home__stat-num">12</div>
+            <div class="hero-home__stat-label">майстрів</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTNERS / MATERIALS ============ -->
+  <section class="home__partners partners">
+    <div class="partners__container">
+      <div class="partners__head">
+        <h2>Матеріали,<br />яким ми <span class="accent">довіряємо</span>.</h2>
+        <p>
+          Європейські виробники плит, фурнітури та оздоблювальних матеріалів із
+          багаторічною гарантією. Egger, Kronospan, Swiss Krono, Blum, Häfele,
+          Corian. Ми не економимо на тому, що ви бачите і до чого торкаєтеся
+          щодня.
+        </p>
+      </div>
+
+      <div data-fls-watcher class="partners__grid">
+        <div
+          class="partners__item"
+          title="Egger — плити ДСП, МДФ, ламіновані поверхні (Австрія)"
+        >
+          <img
+            class="partners__logo partners__logo--wide"
+            src="@img/partners/egger.svg"
+            alt="Egger"
+            loading="lazy"
+            width="160"
+            height="36"
+          />
+        </div>
+        <div
+          class="partners__item"
+          title="Kronospan — деревні плити, ламінат (Австрія/Польща)"
+        >
+          <img
+            class="partners__logo partners__logo--wide"
+            src="@img/partners/kronospan.svg"
+            alt="Kronospan"
+            loading="lazy"
+            width="160"
+            height="32"
+          />
+        </div>
+
+        <div
+          class="partners__item"
+          title="Blum — австрійська фурнітура: доводчики, механізми"
+        >
+          <img
+            class="partners__logo"
+            src="@img/partners/blum.svg"
+            alt="Blum"
+            loading="lazy"
+            width="100"
+            height="50"
+          />
+        </div>
+        <div
+          class="partners__item"
+          title="Swiss Krono — деревні плити (Швейцарія)"
+        >
+          <img
+            class="partners__logo partners__logo--wide"
+            src="@img/partners/swiss-krono.svg"
+            alt="Swiss Krono"
+            loading="lazy"
+            width="160"
+            height="24"
+          />
+        </div>
+        <div class="partners__item" title="Häfele — німецькі меблеві системи">
+          <img
+            class="partners__logo partners__logo--mark"
+            src="@img/partners/hafele.svg"
+            alt="Häfele"
+            loading="lazy"
+            width="64"
+            height="64"
+          />
+        </div>
+        <div
+          class="partners__item"
+          title="Corian — акриловий камінь від DuPont (США)"
+        >
+          <img
+            class="partners__logo partners__logo--mark"
+            src="@img/partners/corian.svg"
+            alt="Corian"
+            loading="lazy"
+            width="60"
+            height="64"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home__services-preview services-preview">
+    <div data-fls-watcher class="services-preview__container">
+      <div class="services-preview__header">
+        <div class="section-label">що ми робимо</div>
+        <h2 class="section-title">Сервіси</h2>
+      </div>
+      <div class="services-preview__list">
+        <a href="/ua/kitchen-service.html" class="services-preview__row">
+          <div class="services-preview__num">01</div>
+          <div class="services-preview__name">Кухні на замовлення</div>
+          <div class="services-preview__desc">
+            Кухні, розроблені під конкретний інтер’єр: робочий трикутник, ніші,
+            побутова техніка, стільниця з каменю, компакт-плита HPL або дерева.
+            Ми працюємо від 3D-проектування до монтажу обладнання.
+          </div>
+          <div class="services-preview__arrow-wrap">
+            <svg aria-hidden="true" width="20" height="20">
+              <use href="#i-arrow-diag" />
+            </svg>
+          </div>
+        </a>
+        <a href="./countertops.html" class="services-preview__row">
+          <div class="services-preview__num">02</div>
+          <div class="services-preview__name">Стільниці</div>
+          <div class="services-preview__desc">
+            Штучний камінь, HPL, дерево, ДСП — для ваших кухонь, барів і
+            ресторанів.
+          </div>
+          <div class="services-preview__arrow-wrap">
+            <svg aria-hidden="true" width="20" height="20">
+              <use href="#i-arrow-diag" />
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="services-preview__row">
+          <div class="services-preview__num">03</div>
+          <div class="services-preview__name">
+            Гардеробні системи та вбудовані шафи
+          </div>
+          <div class="services-preview__desc">
+            Вбудовані шафи, гардеробні, розсувні та відкриті шафи. Світлодіодне
+            освітлення, фурнітура Blum та Häfele, планування інтер’єру,
+            адаптоване до ваших речей та звичок
+          </div>
+          <div class="services-preview__arrow-wrap">
+            <svg aria-hidden="true" width="20" height="20">
+              <use href="#i-arrow-diag" />
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="services-preview__row">
+          <div class="services-preview__num">04</div>
+          <div class="services-preview__name">Корпоративні інтерʼєри</div>
+          <div class="services-preview__desc">
+            Офіси, кав’ярні, ресторани, виставкові зали. Ми також співпрацюємо
+            безпосередньо з архітекторами.
+          </div>
+          <div class="services-preview__arrow-wrap">
+            <svg aria-hidden="true" width="20" height="20">
+              <use href="#i-arrow-diag" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home__works-preview works-preview">
+    <div class="works-preview__container">
+      <div data-fls-watcher class="works-preview__header">
+        <div class="section-label">вибрані роботи</div>
+        <h2 class="section-title">
+          Кожен шматок дерева<br /><span class="accent">знає своє місце.</span>
+        </h2>
+      </div>
+      <div
+        data-fls-watcher
+        data-fls-watcher-once
+        class="works-preview__wrapper"
+      >
+        <div class="works-items">
+          <a href="./works.html" class="work-card">
+            <div class="work-card__img">
+              <div class="work-card__img-inner">
+                <img
+                  src="@img/home/1.jpeg"
+                  alt="Кухня «Брама» — горіх, 18 м²"
+                  decoding="async"
+                  width="900"
+                  height="675"
+                />
+              </div>
+              <div class="work-card__overlay">
+                подивитись проєкт
+                <svg aria-hidden="true" width="14" height="14">
+                  <use href="#i-arrow-right" />
+                </svg>
+              </div>
+            </div>
+            <div class="work-card__meta">
+              <div>
+                <div class="work-card__title">Кухня «Брама»</div>
+                <div class="work-card__tag">кухня · горіх · 18 м²</div>
+              </div>
+              <div class="work-card__arrow">
+                <svg aria-hidden="true" width="18" height="18">
+                  <use href="#i-arrow-diag" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a data-fls-watcher href="./works.html" class="work-card">
+            <div class="work-card__img">
+              <div class="work-card__img-inner">
+                <img
+                  src="@img/home/2.jpeg"
+                  alt="Гардеробна «Тиша» — дуб"
+                  loading="lazy"
+                  decoding="async"
+                  width="900"
+                  height="675"
+                />
+              </div>
+              <div class="work-card__overlay">
+                подивитись проєкт
+                <svg aria-hidden="true" width="14" height="14">
+                  <use href="#i-arrow-right" />
+                </svg>
+              </div>
+            </div>
+            <div class="work-card__meta">
+              <div>
+                <div class="work-card__title">Гардероб «Тиша»</div>
+                <div class="work-card__tag">гардеробна · дуб</div>
+              </div>
+              <div class="work-card__arrow">
+                <svg aria-hidden="true" width="18" height="18">
+                  <use href="#i-arrow-diag" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a data-fls-watcher href="./works.html" class="work-card">
+            <div class="work-card__img">
+              <div class="work-card__img-inner">
+                <img
+                  src="@img/home/3.jpeg"
+                  alt="Кабінет OPE — ясен"
+                  loading="lazy"
+                  decoding="async"
+                  width="900"
+                  height="675"
+                />
+              </div>
+              <div class="work-card__overlay">
+                подивитись проєкт
+                <svg aria-hidden="true" width="14" height="14">
+                  <use href="#i-arrow-right" />
+                </svg>
+              </div>
+            </div>
+            <div class="work-card__meta">
+              <div>
+                <div class="work-card__title">Кабінет OPE</div>
+                <div class="work-card__tag">офіс · ясен</div>
+              </div>
+              <div class="work-card__arrow">
+                <svg aria-hidden="true" width="18" height="18">
+                  <use href="#i-arrow-diag" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a data-fls-watcher href="./works.html" class="work-card">
+            <div class="work-card__img">
+              <div class="work-card__img-inner">
+                <img
+                  src="@img/home/4.jpeg"
+                  alt="Спальня «Льон» — бук"
+                  loading="lazy"
+                  decoding="async"
+                  width="900"
+                  height="675"
+                />
+              </div>
+              <div class="work-card__overlay">
+                подивитись проєкт
+                <svg aria-hidden="true" width="14" height="14">
+                  <use href="#i-arrow-right" />
+                </svg>
+              </div>
+            </div>
+            <div class="work-card__meta">
+              <div>
+                <div class="work-card__title">Спальня «Льон»</div>
+                <div class="work-card__tag">спальня · бук</div>
+              </div>
+              <div class="work-card__arrow">
+                <svg aria-hidden="true" width="18" height="18">
+                  <use href="#i-arrow-diag" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home__faq faq-home">
+    <div class="section faq-home__container">
+      <div class="faq-home__layout">
+        <div data-fls-watcher class="faq-home__header">
+          <div class="section-label faq-home__label">поширені запитання</div>
+          <h2 class="section-title faq-home__title">
+            Найпоширеніші<br /><span class="accent">запитання</span>
+          </h2>
+
+          <p class="faq-home__tagline">
+            Коротко про терміни, ціни та матеріали. Якщо тут чогось бракує —
+            зателефонуйте або напишіть, ми надамо конкретну відповідь.
+          </p>
+        </div>
+
+        <div
+          class="faq-home__list spollers"
+          data-fls-watcher
+          data-fls-spollers-one
+          data-fls-spollers
+        >
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Скільки часу займає виготовлення кухні на замовлення?
+            </summary>
+            <div class="spollers__body">
+              Зазвичай 4–6 тижнів від моменту підписання договору: тиждень на
+              розробку проекту та розрахунок вартості, 3–4 тижні на виробництво,
+              2–3 дні на монтаж. У разі більш складних проектів із
+              нестандартними матеріалами термін подовжується до 8 тижнів. Наразі
+              черга у нас становить 3 тижні до початку виробництва.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Скільки коштують меблі на замовлення у Вроцлаві?
+            </summary>
+            <div class="spollers__body">
+              Ціна залежить від матеріалів, фурнітури та площі. Кухня з
+              ламінованої плити та фурнітурою Blum коштує від кількох тисяч
+              злотих. Кухня з шпоном, стільницею зі спеченого матеріалу та
+              механізмами преміум-класу — це вища цінова категорія. Після
+              вимірювання ми надаємо конкретну цінову пропозицію протягом 48
+              годин — без прихованих витрат.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Ви виготовляєте меблі за межами Вроцлава?
+            </summary>
+            <div class="spollers__body">
+              Так. Наша майстерня розташована в Єльчі-Ласковіце поблизу
+              Вроцлава, а монтажні роботи ми виконуємо по всій Польщі.
+              Найчастіше ми працюємо в Нижньому Сілезії, але реалізовували
+              проекти у Варшаві, Кракові та Познані. Вартість доставки за межі
+              Вроцлава розраховуємо індивідуально.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Ви виготовляєте меблі для ресторанів та готелів?
+            </summary>
+            <div class="spollers__body">
+              Так, сегмент HORECA — це наша друга основна спеціалізація, поряд
+              із приватними помешканнями. Ми виготовляємо бари, стійки
+              реєстрації, кухонні меблі, меблі для готельних номерів, вітрини та
+              експозиційні конструкції. Ми співпрацюємо безпосередньо з
+              архітекторами інтер’єрів та проектними бюро.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">Чи платний проєкт?</summary>
+            <div class="spollers__body">
+              Перша 3D-візуалізація та кошторис надаються безкоштовно. Оплата
+              здійснюється лише після підписання договору. У вартість проекту
+              входять дві поправки — подальші зміни конкретних елементів
+              узгоджуються окремо.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              З яких матеріалів ви виготовляєте меблі?
+            </summary>
+            <div class="spollers__body">
+              Ми працюємо з ламінованими та шпонованими плитами (Egger,
+              Kronospan, Swiss Krono), лакованим МДФ, березовою фанерою, масивом
+              дерева (дуб, ясен, бук, горіх), поверхнями Corian, кварцовими
+              композитами та HPL. Фурнітура: Blum та Häfele.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              Ви розмовляєте українською?
+            </summary>
+            <div class="spollers__body">
+              Так. Українська версія сайту доступна за посиланням «UA» у меню. З
+              клієнтами з України ми спілкуємося їхньою мовою, документи
+              оформлюємо польською мовою.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">Які умови гарантії?</summary>
+            <div class="spollers__body">
+              На конструкцію меблів ми надаємо гарантію 24 місяці. Фурнітура
+              Blum має окрему гарантію від виробника. Якщо через кілька років
+              щось перестане працювати — фурнітура, петля, підсвічування — ми
+              замінимо це за окрему плату, але швидко, адже у нас є власна
+              майстерня.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-fls-cta class="home__cta cta">
+    <div class="cta__container">
+      <div class="cta__inner">
+        <div>
+          <h2 class="cta__title">
+            Давайте<br />порахуємо <span class="accent">ваші</span><br />меблі.
+          </h2>
+          <p class="cta__sub">
+            Залиште номер — передзвонимо протягом 2 годин у робочий час.
+            Безкоштовний виїзд на обмір у межах Вроцлава.
+          </p>
+          <div class="contact-info">
+            <div class="contact-info__row">
+              <span>Телефон</span>
+              <a href="tel:+48570643528">+48570643528</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Email</span>
+              <a href="mailto:hello@fesmeble.com">hello@fesmeble.com</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Офіс</span>
+              <span>Єльч-Лясковиці, вул. Wiśniowa, 13</span>
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="form form--compact"
+          onsubmit="
+            event.preventDefault();
+            window.submitForm();
+          "
+        >
+          <div class="form__row">
+            <div class="form__field">
+              <label for="text-field-1">Ваше імʼя</label>
+              <input
+                type="text"
+                required
+                id="text-field-1"
+                name="name"
+                aria-required="true"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form__field">
+              <label for="tel-field-2">Телефон</label>
+              <input
+                type="tel"
+                placeholder="+380"
+                required
+                id="tel-field-2"
+                name="phone"
+                aria-required="true"
+                autocomplete="tel"
+              />
+            </div>
+          </div>
+
+          <fieldset class="form__field form__fieldset">
+            <legend>Що вас цікавить?</legend>
+            <div class="form__chips">
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="kitchen"
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Кухня
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="wardrobe"
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Гардероб
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="closet"
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Шафа
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="office"
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Офіс
+              </button>
+              <button
+                type="button"
+                class="chip"
+                aria-pressed="false"
+                data-value="other"
+                onclick="
+                  this.setAttribute(
+                    'aria-pressed',
+                    this.getAttribute('aria-pressed') === 'true'
+                      ? 'false'
+                      : 'true'
+                  )
+                "
+              >
+                Інше
+              </button>
+            </div>
+          </fieldset>
+
+          <div class="form__field">
+            <label for="select-field-3"> Коли зручно передзвонити </label>
+            <select id="select-field-3" name="when">
+              <option value="asap">Якнайшвидше</option>
+              <option value="today">Сьогодні до 18:00</option>
+              <option value="tomorrow-am">Завтра зранку</option>
+              <option value="tomorrow-pm">Завтра після обіду</option>
+            </select>
+          </div>
+
+          <div class="form__field">
+            <label for="message-cta" class="visually-hidden">
+              Коротко про проєкт
+            </label>
+            <textarea
+              id="message-cta"
+              name="message"
+              placeholder="Коротко про проєкт"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="form__submit">
+            <span>отримати прорахунок</span>
+            <span class="form__submit-arrow" aria-hidden="true"
+              ><svg width="20" height="20"><use href="#i-arrow-right" /></svg
+            ></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

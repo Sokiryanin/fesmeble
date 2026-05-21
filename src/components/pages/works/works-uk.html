@@ -1,0 +1,213 @@
+<script type="module" src="@components/pages/works/works.js"></script>
+<link rel="stylesheet" href="@components/pages/works/works.scss" />
+
+<!-- ============ WORKS ============ -->
+<main class="page page--works">
+  <div class="page--works__container">
+    <section class="section works">
+      <div class="works__header">
+        <div class="section-label works__label">роботи · 2019—26</div>
+        <h1 class="section-title works__title">
+          240+ проєктів<br /><span class="accent works__title--accent"
+            >меблів на замовлення.</span
+          >
+          <br />
+          Кожний інший.
+        </h1>
+      </div>
+
+      <div class="works-tabs" id="worksTabs">
+        <button class="works-tabs__tab works-tabs__tab--active" data-cat="all">
+          <span>Всі проєкти</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="kitchen">
+          <span>Кухні</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="wardrobe">
+          <span>Гардеробні</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="closet">
+          <span>Шафи</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="bathroom">
+          <span>Ванні</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="commercial">
+          <span>Комерційні</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="office">
+          <span>Офіси</span>
+          <span class="works-tabs__count"></span>
+        </button>
+      </div>
+
+      <div class="works-grid" id="worksGrid" aria-busy="true">
+        <!-- Картки рендеряться з JS -->
+      </div>
+    </section>
+  </div>
+
+  <section data-fls-cta class="works__cta cta">
+    <div class="cta__container">
+      <div class="cta__inner">
+        <div>
+          <h2 class="cta__title">
+            Сподобалось?<br /><span class="accent">Зробимо</span> своє.
+          </h2>
+          <p class="cta__sub">
+            Кожен проєкт починається з розмови. Залиште контакт — обговоримо ваш
+            простір.
+          </p>
+          <div class="contact-info">
+            <div class="contact-info__row">
+              <span>Телефон</span>
+              <a href="tel:+48570643528">+48 570 643 528</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Email</span>
+              <a href="mailto:hello@fesmeble.com">hello@fesmeble.com</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Офіс</span>
+              <span>Jelcz-Laskowice, Wiśniowa 13, 55-220</span>
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="form form--compact"
+          onsubmit="
+            event.preventDefault();
+            window.submitForm();
+          "
+        >
+          <div class="form__row">
+            <div class="form__field">
+              <label for="text-field-1">Ваше імʼя</label>
+              <input
+                type="text"
+                required
+                id="text-field-1"
+                name="name"
+                aria-required="true"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form__field">
+              <label for="tel-field-2">Телефон</label>
+              <input
+                type="tel"
+                placeholder="+48"
+                required
+                id="tel-field-2"
+                name="phone"
+                aria-required="true"
+                autocomplete="tel"
+              />
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="message-cta" class="visually-hidden">
+              Про проєкт
+            </label>
+            <textarea
+              id="message-cta"
+              name="message"
+              placeholder="про проєкт"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="form__submit">
+            <span>отримати прорахунок</span>
+            <span class="form__submit-arrow" aria-hidden="true"
+              ><svg width="20" height="20"><use href="#i-arrow-right" /></svg
+            ></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ MODAL / LIGHTBOX ============ -->
+<div
+  class="project-modal__backdrop"
+  id="modalBackdrop"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+  aria-hidden="true"
+>
+  <div class="project-modal" id="project-modal">
+    <button
+      class="project-modal__close"
+      id="modalClose"
+      type="button"
+      aria-label="Закрити"
+    >
+      ×
+    </button>
+    <div
+      class="project-modal__gallery"
+      id="modalGallery"
+      role="region"
+      aria-roledescription="галерея"
+      aria-label="Фото проєкту"
+    >
+      <button
+        class="project-modal__arrow prev"
+        id="modalPrev"
+        type="button"
+        aria-label="Попереднє фото"
+      >
+        <svg aria-hidden="true" width="20" height="20">
+          <use href="#i-arrow-left" />
+        </svg>
+      </button>
+      <button
+        class="project-modal__arrow next"
+        id="modalNext"
+        type="button"
+        aria-label="Наступне фото"
+      >
+        <svg aria-hidden="true" width="20" height="20">
+          <use href="#i-arrow-right" />
+        </svg>
+      </button>
+      <div class="project-modal__counter" id="modalCounter" aria-live="polite">
+        1 / 4
+      </div>
+      <div
+        class="project-modal__dots"
+        id="modalDots"
+        role="tablist"
+        aria-label="Перейти до фото"
+      ></div>
+    </div>
+    <div class="project-modal__info">
+      <div class="project-modal__cat" id="modalCat">Кухня</div>
+      <h2 class="project-modal__title" id="modalTitle">Кухня «Брама»</h2>
+      <p class="project-modal__desc" id="modalDesc"></p>
+      <div class="project-modal__specs" id="modalSpecs"></div>
+      <div class="project-modal__chips" id="modalChips"></div>
+      <a
+        href="./contact.html"
+        class="project-modal__cta"
+        onclick="closeModal()"
+      >
+        <span>замовити подібний проєкт</span>
+        <span aria-hidden="true"
+          ><svg width="16" height="16"><use href="#i-arrow-right" /></svg
+        ></span>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+[data-fls-watcher] {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+[data-fls-loaded] {
+  [data-fls-watcher].--watcher-view {
+  }
+}

@@ -1,0 +1,931 @@
+<script type="module" src="@components/pages/works/works.js"></script>
+<link rel="stylesheet" href="@components/pages/works/works.scss" />
+
+<!-- ============ WORKS ============ -->
+<main class="page page--works">
+  <div class="page--works__container">
+    <section class="section works">
+      <div class="works__header">
+        <div class="section-label works__label">realizacje · 2019—26</div>
+        <h1 class="section-title works__title">
+          240+ projektów<br /><span class="accent works__title--accent"
+            >mebli na wymiar.</span
+          >
+          Każdy inny.
+        </h1>
+      </div>
+
+      <div class="works-tabs" id="worksTabs">
+        <button class="works-tabs__tab works-tabs__tab--active" data-cat="all">
+          <span>Wszystkie</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="kitchen">
+          <span>Kuchnie</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="wardrobe">
+          <span>Garderoby i szafy</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="closet">
+          <span>Łazienki</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="bathroom">
+          <span>Biura</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="commercial">
+          <span>HORECA</span>
+          <span class="works-tabs__count"></span>
+        </button>
+        <button class="works-tabs__tab" data-cat="office">
+          <span>Wnętrza mieszkalne</span>
+          <span class="works-tabs__count"></span>
+        </button>
+      </div>
+      <div class="works-grid" id="worksGrid">
+        <article
+          class="work-card"
+          data-cat="kitchen"
+          data-project='{"title":"Kuchnia \u201EBrama\u201D","cat":"Kuchnia","tag":"orzech · 18 m² · 2025","desc":"Kuchnia dla rodziny trzech pokoleń. Główne zadanie — zmieścić pełnoprawną strefę roboczą, stół śniadaniowy i ukryty kredens w 18 m². Fronty z orzecha amerykańskiego, blat z konglomeratu kwarcowego.","specs":{"Powierzchnia":"18 m²","Materiał":"Orzech amerykański","Okucia":"Blum TIP-ON","Termin":"6 tygodni"},"images":["https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&amp;q=80","https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&amp;q=80","https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&amp;q=80","https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&amp;q=80"
+                alt="Kuchnia na wymiar Brama — orzech amerykański, 18 m², Wrocław"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              zobacz projekt
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Kuchnia „Brama"</h3>
+              <div class="work-card__tag">kuchnia · orzech · 18 m²</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="wardrobe"
+          data-project='{"title":"Garderoba \u201ECisza\u201D","cat":"Garderoba","tag":"dąb · 12 m² · 2025","desc":"Wydzielona garderoba z centralną wyspą. Ciche domyki, oświetlenie drążków z czujnikiem ruchu, systemy na buty i torebki.","specs":{"Powierzchnia":"12 m²","Materiał":"Dąb naturalny","Oświetlenie":"LED z czujnikiem","Termin":"5 tygodni"},"images":["https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=1200&amp;q=80","https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=1200&amp;q=80","https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=900&amp;q=80"
+                alt="Garderoba na wymiar Cisza — dąb naturalny, 12 m², Wrocław"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              zobacz projekt
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Garderoba „Cisza"</h3>
+              <div class="work-card__tag">garderoba · dąb</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="commercial"
+          data-project='{"title":"Salon \u201EPauza\u201D","cat":"Salon","tag":"jesion · 22 m² · 2024","desc":"Zabudowa salonu: ściana TV, regały na książki, ukryta strefa barowa. Jesion w litej desce i fornirze.","specs":{"Powierzchnia":"22 m²","Materiał":"Jesion","Dodatkowo":"Zabudowana akustyka","Termin":"7 tygodni"},"images":["https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&amp;q=80","https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&amp;q=80","https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&amp;q=80"
+                alt="Zabudowa salonu Pauza — jesion, 22 m², Wrocław"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              zobacz projekt
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Salon „Pauza"</h3>
+              <div class="work-card__tag">salon · jesion</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="office"
+          data-project='{"title":"Gabinet OPE","cat":"Biuro","tag":"jesion · mosiądz · 2024","desc":"Domowy gabinet dla prawnika. Biurko-transformer z ukrytymi gniazdkami, zamykana szafa na dokumenty, panele akustyczne.","specs":{"Powierzchnia":"14 m²","Materiał":"Jesion · mosiądz","Detal":"Panele akustyczne","Termin":"5 tygodni"},"images":["https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&amp;q=80","https://images.unsplash.com/photo-1505409859467-3a796fd5798e?w=1200&amp;q=80","https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=900&amp;q=80"
+                alt="Gabinet na wymiar OPE — jesion z mosiądzem, Wrocław"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              zobacz projekt
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Gabinet OPE</h3>
+              <div class="work-card__tag">biuro · jesion · mosiądz</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="closet"
+          data-project='{"title":"Sypialnia \u201ELen\u201D","cat":"Sypialnia","tag":"buk · tkanina · 2024","desc":"Szafa przesuwna na całą ścianę i szafki przyłóżkowe z wbudowanym oświetleniem. Buk połączony z naturalnym lnem.","specs":{"Powierzchnia":"16 m²","Materiał":"Buk · len","Lustra":"Antyrefleksyjne","Termin":"4 tygodnie"},"images":["https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&amp;q=80","https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1200&amp;q=80","https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=900&amp;q=80"
+                alt="Sypialnia Len — buk z lnem, 16 m², Wrocław"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              zobacz projekt
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Sypialnia „Len"</h3>
+              <div class="work-card__tag">sypialnia · buk</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="commercial"
+          data-project='{"title":"Kawiarnia \u201ETereń\u201D","cat":"HORECA","tag":"metal · dąb · 2025","desc":"Wnętrze kawiarni na 40 miejsc. Bar o długości 6 metrów, witryna na ciastka, półki na zastawę. Materiały, które wytrzymują 200 gości dziennie.","specs":{"Pojemność":"40 miejsc","Materiał":"Dąb · stal","Wytrzymałość":"Klasa komercyjna","Termin":"8 tygodni"},"images":["https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=1200&amp;q=80","https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?w=1200&amp;q=80","https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=900&amp;q=80"
+                alt="Wyposażenie kawiarni Tereń — dąb i stal, 40 miejsc, Wrocław"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              zobacz projekt
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Kawiarnia „Tereń"</h3>
+              <div class="work-card__tag">HORECA · metal · dąb</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="kitchen"
+          data-project='{"title":"Kuchnia \u201EMięta\u201D","cat":"Kuchnia","tag":"MDF · zielony · 2025","desc":"Kompaktowa kuchnia w mieszkaniu typu studio. Miętowy MDF w macie, mosiężne uchwyty, zabudowany sprzęt Miele.","specs":{"Powierzchnia":"9 m²","Materiał":"MDF matowy","Sprzęt":"Miele","Termin":"5 tygodni"},"images":["https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&amp;q=80","https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&amp;q=80","https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=900&amp;q=80"
+                alt="Kuchnia na wymiar Mięta — miętowy MDF, 9 m², Wrocław"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              zobacz projekt
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Kuchnia „Mięta"</h3>
+              <div class="work-card__tag">kuchnia · MDF · 9 m²</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="bathroom"
+          data-project='{"title":"Łazienka \u201EKamień\u201D","cat":"Łazienka","tag":"dąb wodoodporny · 2025","desc":"Meble łazienkowe z dębu wodoodpornego. Szafka pod umywalkę, lustro-szafka, wysoki słupek. Wszystko na ukrytych mechanizmach.","specs":{"Powierzchnia":"8 m²","Materiał":"Dąb wodoodporny","Wykończenie":"Olej naturalny","Termin":"4 tygodnie"},"images":["https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&amp;q=80","https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200&amp;q=80","https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&amp;q=80"
+                alt="Łazienka na wymiar Kamień — dąb wodoodporny, 8 m², Wrocław"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              zobacz projekt
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Łazienka „Kamień"</h3>
+              <div class="work-card__tag">łazienka · dąb</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="wardrobe"
+          data-project='{"title":"Garderoba \u201EAlbum\u201D","cat":"Garderoba","tag":"biała emalia · 2024","desc":"Minimalistyczna garderoba w białej emalii. Uchwyty profilowane bez widocznych okuć, ścianka lustrzana, wysuwane półki.","specs":{"Powierzchnia":"10 m²","Wykończenie":"Biała emalia","Otwieranie":"Push-to-open","Termin":"5 tygodni"},"images":["https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&amp;q=80","https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=1200&amp;q=80","https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&amp;q=80"
+                alt="Garderoba na wymiar Album — biała emalia, 10 m², Wrocław"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              zobacz projekt
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Garderoba „Album"</h3>
+              <div class="work-card__tag">garderoba · emalia</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="kitchen"
+          data-project='{"title":"Kuchnia \u201ESroka\u201D","cat":"Kuchnia","tag":"czarny dąb · wyspa · 2025","desc":"Kuchnia w loftowym wnętrzu o powierzchni 40 m². Masywna wyspa 3,2 metra, indukcja, zabudowane kolumny chłodzące. Czarny barwiony dąb.","specs":{"Powierzchnia":"40 m²","Materiał":"Dąb barwiony","Wyspa":"3,2 m","Termin":"9 tygodni"},"images":["https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&amp;q=80","https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&amp;q=80","https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=900&amp;q=80"
+                alt="Kuchnia na wymiar Sroka — czarny dąb barwiony, wyspa 3,2 m, Wrocław"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              zobacz projekt
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Kuchnia „Sroka"</h3>
+              <div class="work-card__tag">kuchnia · czarny dąb</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+      </div>
+      <!-- <div class="works-grid" id="worksGrid">
+        <article
+          class="work-card"
+          data-cat="kitchen"
+          data-project='{"title":"Кухня «Брама»","cat":"Кухня","tag":"горіх · 18 м² · 2025","desc":"Кухня для родини з трьох поколінь. Головна задача — помістити повноцінну робочу зону, стіл для сніданків і прихований буфет у 18 м². Фасади з горіху, стільниця — кварцовий агломерат.","specs":{"Площа":"18 м²","Матеріал":"Горіх американський","Фурнітура":"Blum TIP-ON","Термін":"6 тижнів"},"images":["https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&amp;q=80","https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&amp;q=80","https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&amp;q=80","https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&amp;q=80"
+                alt="Кухня «Брама» — горіх, 18 м²"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              подивитись проєкт
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Кухня «Брама»</h3>
+              <div class="work-card__tag">кухня · горіх · 18 м²</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="wardrobe"
+          data-project='{"title":"Гардероб «Тиша»","cat":"Гардеробна","tag":"дуб · 12 м² · 2025","desc":"Ізольована гардеробна з центральним островом. Тихі доводчики, штангова підсвітка з датчиком руху, системи для взуття і сумок.","specs":{"Площа":"12 м²","Матеріал":"Дуб натуральний","Підсвітка":"LED з датчиком","Термін":"5 тижнів"},"images":["https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=1200&amp;q=80","https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=1200&amp;q=80","https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=900&amp;q=80"
+                alt="Гардеробна «Тиша» — дуб"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              подивитись проєкт
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Гардероб «Тиша»</h3>
+              <div class="work-card__tag">гардеробна · дуб</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="commercial"
+          data-project='{"title":"Вітальня «Пауза»","cat":"Вітальня","tag":"ясен · 22 м² · 2024","desc":"Вбудована система для вітальні: медіастіна, книжкові полиці, прихована барна зона. Ясен у масиві і шпоні.","specs":{"Площа":"22 м²","Матеріал":"Ясен","Додатково":"Вбудована акустика","Термін":"7 тижнів"},"images":["https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&amp;q=80","https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&amp;q=80","https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&amp;q=80"
+                alt="Прихована кухня з обідньою зоною"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              подивитись проєкт
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Вітальня «Пауза»</h3>
+              <div class="work-card__tag">вітальня · ясен</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="office"
+          data-project='{"title":"Кабінет OPE","cat":"Офіс","tag":"ясен · латунь · 2024","desc":"Домашній кабінет для юриста. Стіл-трансформер з прихованими розетками, шафа з замком для документів, акустичні панелі.","specs":{"Площа":"14 м²","Матеріал":"Ясен · латунь","Деталі":"Акустичні панелі","Термін":"5 тижнів"},"images":["https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&amp;q=80","https://images.unsplash.com/photo-1505409859467-3a796fd5798e?w=1200&amp;q=80","https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=900&amp;q=80"
+                alt="Кабінет OPE — ясен"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              подивитись проєкт
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Кабінет OPE</h3>
+              <div class="work-card__tag">офіс · ясен · латунь</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="closet"
+          data-project='{"title":"Спальня «Льон»","cat":"Спальня","tag":"бук · текстиль · 2024","desc":"Шафа-купе на всю стіну і приліжкові тумби з вбудованим освітленням. Бук у поєднанні з натуральним льоном.","specs":{"Площа":"16 м²","Матеріал":"Бук · льон","Дзеркала":"З антивідбиттям","Термін":"4 тижні"},"images":["https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&amp;q=80","https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1200&amp;q=80","https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=900&amp;q=80"
+                alt="Спальня «Льон» — бук"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              подивитись проєкт
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Спальня «Льон»</h3>
+              <div class="work-card__tag">спальня · бук</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="commercial"
+          data-project='{"title":"Кавʼярня «Терен»","cat":"Комерція","tag":"метал · дуб · 2025","desc":"Інтерʼєр кавʼярні на 40 місць. Барна стійка 6 метрів, вітрина для випічки, полиці для посуду. Матеріали, які витримують 200 гостей на день.","specs":{"Місткість":"40 посадок","Матеріал":"Дуб · сталь","Витривалість":"Комерційний клас","Термін":"8 тижнів"},"images":["https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=1200&amp;q=80","https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?w=1200&amp;q=80","https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=900&amp;q=80"
+                alt="Меблі для кав'ярні"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              подивитись проєкт
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Кавʼярня «Терен»</h3>
+              <div class="work-card__tag">комерція · метал</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="kitchen"
+          data-project='{"title":"Кухня «Мʼята»","cat":"Кухня","tag":"МДФ · зелений · 2025","desc":"Компактна кухня в квартирі-студії. Мʼятовий МДФ із матовим покриттям, латунні ручки, вбудована техніка Miele.","specs":{"Площа":"9 м²","Матеріал":"МДФ матовий","Техніка":"Miele","Термін":"5 тижнів"},"images":["https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&amp;q=80","https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&amp;q=80","https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=900&amp;q=80"
+                alt="Острівна кухня з мармуром"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              подивитись проєкт
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Кухня «Мʼята»</h3>
+              <div class="work-card__tag">кухня · МДФ · 9 м²</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="bathroom"
+          data-project='{"title":"Ванна «Камінь»","cat":"Ванна","tag":"водостійкий дуб · 2025","desc":"Меблі для ванної з водостійкого дуба. Тумба під раковиною, дзеркало-шафа, висока пенал-шафа. Все на прихованих механізмах.","specs":{"Площа":"8 м²","Матеріал":"Дуб водостійкий","Покриття":"Оливкова олія","Термін":"4 тижні"},"images":["https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&amp;q=80","https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200&amp;q=80","https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&amp;q=80"
+                alt="Гардеробна з підсвіткою"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              подивитись проєкт
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Ванна «Камінь»</h3>
+              <div class="work-card__tag">ванна · дуб</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="wardrobe"
+          data-project='{"title":"Гардероб «Альбом»","cat":"Гардеробна","tag":"біла емаль · 2024","desc":"Мінімалістична гардеробна у білій емалі. Ручки-профіль без видимої фурнітури, дзеркальна стіна, висувні полиці.","specs":{"Площа":"10 м²","Покриття":"Біла емаль","Відкриття":"Push-to-open","Термін":"5 тижнів"},"images":["https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&amp;q=80","https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=1200&amp;q=80","https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&amp;q=80"
+                alt="Шафа під сходи"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              подивитись проєкт
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Гардероб «Альбом»</h3>
+              <div class="work-card__tag">гардеробна · емаль</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="work-card"
+          data-cat="kitchen"
+          data-project='{"title":"Кухня «Сорок»","cat":"Кухня","tag":"чорний дуб · острів · 2025","desc":"Кухня для лофту на 40 м². Масивний острів 3,2 метра, індукційна варильна, вбудовані холодильні колони. Чорний морений дуб.","specs":{"Площа":"40 м²","Матеріал":"Дуб морений","Острів":"3,2 м","Термін":"9 тижнів"},"images":["https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&amp;q=80","https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&amp;q=80","https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&amp;q=80"]}'
+        >
+          <div class="work-card__img">
+            <div class="work-card__img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=900&amp;q=80"
+                alt="Меблі для дитячої кімнати"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="675"
+              />
+            </div>
+            <div class="work-card__overlay">
+              подивитись проєкт
+              <svg aria-hidden="true" width="14" height="14">
+                <use href="#i-arrow-right" />
+              </svg>
+            </div>
+          </div>
+          <div class="work-card__meta">
+            <div>
+              <h3 class="work-card__title">Кухня «Сорок»</h3>
+              <div class="work-card__tag">кухня · чорний дуб</div>
+            </div>
+            <div class="work-card__arrow">
+              <svg aria-hidden="true" width="18" height="18">
+                <use href="#i-arrow-diag" />
+              </svg>
+            </div>
+          </div>
+        </article>
+      </div> -->
+    </section>
+  </div>
+
+  <section data-fls-cta class="works__cta cta">
+    <div class="cta__container">
+      <div class="cta__inner">
+        <div>
+          <h2 class="cta__title">
+            Podobało się?<br /><span class="accent">Zróbmy</span> podobny.
+          </h2>
+          <p class="cta__sub">
+            Każdy projekt zaczyna się od rozmowy. Zostawcie kontakt —
+            porozmawiamy o waszej przestrzeni, pomiar wykonamy bezpłatnie w
+            obrębie Wrocławia.
+          </p>
+          <div class="contact-info">
+            <div class="contact-info__row">
+              <span>Telefon</span>
+              <a href="tel:+48570643528">+48 570 643 528</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Email</span>
+              <a href="mailto:hello@fesmeble.com">hello@fesmeble.com</a>
+            </div>
+            <div class="contact-info__row">
+              <span>Biuro</span>
+              <span>Jelcz-Laskowice, Wiśniowa 13, 55-220</span>
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="form form--compact"
+          onsubmit="
+            event.preventDefault();
+            window.submitForm();
+          "
+        >
+          <div class="form__row">
+            <div class="form__field">
+              <label for="text-field-1">Imię</label>
+              <input
+                type="text"
+                required
+                id="text-field-1"
+                name="name"
+                aria-required="true"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form__field">
+              <label for="tel-field-2">Telefon</label>
+              <input
+                type="tel"
+                placeholder="+48"
+                required
+                id="tel-field-2"
+                name="phone"
+                aria-required="true"
+                autocomplete="tel"
+              />
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="message-cta" class="visually-hidden">
+              Krótko o projekcie
+            </label>
+            <textarea
+              id="message-cta"
+              name="message"
+              placeholder="Krótko o projekcie"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="form__submit">
+            <span>otrzymać wycenę</span>
+            <span class="form__submit-arrow" aria-hidden="true"
+              ><svg width="20" height="20"><use href="#i-arrow-right" /></svg
+            ></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ MODAL / LIGHTBOX ============ -->
+<div
+  class="project-modal__backdrop"
+  id="modalBackdrop"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+  aria-hidden="true"
+>
+  <div class="project-modal" id="project-modal">
+    <button
+      class="project-modal__close"
+      id="modalClose"
+      type="button"
+      aria-label="Закрити"
+    >
+      ×
+    </button>
+    <div
+      class="project-modal__gallery"
+      id="modalGallery"
+      role="region"
+      aria-roledescription="галерея"
+      aria-label="Фото проєкту"
+    >
+      <button
+        class="project-modal__arrow prev"
+        id="modalPrev"
+        type="button"
+        aria-label="Попереднє фото"
+      >
+        <svg aria-hidden="true" width="20" height="20">
+          <use href="#i-arrow-left" />
+        </svg>
+      </button>
+      <button
+        class="project-modal__arrow next"
+        id="modalNext"
+        type="button"
+        aria-label="Наступне фото"
+      >
+        <svg aria-hidden="true" width="20" height="20">
+          <use href="#i-arrow-right" />
+        </svg>
+      </button>
+      <div class="project-modal__counter" id="modalCounter" aria-live="polite">
+        1 / 4
+      </div>
+      <div
+        class="project-modal__dots"
+        id="modalDots"
+        role="tablist"
+        aria-label="Перейти до фото"
+      ></div>
+    </div>
+    <div class="project-modal__info">
+      <div class="project-modal__cat" id="modalCat"></div>
+      <h2 class="project-modal__title" id="modalTitle"></h2>
+      <p class="project-modal__desc" id="modalDesc"></p>
+      <div class="project-modal__specs" id="modalSpecs"></div>
+      <div class="project-modal__chips" id="modalChips"></div>
+      <a
+        href="./contact.html"
+        class="project-modal__cta"
+        onclick="closeModal()"
+      >
+        <span>zamówić podobny projekt</span>
+        <span aria-hidden="true"
+          ><svg width="16" height="16"><use href="#i-arrow-right" /></svg
+        ></span>
+      </a>
+    </div>
+  </div>
+</div>
