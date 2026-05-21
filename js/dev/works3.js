@@ -1,7 +1,7 @@
 //#region src/components/pages/works/works.js
 var htmlLang = (document.documentElement.lang || "").toLowerCase();
-var isUkrainian = htmlLang.startsWith("uk") || htmlLang.startsWith("ua") || window.location.pathname.startsWith("/ua/");
-var DATA_URL = `/data/projects.${isUkrainian ? "uk" : "pl"}.json`;
+var isUkrainian = htmlLang.startsWith("uk") || htmlLang.startsWith("ua") || window.location.pathname.includes("/ua/");
+var DATA_URL = `${isUkrainian ? "../" : ""}data/projects.${isUkrainian ? "uk" : "pl"}.json`;
 var worksGrid = document.getElementById("worksGrid");
 var worksTabs = document.getElementById("worksTabs");
 var modalBackdrop = document.getElementById("modalBackdrop");
