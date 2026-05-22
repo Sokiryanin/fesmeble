@@ -73,9 +73,6 @@
 .kitchen-why__container {
   width: 100%;
 }
-.kitchen-why__title {
-  margin-bottom: clamp(2.5rem, 4vw, 4rem);
-}
 .kitchen-why__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -99,7 +96,6 @@
   height: 100%;
 }
 .kitchen-why-card__title {
-  font-size: clamp(1.125rem, 1.5vw, 1.375rem);
   font-weight: 400;
   letter-spacing: -0.02em;
   margin-bottom: 0.875rem;
@@ -142,10 +138,12 @@
 .kitchen-timeline__container {
   width: 100%;
 }
+.kitchen-timeline__title.section-title {
+  margin-bottom: 0rem;
+}
 .kitchen-timeline__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
   align-items: start;
 }
 .kitchen-timeline__header {
@@ -243,43 +241,67 @@
   color: var(--accent);
 }
 
-.kitchen-types__title {
-  margin-bottom: clamp(2.5rem, 4vw, 4.5rem);
+.kitchen-types__container {
+  width: 100%;
 }
 .kitchen-types__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.0625rem;
-  background-color: var(--line);
-  border: 0.0625rem solid var(--line);
-  border-radius: 1.25rem;
-  overflow: hidden;
+  gap: 1rem;
 }
 
 .kitchen-type-card {
-  background: var(--bg);
-  padding: clamp(1.75rem, 3vw, 3rem);
-  transition: background 0.2s;
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.kitchen-type-card__img {
+  position: absolute;
+  inset: 0;
+}
+.kitchen-type-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.kitchen-type-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.1) 50%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(1.25rem, 2.5vw, 2.25rem);
+  color: #fff;
+  transition: background 0.3s;
 }
 .kitchen-type-card__num {
-  font-size: 0.75rem;
-  color: var(--accent);
-  letter-spacing: 0.1em;
-  font-weight: 500;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  opacity: 0.6;
+  margin-bottom: 0.375rem;
 }
 .kitchen-type-card__name {
-  font-size: clamp(1.25rem, 2vw, 1.625rem);
   font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+  transition: margin 0.3s;
 }
 .kitchen-type-card__desc {
-  color: var(--ink-2);
-  line-height: 1.45;
+  line-height: 1.5;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s, max-height 0.4s ease;
+  margin-top: 0;
 }
+
 .kitchen-materials__inner {
   display: grid;
+  gap: 5rem;
   grid-template-columns: 1fr 2fr;
   align-items: start;
 }
@@ -404,11 +426,22 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+  .kitchen-timeline__title.section-title {
+    margin-bottom: 3.5rem;
+  }
   .kitchen-timeline__inner {
     grid-template-columns: 1fr;
   }
   .kitchen-timeline__header {
     position: static;
+  }
+  .kitchen-type-card__name {
+    margin-bottom: 0.625rem;
+  }
+  .kitchen-type-card__desc {
+    opacity: 1;
+    max-height: 7.5rem;
+    margin-top: 0.5rem;
   }
   .faq-service__layout {
     grid-template-columns: 1fr;
@@ -456,8 +489,12 @@
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
-  .kitchen-type-card__name {
-    font-size: 1.25rem;
+  .kitchen-types__container {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+  .kitchen-types__grid {
+    grid-template-columns: 1fr;
   }
   .faq-service__container {
     padding-left: 0.9375rem;
@@ -472,16 +509,10 @@
 }
 @media (max-width: 48em) and (width < 20em) {
   .hero-kitchen__img-mob {
-    margin-bottom: 2.25rem;
+    margin-bottom: 2.5rem;
   }
 }
 @media (max-width: 40rem) {
-  .kitchen-type-card {
-    padding: 1.5rem;
-  }
-  .kitchen-types__grid {
-    grid-template-columns: 1fr;
-  }
   .kitchen-material-item {
     grid-template-columns: 1fr;
     gap: 0.5rem;
@@ -519,7 +550,7 @@
     padding-bottom: 3.75rem;
   }
   .hero-kitchen__title {
-    margin-bottom: 2.25rem;
+    font-size: 3.375rem;
   }
   .hero-kitchen__text-promise {
     font-size: 0.875rem;
@@ -530,17 +561,32 @@
   .hero-kitchen__stat-label {
     font-size: 0.625rem;
   }
+  .kitchen-why__title {
+    margin-bottom: 2.5rem;
+  }
+  .kitchen-why-card__title {
+    font-size: 1.125rem;
+  }
+  .kitchen-timeline__title.section-title {
+    font-size: 2.25rem;
+  }
   .kitchen-tl-item__title {
     font-size: 1.25rem;
   }
   .kitchen-tl-item__text {
     font-size: 0.875rem;
   }
+  .kitchen-type-card__name {
+    font-size: 1.25rem;
+  }
   .kitchen-type-card__desc {
-    font-size: 1.125rem;
+    font-size: 0.875rem;
   }
   .kitchen-material-item__text {
     font-size: 1.125rem;
+  }
+  .faq-service__title {
+    font-size: 2.25rem;
   }
   .faq-service__tagline {
     font-size: 0.9375rem;
@@ -551,7 +597,7 @@
 }
 @media (max-width: 48em) and (width >= 94.375em) {
   .hero-kitchen__img-mob {
-    margin-bottom: 3.5rem;
+    margin-bottom: 4rem;
   }
 }
 @media (width >= 20em) and (width < 94.375em) {
@@ -586,7 +632,7 @@
     padding-bottom: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
   }
   .hero-kitchen__title {
-    margin-bottom: clamp( 2.25rem , 1.91386554621875rem  +  1.6806722689vw , 3.5rem );
+    font-size: clamp( 3.375rem , 2.870798319325rem  +  2.5210084034vw , 5.25rem );
   }
   .hero-kitchen__text-promise {
     font-size: clamp( 0.875rem , 0.80777310924375rem  +  0.3361344538vw , 1.125rem );
@@ -597,17 +643,32 @@
   .hero-kitchen__stat-label {
     font-size: clamp( 0.625rem , 0.59138655461875rem  +  0.1680672269vw , 0.75rem );
   }
+  .kitchen-why__title {
+    margin-bottom: clamp( 2.5rem , 2.0966386554625rem  +  2.0168067227vw , 4rem );
+  }
+  .kitchen-why-card__title {
+    font-size: clamp( 1.125rem , 1.05777310924375rem  +  0.3361344538vw , 1.375rem );
+  }
+  .kitchen-timeline__title.section-title {
+    font-size: clamp( 2.25rem , 1.94747899159375rem  +  1.512605042vw , 3.375rem );
+  }
   .kitchen-tl-item__title {
     font-size: clamp( 1.25rem , 1.1491596638625rem  +  0.5042016807vw , 1.625rem );
   }
   .kitchen-tl-item__text {
     font-size: clamp( 0.875rem , 0.84138655461875rem  +  0.1680672269vw , 1rem );
   }
+  .kitchen-type-card__name {
+    font-size: clamp( 1.25rem , 1.1155462184875rem  +  0.6722689076vw , 1.75rem );
+  }
   .kitchen-type-card__desc {
-    font-size: clamp( 1rem , 1.15861344538125rem  +  -0.1680672269vw , 1.125rem );
+    font-size: clamp( 0.875rem , 0.84138655461875rem  +  0.1680672269vw , 1rem );
   }
   .kitchen-material-item__text {
     font-size: clamp( 1rem , 1.15861344538125rem  +  -0.1680672269vw , 1.125rem );
+  }
+  .faq-service__title {
+    font-size: clamp( 2.25rem , 1.94747899159375rem  +  1.512605042vw , 3.375rem );
   }
   .faq-service__tagline {
     font-size: clamp( 0.9375rem , 0.88707983193125rem  +  0.2521008403vw , 1.125rem );
@@ -618,7 +679,12 @@
 }
 @media (max-width: 48em) and (width >= 20em) and (width < 94.375em) {
   .hero-kitchen__img-mob {
-    margin-bottom: clamp( 2.25rem , 1.91386554621875rem  +  1.6806722689vw , 3.5rem );
+    margin-bottom: clamp( 2.5rem , 2.0966386554625rem  +  2.0168067227vw , 4rem );
+  }
+}
+@media (min-width: 62em) {
+  .kitchen-timeline__inner {
+    gap: 2.5rem;
   }
 }
 @media (width >= 94.375em) {
@@ -653,7 +719,7 @@
     padding-bottom: 6.25rem;
   }
   .hero-kitchen__title {
-    margin-bottom: 3.5rem;
+    font-size: 5.25rem;
   }
   .hero-kitchen__text-promise {
     font-size: 1.125rem;
@@ -664,17 +730,32 @@
   .hero-kitchen__stat-label {
     font-size: 0.75rem;
   }
+  .kitchen-why__title {
+    margin-bottom: 4rem;
+  }
+  .kitchen-why-card__title {
+    font-size: 1.375rem;
+  }
+  .kitchen-timeline__title.section-title {
+    font-size: 3.375rem;
+  }
   .kitchen-tl-item__title {
     font-size: 1.625rem;
   }
   .kitchen-tl-item__text {
     font-size: 1rem;
   }
+  .kitchen-type-card__name {
+    font-size: 1.75rem;
+  }
   .kitchen-type-card__desc {
     font-size: 1rem;
   }
   .kitchen-material-item__text {
     font-size: 1rem;
+  }
+  .faq-service__title {
+    font-size: 3.375rem;
   }
   .faq-service__tagline {
     font-size: 1.125rem;
@@ -693,7 +774,17 @@
   .gallery-kitchen__item:hover {
     transform: scale(1.02);
   }
-  .kitchen-type-card:hover {
-    background: var(--bg-2);
+  .kitchen-type-card:hover .kitchen-type-card__img img {
+    transform: scale(1.04);
+  }
+  .kitchen-type-card:hover .kitchen-type-card__overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.3) 60%, transparent 100%);
+  }
+  .kitchen-type-card:hover .kitchen-type-card__name {
+    margin-bottom: 0.625rem;
+  }
+  .kitchen-type-card:hover .kitchen-type-card__desc {
+    opacity: 1;
+    max-height: 7.5rem;
   }
 }
