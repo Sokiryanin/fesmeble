@@ -21,14 +21,14 @@
 		<link rel="shortcut icon" href="/fesmeble/assets/img/fesmeble.png">
 		<meta name="description" content="Проєктуємо й виготовляємо кухні на замовлення у Вроцлаві. Обмір, 3D-проєкт, фурнітура Blum, стільниці зі штучного каменю та HPL. Виконання 6 тижнів, гарантія 24 міс.">
 		<title>Кухні на замовлення у Вроцлаві — проєкт 3D, монтаж | Fes meble</title>
-		<script type="module" crossorigin="" src="/fesmeble/js/kitchen-service2.min.js?v=1779450550312"></script>
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779450550312">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779450550312">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/kitchen-service3.min.js?v=1779450550312">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/spollers.min.js?v=1779450550312">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779450550312">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/kitchen-service.min.css?v=1779450550312">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/spollers.min.css?v=1779450550312">
+		<script type="module" crossorigin="" src="/fesmeble/js/kitchen-service2.min.js?v=1779452455618"></script>
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779452455618">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779452455618">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/watcher.min.js?v=1779452455618">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/kitchen-service3.min.js?v=1779452455618">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779452455618">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/watcher.min.css?v=1779452455618">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/kitchen-service.min.css?v=1779452455618">
 	</head>
 	<body>
 		<svg width="0" height="0" style="position: absolute; overflow: hidden" aria-hidden="true" focusable="false">
@@ -210,80 +210,184 @@
 					</div>
 				</section>
 				<!-- INCLUDES: що входить -->
-				<section class="section service-kitchen__includes includes-kitchen">
-					<div class="includes-kitchen__container">
-						<div class="includes-kitchen__content">
-							<h2 class="includes-kitchen__title">
-								Що входить
-								<br>
-								у замовлення.
-							</h2>
-							<div class="includes-kitchen__items">
-								<div class="includes-kitchen__item">
-									<div class="includes-kitchen__item-num">01</div>
-									<div>
-										<div class="includes-kitchen__item-name">Виїзд на обмір</div>
-										<div class="includes-kitchen__item-desc">
+				<section class="section kitchen-timeline">
+					<div class="kitchen-timeline__container">
+						<div class="kitchen-timeline__inner">
+							<div class="kitchen-timeline__header">
+								<div class="section-label" data-fls-watcher="">Що входить у замовлення?</div>
+								<h2 class="section-title" data-fls-watcher="">
+									Від розмови
+									<br>
+									<span class="accent">до монтажу.</span>
+								</h2>
+							</div>
+							<ol class="kitchen-timeline__list" id="kitchenTimeline">
+								<li class="kitchen-tl-item">
+									<div class="kitchen-tl-item__marker">
+										<span class="kitchen-tl-item__dot"></span>
+										<span class="kitchen-tl-item__line" aria-hidden="true"></span>
+									</div>
+									<div class="kitchen-tl-item__content">
+										<div class="kitchen-tl-item__num">01</div>
+										<h3 class="kitchen-tl-item__title">Виїзд на обмір</h3>
+										<p class="kitchen-tl-item__text">
 											Лазерний обмір з фіксацією комунікацій, розеток, нерівностей
                 стін. Безкоштовно у межах 30 км від цеху.
-										</div>
+										</p>
+										<div class="kitchen-tl-item__meta">день 1</div>
 									</div>
-								</div>
-								<div class="includes-kitchen__item">
-									<div class="includes-kitchen__item-num">02</div>
-									<div>
-										<div class="includes-kitchen__item-name">3D-проєкт</div>
-										<div class="includes-kitchen__item-desc">
+								</li>
+								<li class="kitchen-tl-item">
+									<div class="kitchen-tl-item__marker">
+										<span class="kitchen-tl-item__dot"></span>
+										<span class="kitchen-tl-item__line" aria-hidden="true"></span>
+									</div>
+									<div class="kitchen-tl-item__content">
+										<div class="kitchen-tl-item__num">02</div>
+										<h3 class="kitchen-tl-item__title">3D-проєкт</h3>
+										<p class="kitchen-tl-item__text">
 											Реалістична візуалізація з матеріалами і освітленням. Правимо
                 разом до повного «так».
-										</div>
+										</p>
+										<div class="kitchen-tl-item__meta">тиждень 1–2</div>
 									</div>
-								</div>
-								<div class="includes-kitchen__item">
-									<div class="includes-kitchen__item-num">03</div>
-									<div>
-										<div class="includes-kitchen__item-name">Матеріали</div>
-										<div class="includes-kitchen__item-desc">
+								</li>
+								<li class="kitchen-tl-item">
+									<div class="kitchen-tl-item__marker">
+										<span class="kitchen-tl-item__dot"></span>
+										<span class="kitchen-tl-item__line" aria-hidden="true"></span>
+									</div>
+									<div class="kitchen-tl-item__content">
+										<div class="kitchen-tl-item__num">03</div>
+										<h3 class="kitchen-tl-item__title">Матеріали</h3>
+										<p class="kitchen-tl-item__text">
 											Плити Egger, Kronospan, Swiss Krono. Стільниці зі штучного
                 каменю акрилового, HPL компакт, ДСП. Дерев'яні стільниці
                 прораховуємо індивідуально.
-										</div>
+										</p>
+										<div class="kitchen-tl-item__meta">замовлення після затвердження</div>
 									</div>
-								</div>
-								<div class="includes-kitchen__item">
-									<div class="includes-kitchen__item-num">04</div>
-									<div>
-										<div class="includes-kitchen__item-name">Фурнітура</div>
-										<div class="includes-kitchen__item-desc">
-											Blum, Häfele, GTV, PEKA — тихі доводчики, направляючі з повним
-                висуванням, системи push-to-open.
-										</div>
+								</li>
+								<li class="kitchen-tl-item">
+									<div class="kitchen-tl-item__marker">
+										<span class="kitchen-tl-item__dot"></span>
+										<span class="kitchen-tl-item__line" aria-hidden="true"></span>
 									</div>
-								</div>
-								<div class="includes-kitchen__item">
-									<div class="includes-kitchen__item-num">05</div>
-									<div>
-										<div class="includes-kitchen__item-name">Виробництво</div>
-										<div class="includes-kitchen__item-desc">
+									<div class="kitchen-tl-item__content">
+										<div class="kitchen-tl-item__num">04</div>
+										<h3 class="kitchen-tl-item__title">Виробництво</h3>
+										<p class="kitchen-tl-item__text">
 											Різання, кромкування, фрезерування на ЧПУ-обладнанні. Контроль
                 якості на кожному етапі.
-										</div>
+										</p>
+										<div class="kitchen-tl-item__meta">тиждень 3–6</div>
 									</div>
-								</div>
-								<div class="includes-kitchen__item">
-									<div class="includes-kitchen__item-num">06</div>
-									<div>
-										<div class="includes-kitchen__item-name">Монтаж</div>
-										<div class="includes-kitchen__item-desc">
+								</li>
+								<li class="kitchen-tl-item">
+									<div class="kitchen-tl-item__marker">
+										<span class="kitchen-tl-item__dot"></span>
+										<span class="kitchen-tl-item__line" aria-hidden="true"></span>
+									</div>
+									<div class="kitchen-tl-item__content">
+										<div class="kitchen-tl-item__num">05</div>
+										<h3 class="kitchen-tl-item__title">Монтаж</h3>
+										<p class="kitchen-tl-item__text">
 											Доставка, монтаж, підключення техніки. Після монтажу прибираємо
                 за собою і залишаємо інструкцію догляду.
-										</div>
+										</p>
+										<div class="kitchen-tl-item__meta">день монтажу</div>
 									</div>
-								</div>
-							</div>
+								</li>
+								<li class="kitchen-tl-item kitchen-tl-item--last">
+									<div class="kitchen-tl-item__marker">
+										<span class="kitchen-tl-item__dot kitchen-tl-item__dot--accent"></span>
+									</div>
+									<div class="kitchen-tl-item__content">
+										<div class="kitchen-tl-item__num">06</div>
+										<h3 class="kitchen-tl-item__title">Гарантія</h3>
+										<p class="kitchen-tl-item__text">
+											24 місяці на корпус і фасади. Фурнітура Blum — довічна гарантія
+                від виробника.
+										</p>
+										<div class="kitchen-tl-item__meta">надійний сервіс</div>
+									</div>
+								</li>
+							</ol>
 						</div>
 					</div>
 				</section>
+				<!--
+<section class="section service-kitchen__includes includes-kitchen">
+<div class="includes-kitchen__container">
+<div class="includes-kitchen__content">
+<h2 class="includes-kitchen__title">Що входить<br />у замовлення.</h2>
+<div class="includes-kitchen__items">
+<div class="includes-kitchen__item">
+<div class="includes-kitchen__item-num">01</div>
+<div>
+<div class="includes-kitchen__item-name">Виїзд на обмір</div>
+<div class="includes-kitchen__item-desc">
+Лазерний обмір з фіксацією комунікацій, розеток, нерівностей
+стін. Безкоштовно у межах 30 км від цеху.
+</div>
+</div>
+</div>
+<div class="includes-kitchen__item">
+<div class="includes-kitchen__item-num">02</div>
+<div>
+<div class="includes-kitchen__item-name">3D-проєкт</div>
+<div class="includes-kitchen__item-desc">
+Реалістична візуалізація з матеріалами і освітленням. Правимо
+разом до повного «так».
+</div>
+</div>
+</div>
+<div class="includes-kitchen__item">
+<div class="includes-kitchen__item-num">03</div>
+<div>
+<div class="includes-kitchen__item-name">Матеріали</div>
+<div class="includes-kitchen__item-desc">
+Плити Egger, Kronospan, Swiss Krono. Стільниці зі штучного
+каменю акрилового, HPL компакт, ДСП. Дерев'яні стільниці
+прораховуємо індивідуально.
+</div>
+</div>
+</div>
+<div class="includes-kitchen__item">
+<div class="includes-kitchen__item-num">04</div>
+<div>
+<div class="includes-kitchen__item-name">Фурнітура</div>
+<div class="includes-kitchen__item-desc">
+Blum, Häfele, GTV, PEKA — тихі доводчики, направляючі з повним
+висуванням, системи push-to-open.
+</div>
+</div>
+</div>
+<div class="includes-kitchen__item">
+<div class="includes-kitchen__item-num">05</div>
+<div>
+<div class="includes-kitchen__item-name">Виробництво</div>
+<div class="includes-kitchen__item-desc">
+Різання, кромкування, фрезерування на ЧПУ-обладнанні. Контроль
+якості на кожному етапі.
+</div>
+</div>
+</div>
+<div class="includes-kitchen__item">
+<div class="includes-kitchen__item-num">06</div>
+<div>
+<div class="includes-kitchen__item-name">Монтаж</div>
+<div class="includes-kitchen__item-desc">
+Доставка, монтаж, підключення техніки. Після монтажу прибираємо
+за собою і залишаємо інструкцію догляду.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+-->
 				<!-- Kitchen types -->
 				<section class="section service-kitchen__types kitchen-types">
 					<div class="kitchen-types__container">
