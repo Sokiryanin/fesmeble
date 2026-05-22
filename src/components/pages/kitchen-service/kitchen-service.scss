@@ -27,17 +27,17 @@
   }
 
   &__types {
-    @include adaptiveValue('padding-top', 100, 60);
+    // @include adaptiveValue('padding-top', 100, 60);
     @include adaptiveValue('padding-bottom', 100, 60);
   }
 
   &__materials {
-    @include adaptiveValue('padding-top', 100, 60);
+    // @include adaptiveValue('padding-top', 100, 60);
     @include adaptiveValue('padding-bottom', 100, 60);
   }
 
   &__faq {
-    @include adaptiveValue('padding-top', 100, 60);
+    // @include adaptiveValue('padding-top', 100, 60);
     @include adaptiveValue('padding-bottom', 100, 60);
   }
 
@@ -61,30 +61,72 @@
     }
   }
 
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    @include adaptiveValue('padding-bottom', 100, 60);
+    border-bottom: 1px solid var(--line);
+
+    @media (max-width: toEm($mobile)) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    @include adaptiveValue('margin-bottom', 56, 36);
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-mob {
+    display: none;
+    @media (max-width: toEm($mobile)) {
+      display: block;
+      @include adaptiveValue('margin-bottom', 56, 36);
+    }
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+
+    transition: transform 0.5s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+  }
+
   &__label {
   }
 
   &__text {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1fr;
     align-items: end;
-    padding-bottom: 60px;
-    border-bottom: 1px solid var(--line);
-    // margin-bottom: 80px;
-
+    gap: 40px;
     @media (max-width: toEm($tablet)) {
       grid-template-columns: 1fr;
-      gap: 40px;
-      padding-bottom: 50px;
-    }
-    @media (max-width: toEm($mobile)) {
-      padding-bottom: 40px;
     }
   }
 
   &__text-promise {
-    font-size: 19px;
+    @include adaptiveValue('font-size', 18, 14);
     color: var(--ink-2);
     line-height: 1.55;
     max-width: 440px;
@@ -94,10 +136,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    @media (max-width: toEm($mobile)) {
+    }
   }
 
   &__stat-num {
-    font-size: clamp(48px, 5vw, 72px);
+    @include adaptiveValue('font-size', 72, 40);
     font-weight: 350;
     line-height: 1;
     letter-spacing: -0.035em;
@@ -109,7 +153,7 @@
     margin-left: 6px;
   }
   &__stat-label {
-    font-size: 12px;
+    @include adaptiveValue('font-size', 12, 10);
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--ink-3);
@@ -152,7 +196,7 @@
 
   &__body p {
     margin-bottom: 18px;
-    font-size: 19px;
+    @include adaptiveValue('font-size', 18, 14);
     color: var(--ink-2);
     line-height: 1.55;
     // max-width: 440px;
@@ -286,7 +330,7 @@
   }
 
   &__item-name {
-    font-size: clamp(20px, 2vw, 26px);
+    @include adaptiveValue('font-size', 26, 20);
     font-weight: 400;
     letter-spacing: -0.025em;
     line-height: 1.1;
@@ -297,100 +341,10 @@
   }
 
   &__item-desc {
-    @include adaptiveValue('font-size', 16, 18);
+    @include adaptiveValue('font-size', 18, 14);
     color: var(--ink-2);
     line-height: 1.45;
   }
-}
-
-/* FAQ — гармошка */
-.service-detail__faq {
-  max-width: 880px;
-  margin: 0 auto 100px;
-}
-.service-detail__faq-title {
-  font-size: clamp(28px, 3.4vw, 42px);
-  font-weight: 350;
-  line-height: 1.1;
-  letter-spacing: -0.025em;
-  margin-bottom: 50px;
-  text-align: center;
-}
-.faq-item {
-  border-bottom: 1px solid var(--line);
-}
-.faq-item:first-child {
-  border-top: 1px solid var(--line);
-}
-.faq-item__trigger {
-  width: 100%;
-  background: transparent;
-  border: 0;
-  text-align: left;
-  padding: 26px 0;
-  cursor: pointer;
-  display: grid;
-  grid-template-columns: 1fr 30px;
-  align-items: center;
-  gap: 20px;
-  font-family: inherit;
-  font-size: 18px;
-  color: var(--ink);
-  letter-spacing: -0.01em;
-  transition: color 0.2s;
-}
-.faq-item__trigger:hover {
-  color: var(--accent);
-}
-.faq-item__trigger:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
-  border-radius: 4px;
-}
-.faq-item__icon {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  flex-shrink: 0;
-}
-.faq-item__icon::before,
-.faq-item__icon::after {
-  content: '';
-  position: absolute;
-  background: var(--ink);
-  transition: transform 0.3s ease;
-}
-.faq-item__icon::before {
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 1.5px;
-  margin-top: -0.75px;
-}
-.faq-item__icon::after {
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 1.5px;
-  margin-left: -0.75px;
-}
-.faq-item[aria-expanded='true'] .faq-item__icon::after {
-  transform: rotate(90deg);
-}
-.faq-item__answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.faq-item__answer-inner {
-  padding: 0 0 26px;
-  color: var(--ink-2);
-  font-size: 15px;
-  line-height: 1.6;
-  max-width: 720px;
-}
-.faq-item[aria-expanded='true'] .faq-item__answer {
-  max-height: 600px;
 }
 
 // ── Rodzaje kuchni ──────────────────────────────────────
@@ -422,24 +376,29 @@
   }
 
   &__num {
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    color: var(--ink-3);
-    margin-bottom: 20px;
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    @media (max-width: toEm($mobile)) {
+    }
   }
 
   &__name {
-    font-size: clamp(20px, 1.8vw, 28px);
+    font-size: clamp(20px, 2vw, 26px);
     font-weight: 400;
-    letter-spacing: -0.02em;
-    color: var(--ink);
-    margin-bottom: 16px;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    @media (max-width: toEm($mobile)) {
+      font-size: 20px;
+    }
   }
 
   &__desc {
-    font-size: clamp(14px, 1.1vw, 17px);
+    @include adaptiveValue('font-size', 16, 18);
     color: var(--ink-2);
-    line-height: 1.55;
+    line-height: 1.45;
   }
 
   @media (max-width: 640px) {
@@ -458,7 +417,6 @@
   &__inner {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: clamp(40px, 5vw, 100px);
     align-items: start;
   }
 
@@ -476,7 +434,6 @@
   @media (max-width: 1024px) {
     &__inner {
       grid-template-columns: 1fr;
-      gap: 40px;
     }
 
     &__header {
@@ -497,7 +454,7 @@
   }
 
   &__cat {
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--ink-3);
@@ -505,9 +462,9 @@
   }
 
   &__text {
-    font-size: clamp(15px, 1.1vw, 17px);
+    @include adaptiveValue('font-size', 16, 18);
     color: var(--ink-2);
-    line-height: 1.6;
+    line-height: 1.45;
   }
 
   @media (max-width: 640px) {
@@ -534,15 +491,14 @@
   &__layout {
     display: grid;
     grid-template-columns: minmax(280px, 0.9fr) 1.4fr;
-    gap: clamp(40px, 6vw, 100px);
+    gap: 80px;
     align-items: start;
 
     @media (max-width: toEm($tablet)) {
       grid-template-columns: 1fr;
-      gap: 40px;
+      gap: 0;
     }
     @media (max-width: toEm($mobile)) {
-      gap: 32px;
     }
   }
 
