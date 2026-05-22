@@ -257,6 +257,160 @@
   max-height: 37.5rem;
 }
 
+.kitchen-types__title {
+  margin-bottom: clamp(2.5rem, 4vw, 4.5rem);
+}
+.kitchen-types__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.0625rem;
+  background-color: var(--line);
+  border: 0.0625rem solid var(--line);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.kitchen-type-card {
+  background: var(--bg);
+  padding: clamp(1.75rem, 3vw, 3rem);
+  transition: background 0.2s;
+}
+.kitchen-type-card__num {
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+  margin-bottom: 1.25rem;
+}
+.kitchen-type-card__name {
+  font-size: clamp(1.25rem, 1.8vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.kitchen-type-card__desc {
+  font-size: clamp(0.875rem, 1.1vw, 1.0625rem);
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+.kitchen-materials__inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: clamp(2.5rem, 5vw, 6.25rem);
+  align-items: start;
+}
+.kitchen-materials__header {
+  position: sticky;
+  top: 6.25rem;
+}
+.kitchen-materials__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.kitchen-material-item {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1.5rem;
+  padding: 1.75rem 0;
+  border-top: 0.0625rem solid var(--line);
+}
+.kitchen-material-item:last-child {
+  border-bottom: 0.0625rem solid var(--line);
+}
+.kitchen-material-item__cat {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-3);
+  padding-top: 0.1875rem;
+}
+.kitchen-material-item__text {
+  font-size: clamp(0.9375rem, 1.1vw, 1.0625rem);
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+
+.faq-service__container {
+  width: 100%;
+}
+.faq-service__layout {
+  display: grid;
+  grid-template-columns: minmax(17.5rem, 0.9fr) 1.4fr;
+  gap: clamp(2.5rem, 6vw, 6.25rem);
+  align-items: start;
+}
+.faq-service__header {
+  position: sticky;
+  top: 1.5rem;
+  align-self: start;
+  height: fit-content;
+}
+.faq-service__header.section-label {
+  margin-bottom: 1.5rem;
+}
+.faq-service__tagline {
+  line-height: 1.55;
+  color: var(--ink-2);
+  margin: 0;
+  max-width: 23.75rem;
+}
+.faq-service__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-service__list .spollers__item {
+  border-top: 0.0625rem solid var(--line);
+}
+
+.faq-service__list .spollers__item:last-child {
+  border-bottom: 0.0625rem solid var(--line);
+}
+
+.faq-service__list .spollers__title {
+  list-style: none;
+  cursor: pointer;
+  padding: clamp(1.25rem, 2vw, 1.875rem) 0;
+  font-size: clamp(1.0625rem, 1.5vw, 1.375rem);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  transition: color 0.25s;
+}
+
+.faq-service__list .spollers__title::-webkit-details-marker {
+  display: none;
+}
+
+.faq-service__list .spollers__title:hover {
+  color: var(--accent);
+}
+
+.faq-service__list .spollers__item[open] .spollers__title {
+  color: var(--accent);
+}
+.faq-service__list .spollers__body {
+  padding: 0 0 clamp(1.375rem, 2vw, 2rem);
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 42.5rem;
+}
+@media (max-width: 64rem){
+  .kitchen-materials__inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .kitchen-materials__header {
+    position: static;
+  }
+}
 @media (max-width: 62em){
   .service-kitchen__cta {
     padding: 4.375rem 0;
@@ -279,8 +433,17 @@
   .includes-kitchen__title {
     position: static;
   }
+  .faq-service__layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .faq-service__header {
+    position: static;
+  }
+  .faq-service__tagline {
+    max-width: 100%;
+  }
 }
-
 @media (max-width: 48em){
   .hero-kitchen__container {
     padding-left: 0.9375rem;
@@ -320,8 +483,32 @@
   .includes-kitchen__item-name {
     font-size: 1.25rem;
   }
+  .faq-service__container {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+  .faq-service__layout {
+    gap: 2rem;
+  }
+  .faq-service__list .spollers__title {
+    padding-right: 2.125rem;
+  }
+  .faq-service__list .spollers__body {
+    padding-bottom: 1.375rem;
+  }
 }
-
+@media (max-width: 40rem){
+  .kitchen-type-card {
+    padding: 1.5rem;
+  }
+  .kitchen-types__grid {
+    grid-template-columns: 1fr;
+  }
+  .kitchen-material-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
 @media (width < 20em){
   .service-kitchen__hero {
     padding-top: 6.25rem;
@@ -344,14 +531,37 @@
   .service-kitchen__includes {
     padding-bottom: 3.75rem;
   }
+  .service-kitchen__types {
+    padding-top: 3.75rem;
+  }
+  .service-kitchen__types {
+    padding-bottom: 3.75rem;
+  }
+  .service-kitchen__materials {
+    padding-top: 3.75rem;
+  }
+  .service-kitchen__materials {
+    padding-bottom: 3.75rem;
+  }
+  .service-kitchen__faq {
+    padding-top: 3.75rem;
+  }
+  .service-kitchen__faq {
+    padding-bottom: 3.75rem;
+  }
   .lead-kitchen__content {
     gap: 1.5rem;
   }
   .includes-kitchen__item-desc {
     font-size: 1.125rem;
   }
+  .faq-service__tagline {
+    font-size: 0.9375rem;
+  }
+  .faq-service__list .spollers__body {
+    font-size: 0.875rem;
+  }
 }
-
 @media (width >= 20em) and (width < 94.375em){
   .service-kitchen__hero {
     padding-top: clamp( 6.25rem , 5.24159663865625rem  +  5.0420168067vw , 10rem );
@@ -374,14 +584,37 @@
   .service-kitchen__includes {
     padding-bottom: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
   }
+  .service-kitchen__types {
+    padding-top: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
+  }
+  .service-kitchen__types {
+    padding-bottom: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
+  }
+  .service-kitchen__materials {
+    padding-top: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
+  }
+  .service-kitchen__materials {
+    padding-bottom: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
+  }
+  .service-kitchen__faq {
+    padding-top: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
+  }
+  .service-kitchen__faq {
+    padding-bottom: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
+  }
   .lead-kitchen__content {
     gap: clamp( 1.5rem , 0.5588235294125rem  +  4.7058823529vw , 5rem );
   }
   .includes-kitchen__item-desc {
     font-size: clamp( 1rem , 1.15861344538125rem  +  -0.1680672269vw , 1.125rem );
   }
+  .faq-service__tagline {
+    font-size: clamp( 0.9375rem , 0.88707983193125rem  +  0.2521008403vw , 1.125rem );
+  }
+  .faq-service__list .spollers__body {
+    font-size: clamp( 0.875rem , 0.82457983193125rem  +  0.2521008403vw , 1.0625rem );
+  }
 }
-
 @media (width >= 94.375em){
   .service-kitchen__hero {
     padding-top: 10rem;
@@ -404,16 +637,42 @@
   .service-kitchen__includes {
     padding-bottom: 6.25rem;
   }
+  .service-kitchen__types {
+    padding-top: 6.25rem;
+  }
+  .service-kitchen__types {
+    padding-bottom: 6.25rem;
+  }
+  .service-kitchen__materials {
+    padding-top: 6.25rem;
+  }
+  .service-kitchen__materials {
+    padding-bottom: 6.25rem;
+  }
+  .service-kitchen__faq {
+    padding-top: 6.25rem;
+  }
+  .service-kitchen__faq {
+    padding-bottom: 6.25rem;
+  }
   .lead-kitchen__content {
     gap: 5rem;
   }
   .includes-kitchen__item-desc {
     font-size: 1rem;
   }
+  .faq-service__tagline {
+    font-size: 1.125rem;
+  }
+  .faq-service__list .spollers__body {
+    font-size: 1.0625rem;
+  }
 }
-
 @media (any-hover: hover){
   .gallery-kitchen__item:hover {
     transform: scale(1.02);
+  }
+  .kitchen-type-card:hover {
+    background: var(--bg-2);
   }
 }
