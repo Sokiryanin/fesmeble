@@ -18,3 +18,4 @@ document.addEventListener('DOMContentLoaded', () => {
 addTouchAttr();
 addLoadedAttr();
 initYearCounter();
+initTimeline();
