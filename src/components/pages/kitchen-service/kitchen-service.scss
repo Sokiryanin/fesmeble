@@ -11,8 +11,7 @@
     @include adaptiveValue('padding-bottom', 100, 60);
   }
 
-  &__lead-kitchen {
-    @include adaptiveValue('padding-top', 100, 60);
+  &__why {
     @include adaptiveValue('padding-bottom', 100, 60);
   }
 
@@ -21,7 +20,7 @@
     @include adaptiveValue('padding-bottom', 100, 60);
   }
 
-  &__includes {
+  &__timeline {
     // @include adaptiveValue('padding-top', 100, 60);
     @include adaptiveValue('padding-bottom', 100, 60);
   }
@@ -161,7 +160,55 @@
   }
 }
 
-.lead-kitchen {
+// .lead-kitchen {
+//   &__container {
+//     width: 100%;
+//     @media (max-width: toEm($mobile)) {
+//       padding-left: 15px;
+//       padding-right: 15px;
+//     }
+//   }
+
+//   &__content {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     @include adaptiveValue('gap', 80, 24);
+//     align-items: start;
+//     // margin-bottom: 100px;
+
+//     @media (max-width: toEm($tablet)) {
+//       grid-template-columns: 1fr;
+//     }
+//   }
+//   &__title {
+//     font-size: clamp(28px, 3.2vw, 48px);
+//     font-weight: 400;
+//     letter-spacing: -0.03em;
+//     line-height: 1;
+//     position: sticky;
+//     top: 100px;
+
+//     @media (max-width: toEm($tablet)) {
+//       position: static;
+//     }
+//   }
+
+//   &__body p {
+//     margin-bottom: 18px;
+//     @include adaptiveValue('font-size', 18, 14);
+//     color: var(--ink-2);
+//     line-height: 1.55;
+//     // max-width: 440px;
+
+//     &:last-child {
+//       margin-bottom: 0;
+//     }
+//   }
+// }
+
+// ─── 2. WHY CARDS ───────────────────────────────────────────────────
+
+.kitchen-why {
   &__container {
     width: 100%;
     @media (max-width: toEm($mobile)) {
@@ -169,41 +216,57 @@
       padding-right: 15px;
     }
   }
+  &__title {
+    margin-bottom: clamp(40px, 4vw, 64px);
+  }
 
-  &__content {
+  &__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    @include adaptiveValue('gap', 80, 24);
-    align-items: start;
-    // margin-bottom: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 
     @media (max-width: toEm($tablet)) {
       grid-template-columns: 1fr;
+      gap: 16px;
     }
   }
+}
+
+.kitchen-why-card {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: clamp(28px, 2.5vw, 44px);
+  transition: background 0.25s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background: var(--bg-2);
+    }
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    color: var(--accent);
+    margin-bottom: 28px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   &__title {
-    font-size: clamp(28px, 3.2vw, 48px);
+    font-size: clamp(18px, 1.5vw, 22px);
     font-weight: 400;
-    letter-spacing: -0.03em;
-    line-height: 1;
-    position: sticky;
-    top: 100px;
-
-    @media (max-width: toEm($tablet)) {
-      position: static;
-    }
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
   }
 
-  &__body p {
-    margin-bottom: 18px;
-    @include adaptiveValue('font-size', 18, 14);
+  &__text {
+    font-size: clamp(14px, 1vw, 16px);
     color: var(--ink-2);
-    line-height: 1.55;
-    // max-width: 440px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+    line-height: 1.6;
   }
 }
 

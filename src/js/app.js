@@ -8,6 +8,7 @@ import {
 
 import { tabsInit } from '@js/modules/tabs.js';
 import { initYearCounter } from '@js/modules/year-counter.js';
+import { initTimeline } from '@js/modules/timeline.js';
 
 // Запуск
 document.addEventListener('DOMContentLoaded', () => {

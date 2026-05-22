@@ -507,7 +507,8 @@
       "services-uk.scss",
       "kitchen-service-ua.html",
       "home.js",
-      "year-counter.js"
+      "year-counter.js",
+      "timeline.js"
     ]
   }
 }
