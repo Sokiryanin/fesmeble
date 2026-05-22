@@ -70,33 +70,44 @@
   margin-top: 0.75rem;
 }
 
-.lead-kitchen__container {
+.kitchen-why__container {
   width: 100%;
 }
-.lead-kitchen__content {
+.kitchen-why__title {
+  margin-bottom: clamp(2.5rem, 4vw, 4rem);
+}
+.kitchen-why__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
-.lead-kitchen__content {
-  align-items: start;
+
+.kitchen-why-card {
+  border: 0.0625rem solid var(--line);
+  border-radius: 1.25rem;
+  padding: clamp(1.75rem, 2.5vw, 2.75rem);
+  transition: background 0.25s;
 }
-.lead-kitchen__title {
-  font-size: clamp(1.75rem, 3.2vw, 3rem);
+.kitchen-why-card__icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--accent);
+  margin-bottom: 1.75rem;
+}
+.kitchen-why-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+.kitchen-why-card__title {
+  font-size: clamp(1.125rem, 1.5vw, 1.375rem);
   font-weight: 400;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  position: sticky;
-  top: 6.25rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.875rem;
 }
-.lead-kitchen__body p {
-  margin-bottom: 1.125rem;
-}
-.lead-kitchen__body p {
+.kitchen-why-card__text {
+  font-size: clamp(0.875rem, 1vw, 1rem);
   color: var(--ink-2);
-  line-height: 1.55;
-}
-.lead-kitchen__body p:last-child {
-  margin-bottom: 0;
+  line-height: 1.6;
 }
 
 .gallery-kitchen__container {
@@ -389,11 +400,9 @@
   .hero-kitchen__text {
     grid-template-columns: 1fr;
   }
-  .lead-kitchen__content {
+  .kitchen-why__grid {
     grid-template-columns: 1fr;
-  }
-  .lead-kitchen__title {
-    position: static;
+    gap: 1rem;
   }
   .kitchen-timeline__inner {
     grid-template-columns: 1fr;
@@ -423,7 +432,7 @@
   .hero-kitchen__img-mob {
     display: block;
   }
-  .lead-kitchen__container {
+  .kitchen-why__container {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
@@ -485,10 +494,7 @@
   .service-kitchen__hero {
     padding-bottom: 3.75rem;
   }
-  .service-kitchen__lead-kitchen {
-    padding-top: 3.75rem;
-  }
-  .service-kitchen__lead-kitchen {
+  .service-kitchen__why {
     padding-bottom: 3.75rem;
   }
   .service-kitchen__gallery {
@@ -497,7 +503,7 @@
   .service-kitchen__gallery {
     padding-bottom: 3.75rem;
   }
-  .service-kitchen__includes {
+  .service-kitchen__timeline {
     padding-bottom: 3.75rem;
   }
   .service-kitchen__types {
@@ -523,12 +529,6 @@
   }
   .hero-kitchen__stat-label {
     font-size: 0.625rem;
-  }
-  .lead-kitchen__content {
-    gap: 1.5rem;
-  }
-  .lead-kitchen__body p {
-    font-size: 0.875rem;
   }
   .kitchen-tl-item__title {
     font-size: 1.25rem;
@@ -561,10 +561,7 @@
   .service-kitchen__hero {
     padding-bottom: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
   }
-  .service-kitchen__lead-kitchen {
-    padding-top: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
-  }
-  .service-kitchen__lead-kitchen {
+  .service-kitchen__why {
     padding-bottom: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
   }
   .service-kitchen__gallery {
@@ -573,7 +570,7 @@
   .service-kitchen__gallery {
     padding-bottom: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
   }
-  .service-kitchen__includes {
+  .service-kitchen__timeline {
     padding-bottom: clamp( 3.75rem , 3.0777310924375rem  +  3.3613445378vw , 6.25rem );
   }
   .service-kitchen__types {
@@ -599,12 +596,6 @@
   }
   .hero-kitchen__stat-label {
     font-size: clamp( 0.625rem , 0.59138655461875rem  +  0.1680672269vw , 0.75rem );
-  }
-  .lead-kitchen__content {
-    gap: clamp( 1.5rem , 0.5588235294125rem  +  4.7058823529vw , 5rem );
-  }
-  .lead-kitchen__body p {
-    font-size: clamp( 0.875rem , 0.80777310924375rem  +  0.3361344538vw , 1.125rem );
   }
   .kitchen-tl-item__title {
     font-size: clamp( 1.25rem , 1.1491596638625rem  +  0.5042016807vw , 1.625rem );
@@ -637,10 +628,7 @@
   .service-kitchen__hero {
     padding-bottom: 6.25rem;
   }
-  .service-kitchen__lead-kitchen {
-    padding-top: 6.25rem;
-  }
-  .service-kitchen__lead-kitchen {
+  .service-kitchen__why {
     padding-bottom: 6.25rem;
   }
   .service-kitchen__gallery {
@@ -649,7 +637,7 @@
   .service-kitchen__gallery {
     padding-bottom: 6.25rem;
   }
-  .service-kitchen__includes {
+  .service-kitchen__timeline {
     padding-bottom: 6.25rem;
   }
   .service-kitchen__types {
@@ -676,12 +664,6 @@
   .hero-kitchen__stat-label {
     font-size: 0.75rem;
   }
-  .lead-kitchen__content {
-    gap: 5rem;
-  }
-  .lead-kitchen__body p {
-    font-size: 1.125rem;
-  }
   .kitchen-tl-item__title {
     font-size: 1.625rem;
   }
@@ -704,6 +686,9 @@
 @media (any-hover: hover) {
   .hero-kitchen__img:hover {
     transform: scale(1.02);
+  }
+  .kitchen-why-card:hover {
+    background: var(--bg-2);
   }
   .gallery-kitchen__item:hover {
     transform: scale(1.02);
