@@ -7,6 +7,7 @@ import {
 } from '@js/common/functions.js';
 
 import { tabsInit } from '@js/modules/tabs.js';
+import { initYearCounter } from '@js/modules/year-counter.js';
 
 // Запуск
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,3 +16,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 addTouchAttr();
 addLoadedAttr();
+initYearCounter();

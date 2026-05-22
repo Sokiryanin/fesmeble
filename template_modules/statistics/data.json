@@ -358,7 +358,12 @@
       {
         "date": "21.05.2026",
         "start": 1779381839023,
-        "end": 1779381839023
+        "end": 1779388121510
+      },
+      {
+        "date": "22.05.2026",
+        "start": 1779434466805,
+        "end": 1779434466805
       }
     ],
     "files": [
@@ -490,7 +495,9 @@
       "gtv.svg",
       "gtv-1.svg",
       "services-uk.scss",
-      "kitchen-service-ua.html"
+      "kitchen-service-ua.html",
+      "home.js",
+      "year-counter.js"
     ]
   }
 }

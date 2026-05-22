@@ -84,19 +84,24 @@
           prywatnych, biur, kawiarni, restauracji i hoteli.
         </p>
         <div class="hero-home__stats">
-          <div class="hero-home__stat">
+          <div data-fls-watcher class="hero-home__stat">
             <div class="hero-home__stat-num">
-              240<span style="color: var(--accent)">+</span>
+              <span data-fls-digcounter> 240</span>
+              <span style="color: var(--accent)">+</span>
             </div>
             <div class="hero-home__stat-label">projektów</div>
           </div>
           <div class="hero-home__stat">
-            <div class="hero-home__stat-num">5</div>
+            <div class="hero-home__stat-num">
+              <span data-fls-digcounter data-years></span>
+            </div>
             <div class="hero-home__stat-label">lat doświadczenia</div>
           </div>
           <div class="hero-home__stat">
-            <div class="hero-home__stat-num">12</div>
-            <div class="hero-home__stat-label">mistrzów</div>
+            <div class="hero-home__stat-num">
+              <span data-fls-digcounter>12</span>
+              <div class="hero-home__stat-label">mistrzów</div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,102 +121,82 @@
         </p>
       </div>
 
-      <div data-fls-watcher class="partners__grid">
-        <div
-          class="partners__item"
-          title="Kronospan — płyty drewnopochodne, laminat (Austria/Polska)"
-        >
+      <div
+        data-fls-marquee-direction="right"
+        data-fls-marquee
+        data-fls-marquee-speed="500"
+        class="partners__line line-partners"
+      >
+        <div class="line-partners__item">
           <img
-            class="partners__logo partners__logo--wide"
+            class="line-partners__logo"
             src="@img/partners/kronospan.svg"
             alt="Kronospan"
-            loading="lazy"
             width="160"
             height="32"
           />
         </div>
-        <div
-          class="partners__item"
-          title="Egger — płyty wiórowe, płyty MDF, powierzchnie laminowane (Austria)"
-        >
+        <div class="line-partners__item">
           <img
-            class="partners__logo partners__logo--wide"
+            class="line-partners__logo"
             src="@img/partners/egger.svg"
             alt="Egger"
-            loading="lazy"
             width="160"
-            height="36"
+            height="32"
           />
         </div>
-        <div
-          class="partners__item"
-          title="Swiss Krono — płyty drewnopochodne (Szwajcaria)"
-        >
+        <div class="line-partners__item">
           <img
-            class="partners__logo partners__logo--wide"
+            class="line-partners__logo"
             src="@img/partners/swiss-krono.svg"
-            alt="Swiss Krono"
-            loading="lazy"
+            alt="swiss-krono"
             width="160"
-            height="24"
+            height="32"
           />
         </div>
-        <div
-          class="partners__item"
-          title="Corian — kamień akrylowy firmy DuPont (USA)"
-        >
+        <div class="line-partners__item">
           <img
-            class="partners__logo partners__logo--mark"
+            class="line-partners__logo"
             src="@img/partners/corian.svg"
             alt="Corian"
-            loading="lazy"
-            width="60"
-            height="64"
+            width="160"
+            height="32"
           />
         </div>
-
-        <div
-          class="partners__item"
-          title="Blum — austriackie okucia: samozamykacze, mechanizmy"
-        >
+        <div class="line-partners__item">
           <img
-            class="partners__logo"
+            class="line-partners__logo"
             src="@img/partners/blum.svg"
             alt="Blum"
-            loading="lazy"
-            width="100"
-            height="50"
+            width="160"
+            height="32"
           />
         </div>
-
-        <div class="partners__item" title="Häfele — німецькі меблеві системи">
+        <div class="line-partners__item">
           <img
-            class="partners__logo partners__logo--mark"
+            class="line-partners__logo"
             src="@img/partners/hafele.svg"
-            alt="Häfele"
-            loading="lazy"
-            width="64"
-            height="64"
+            alt="Hafele"
+            width="160"
+            height="32"
           />
         </div>
-        <div class="partners__item" title="GTV">
+        <div class="line-partners__item">
           <img
-            class="partners__logo partners__logo--mark"
+            class="line-partners__logo"
             src="@img/partners/gtv-1.svg"
             alt="GTV"
-            loading="lazy"
-            width="60"
-            height="64"
+            width="160"
+            height="32"
           />
         </div>
-        <div class="partners__item" title="Peka">
+        <div class="line-partners__item">
           <img
-            class="partners__logo partners__logo--mark"
+            class="line-partners__logo"
             src="@img/partners/peka.svg"
             alt="Peka"
-            loading="lazy"
-            width="60"
-            height="64"
+            width="160"
+            height="32"
           />
         </div>
       </div>
