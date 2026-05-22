@@ -2,20 +2,20 @@
   <div class="cta__container">
     <div class="cta__inner">
       <div>
-        <h2 class="cta__title" data-i18n-html="contact.title">
+        <h2 class="cta__title">
           Давайте<br />порахуємо <span class="accent">ваші</span><br />меблі.
         </h2>
-        <p class="cta__sub" data-i18n="contact.sub">
+        <p class="cta__sub">
           Залиште номер — передзвонимо протягом 2 годин у робочий час.
           Безкоштовний виїзд на обмір у межах Львова.
         </p>
         <div class="contact-info">
           <div class="contact-info__row">
-            <span data-i18n="contact.phone">Телефон</span>
+            <span>Телефон</span>
             <a href="tel:+380671234567">+380 67 123 45 67</a>
           </div>
           <div class="contact-info__row">
-            <span data-i18n="contact.telegram">Telegram</span>
+            <span>Telegram</span>
             <a href="#">@fesmeble</a>
           </div>
           <div class="contact-info__row">
@@ -23,8 +23,8 @@
             <a href="mailto:hello@fesmeble.com">hello@fesmeble.com</a>
           </div>
           <div class="contact-info__row">
-            <span data-i18n="contact.showroom">Шоурум</span>
-            <span data-i18n="contact.address">Вроцлав, вул. Легницка 55</span>
+            <span>Шоурум</span>
+            <span>Вроцлав, вул. Легницка 55</span>
           </div>
           <div class="contact-info__row">
             <span>Графік</span>
@@ -42,7 +42,7 @@
       >
         <div class="form__row">
           <div class="form__field">
-            <label data-i18n="form.name" for="text-field-1">Ваше імʼя</label>
+            <label for="text-field-1">Ваше імʼя</label>
             <input
               type="text"
               required
@@ -53,7 +53,7 @@
             />
           </div>
           <div class="form__field">
-            <label data-i18n="form.phone" for="tel-field-2">Телефон</label>
+            <label for="tel-field-2">Телефон</label>
             <input
               type="tel"
               placeholder="+380"
@@ -67,14 +67,14 @@
         </div>
 
         <fieldset class="form__field form__fieldset">
-          <legend data-i18n="form.interest">Що вас цікавить?</legend>
+          <legend>Що вас цікавить?</legend>
           <div class="form__chips">
             <button
               type="button"
               class="chip"
               aria-pressed="false"
               data-value="kitchen"
-              data-i18n="chip.kitchen"
+             
               onclick="
                 this.setAttribute(
                   'aria-pressed',
@@ -91,7 +91,7 @@
               class="chip"
               aria-pressed="false"
               data-value="wardrobe"
-              data-i18n="chip.wardrobe"
+             
               onclick="
                 this.setAttribute(
                   'aria-pressed',
@@ -108,7 +108,7 @@
               class="chip"
               aria-pressed="false"
               data-value="closet"
-              data-i18n="chip.closet"
+             
               onclick="
                 this.setAttribute(
                   'aria-pressed',
@@ -125,7 +125,7 @@
               class="chip"
               aria-pressed="false"
               data-value="office"
-              data-i18n="chip.office"
+             
               onclick="
                 this.setAttribute(
                   'aria-pressed',
@@ -142,7 +142,7 @@
               class="chip"
               aria-pressed="false"
               data-value="other"
-              data-i18n="chip.other"
+             
               onclick="
                 this.setAttribute(
                   'aria-pressed',
@@ -158,18 +158,18 @@
         </fieldset>
 
         <div class="form__field">
-          <label data-i18n="form.when" for="select-field-3">
+          <label for="select-field-3">
             Коли зручно передзвонити
           </label>
           <select id="select-field-3" name="when">
-            <option value="asap" data-i18n="form.when.1">Якнайшвидше</option>
-            <option value="today" data-i18n="form.when.2">
+            <option value="asap">Якнайшвидше</option>
+            <option value="today">
               Сьогодні до 18:00
             </option>
-            <option value="tomorrow-am" data-i18n="form.when.3">
+            <option value="tomorrow-am">
               Завтра зранку
             </option>
-            <option value="tomorrow-pm" data-i18n="form.when.4">
+            <option value="tomorrow-pm">
               Завтра після обіду
             </option>
           </select>
@@ -188,7 +188,7 @@
         </div>
 
         <button type="submit" class="form__submit">
-          <span data-i18n="form.submit">отримати прорахунок</span>
+          <span>отримати прорахунок</span>
           <span class="form__submit-arrow" aria-hidden="true"><svg width="20" height="20"><use href="#i-arrow-right"/></svg></span>
         </button>
       </form>

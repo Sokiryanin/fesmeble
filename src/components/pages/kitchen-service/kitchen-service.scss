@@ -26,6 +26,21 @@
     @include adaptiveValue('padding-bottom', 100, 60);
   }
 
+  &__types {
+    @include adaptiveValue('padding-top', 100, 60);
+    @include adaptiveValue('padding-bottom', 100, 60);
+  }
+
+  &__materials {
+    @include adaptiveValue('padding-top', 100, 60);
+    @include adaptiveValue('padding-bottom', 100, 60);
+  }
+
+  &__faq {
+    @include adaptiveValue('padding-top', 100, 60);
+    @include adaptiveValue('padding-bottom', 100, 60);
+  }
+
   &__cta {
     padding: 100px 0;
     background: var(--ink);
@@ -376,4 +391,252 @@
 }
 .faq-item[aria-expanded='true'] .faq-item__answer {
   max-height: 600px;
+}
+
+// ── Rodzaje kuchni ──────────────────────────────────────
+.kitchen-types {
+  &__title {
+    margin-bottom: clamp(40px, 4vw, 72px);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background-color: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+.kitchen-type-card {
+  background: var(--bg);
+  padding: clamp(28px, 3vw, 48px);
+  transition: background 0.2s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background: var(--bg-2);
+    }
+  }
+
+  &__num {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--ink-3);
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: clamp(20px, 1.8vw, 28px);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    font-size: clamp(14px, 1.1vw, 17px);
+    color: var(--ink-2);
+    line-height: 1.55;
+  }
+
+  @media (max-width: 640px) {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .kitchen-types__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ── Materiały i okucia ──────────────────────────────────
+.kitchen-materials {
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: clamp(40px, 5vw, 100px);
+    align-items: start;
+  }
+
+  &__header {
+    position: sticky;
+    top: 100px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  @media (max-width: 1024px) {
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    &__header {
+      position: static;
+    }
+  }
+}
+
+.kitchen-material-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 24px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+
+  &:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  &__cat {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-3);
+    padding-top: 3px;
+  }
+
+  &__text {
+    font-size: clamp(15px, 1.1vw, 17px);
+    color: var(--ink-2);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+// faq
+
+.faq-service {
+  // .faq-service__container
+
+  &__container {
+    width: 100%;
+    @media (max-width: toEm($mobile)) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  // .faq-service__layout
+
+  &__layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) 1.4fr;
+    gap: clamp(40px, 6vw, 100px);
+    align-items: start;
+
+    @media (max-width: toEm($tablet)) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    @media (max-width: toEm($mobile)) {
+      gap: 32px;
+    }
+  }
+
+  // .faq-service__intro
+
+  &__header {
+    position: sticky;
+
+    top: 24px;
+
+    align-self: start;
+
+    height: fit-content;
+
+    @media (max-width: toEm($tablet)) {
+      position: static;
+    }
+
+    &.section-label {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .faq-service__title
+
+  &__title {
+  }
+
+  // .faq-service__tagline
+
+  &__tagline {
+    @include adaptiveValue('font-size', 18, 15);
+    line-height: 1.55;
+    color: var(--ink-2);
+    margin: 0;
+    max-width: 380px;
+
+    @media (max-width: toEm($tablet)) {
+      max-width: 100%;
+    }
+  }
+
+  // .faq-service__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.faq-service__list .spollers__item {
+  border-top: 1px solid var(--line);
+}
+.faq-service__list .spollers__item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.faq-service__list .spollers__title {
+  list-style: none;
+  cursor: pointer;
+  padding: clamp(20px, 2vw, 30px) 0;
+
+  font-size: clamp(17px, 1.5vw, 22px);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  transition: color 0.25s;
+  @media (max-width: toEm($mobile)) {
+    padding-right: 34px;
+  }
+}
+.faq-service__list .spollers__title::-webkit-details-marker {
+  display: none;
+}
+
+.faq-service__list .spollers__title:hover {
+  color: var(--accent);
+}
+.faq-service__list .spollers__item[open] .spollers__title {
+  color: var(--accent);
+}
+.faq-service__list .spollers__body {
+  @include adaptiveValue('font-size', 17, 14);
+  padding: 0 0 clamp(22px, 2vw, 32px);
+
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 680px;
+
+  @media (max-width: toEm($mobile)) {
+    padding-bottom: 22px;
+  }
 }
