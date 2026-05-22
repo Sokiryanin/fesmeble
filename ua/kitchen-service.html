@@ -21,14 +21,14 @@
 		<link rel="shortcut icon" href="/fesmeble/assets/img/fesmeble.png">
 		<meta name="description" content="Проєктуємо й виготовляємо кухні на замовлення у Вроцлаві. Обмір, 3D-проєкт, фурнітура Blum, стільниці зі штучного каменю та HPL. Виконання 6 тижнів, гарантія 24 міс.">
 		<title>Кухні на замовлення у Вроцлаві — проєкт 3D, монтаж | Fes meble</title>
-		<script type="module" crossorigin="" src="/fesmeble/js/kitchen-service2.min.js?v=1779455691050"></script>
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779455691050">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779455691050">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/watcher.min.js?v=1779455691050">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/kitchen-service3.min.js?v=1779455691050">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779455691050">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/watcher.min.css?v=1779455691050">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/kitchen-service.min.css?v=1779455691050">
+		<script type="module" crossorigin="" src="/fesmeble/js/kitchen-service2.min.js?v=1779457060017"></script>
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779457060017">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779457060017">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/watcher.min.js?v=1779457060017">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/kitchen-service3.min.js?v=1779457060017">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779457060017">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/watcher.min.css?v=1779457060017">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/kitchen-service.min.css?v=1779457060017">
 	</head>
 	<body>
 		<svg width="0" height="0" style="position: absolute; overflow: hidden" aria-hidden="true" focusable="false">
@@ -40,6 +40,27 @@
 			</symbol>
 			<symbol id="i-arrow-diag" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
 				<path d="M7 17L17 7M9 7h8v8"></path>
+			</symbol>
+			<symbol id="i-production" viewbox="0 0 48 48" fill="none">
+				<rect x="6" y="18" width="36" height="24" rx="2" stroke="currentColor" stroke-width="1.8"></rect>
+				<rect x="30" y="6" width="6" height="12" rx="1" stroke="currentColor" stroke-width="1.8"></rect>
+				<rect x="11" y="22" width="8" height="7" rx="1" stroke="currentColor" stroke-width="1.8"></rect>
+				<rect x="24" y="22" width="8" height="7" rx="1" stroke="currentColor" stroke-width="1.8"></rect>
+				<rect x="20" y="32" width="8" height="10" stroke="currentColor" stroke-width="1.8"></rect>
+			</symbol>
+			<symbol id="i-planning" viewbox="0 0 48 48" fill="none">
+				<path d="M34 6 L42 14 L18 38 L10 42 L14 34 Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path>
+				<line x1="30" y1="19" x2="35" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
+			</symbol>
+			<symbol id="i-time" viewbox="0 0 48 48" fill="none">
+				<circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.8"></circle>
+				<line x1="24" y1="10" x2="24" y2="13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
+				<line x1="24" y1="35" x2="24" y2="38" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
+				<line x1="10" y1="24" x2="13" y2="24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
+				<line x1="35" y1="24" x2="38" y2="24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
+				<path d="M24 24 L16 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+				<path d="M24 24 L34 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+				<circle cx="24" cy="24" r="1.5" fill="currentColor"></circle>
 			</symbol>
 		</svg>
 		<div class="wrapper">
@@ -151,36 +172,91 @@
 					</div>
 				</section>
 				<!-- LEAD: великий опис -->
-				<section class="section service-kitchen__lead lead-kitchen">
-					<div class="lead-kitchen__container">
-						<div class="lead-kitchen__content">
-							<h2 class="lead-kitchen__title">
-								Чому варто
-								<span class="accent">саме так</span>
-								.
-							</h2>
-							<div class="lead-kitchen__body">
-								<p>
+				<section class="section service-kitchen__why kitchen-why">
+					<div class="kitchen-why__container">
+						<div class="section-label" data-fls-watcher="">чому так</div>
+						<h2 class="section-title kitchen-why__title" data-fls-watcher="">
+							Чому варто
+							<span class="accent">саме так</span>
+							і не інакше.
+						</h2>
+						<div class="kitchen-why__grid">
+							<div class="kitchen-why-card" data-fls-watcher="">
+								<div class="kitchen-why-card__icon" aria-hidden="true">
+									<svg viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<use href="#i-production"></use>
+									</svg>
+								</div>
+								<h3 class="kitchen-why-card__title">Власне виробництво</h3>
+								<p class="kitchen-why-card__text">
+									Ми маємо власне виробництво. Це означає прямий контроль якості — без
+            посередників, з можливістю виконання будь-яких індивідуальних
+            замовлень. Плитки Egger, Kronospan та Swiss Krono, фурнітура Blum,
+            Häfele, GTV та PEKA.
+								</p>
+							</div>
+							<div class="kitchen-why-card" data-fls-watcher="">
+								<div class="kitchen-why-card__icon" aria-hidden="true">
+									<svg viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<use href="#i-planning"></use>
+									</svg>
+								</div>
+								<h3 class="kitchen-why-card__title">Проєктування</h3>
+								<p class="kitchen-why-card__text">
 									Кухня — це не предмет, а інфраструктура. Ви проводите біля неї
             години щодня. Тому ми починаємо не з фасадів, а з вашого сценарію:
             як ви готуєте, скільки людей сідає за стіл, де зберігаються спеції,
             чи планується посудомийка.
 								</p>
-								<p>
-									Працюємо у власній майстерні в Єльч-Лясковицях під Вроцлавом. Це
-            означає прямий контроль якості — без посередників, з можливістю
-            виправити будь-яку деталь на місці. Плити Egger, Kronospan і Swiss
-            Krono, фурнітура Blum, Häfele, GTV і PEKA.
-								</p>
-								<p>
-									Не беремо більше замовлень, ніж можемо зробити добре. Іноді це
-            означає чергу на 3 тижні до старту виробництва. Зазвичай — що ваша
-            кухня переживе кілька ремонтів, не втративши вигляду.
+							</div>
+							<div class="kitchen-why-card" data-fls-watcher="">
+								<div class="kitchen-why-card__icon" aria-hidden="true">
+									<svg viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<use href="#i-time"></use>
+									</svg>
+								</div>
+								<h3 class="kitchen-why-card__title">Деталі потребують часу</h3>
+								<p class="kitchen-why-card__text">
+									Кожна кухня починається з чистого аркуша: обміру вашого простору,
+            розмови про те, як ви готуєте, проєкту 3D під конкретні розміри.
+            Жодних готових модулів, які залишилось би доробити. Кожна шафка,
+            кожен фасад, кожна деталь фурнітури — підбираємо під вас. І це
+            потребує часу.
 								</p>
 							</div>
 						</div>
 					</div>
 				</section>
+				<!--
+<section class="section service-kitchen__lead lead-kitchen">
+<div class="lead-kitchen__container">
+<div class="lead-kitchen__content">
+<h2 class="lead-kitchen__title">
+Чому варто <span class="accent">саме так</span>.
+</h2>
+<div class="lead-kitchen__body">
+<p>
+Кухня — це не предмет, а інфраструктура. Ви проводите біля неї
+години щодня. Тому ми починаємо не з фасадів, а з вашого сценарію:
+як ви готуєте, скільки людей сідає за стіл, де зберігаються спеції,
+чи планується посудомийка.
+</p>
+<p>
+Працюємо у власній майстерні в Єльч-Лясковицях під Вроцлавом. Це
+означає прямий контроль якості — без посередників, з можливістю
+виправити будь-яку деталь на місці. Плити Egger, Kronospan і Swiss
+Krono, фурнітура Blum, Häfele, GTV і PEKA.
+</p>
+<p>
+Не беремо більше замовлень, ніж можемо зробити добре. Іноді це
+означає чергу на 3 тижні до старту виробництва. Зазвичай — що ваша
+кухня переживе кілька ремонтів, не втративши вигляду.
+</p>
+</div>
+</div>
+</div>
+</section>
+-->
 				<!-- GALLERY -->
 				<section class="section service-kitchen__gallery gallery-kitchen">
 					<div class="gallery-kitchen__container">
