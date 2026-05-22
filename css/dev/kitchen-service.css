@@ -204,7 +204,7 @@
   right: 0;
   height: 0%;
   background: var(--accent);
-  transition: height 0.6s ease;
+  transition: height var(--tl-duration, 0.6s) ease;
 }
 .kitchen-tl-item--active .kitchen-tl-item__line::after {
   height: 100%;
