@@ -127,6 +127,9 @@ var bodyLock = (delay = 500) => {
 		}, delay);
 	}
 };
+function getDigFormat(item, sepp = " ") {
+	return item.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, `$1${sepp}`);
+}
 function uniqArray(array) {
 	return array.filter((item, index, self) => self.indexOf(item) === index);
 }
@@ -203,11 +206,19 @@ function tabsInit() {
 	filterCards("all");
 }
 //#endregion
+//#region src/js/modules/year-counter.js
+var initYearCounter = (selector = "[data-years]") => {
+	document.querySelectorAll(selector).forEach((el) => {
+		el.textContent = (/* @__PURE__ */ new Date()).getFullYear() - 2022 + 1;
+	});
+};
+//#endregion
 //#region src/js/app.js
 document.addEventListener("DOMContentLoaded", () => {
 	tabsInit();
 });
 addTouchAttr();
 addLoadedAttr();
+initYearCounter();
 //#endregion
-export { slideUp as a, slideToggle as i, bodyLockToggle as n, uniqArray as o, dataMediaQueries as r, bodyLockStatus as t };
+export { slideToggle as a, getDigFormat as i, bodyLockToggle as n, slideUp as o, dataMediaQueries as r, uniqArray as s, bodyLockStatus as t };
