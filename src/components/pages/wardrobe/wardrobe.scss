@@ -129,14 +129,7 @@
     margin-top: 12px;
   }
 }
-.container {
-}
-.section-label {
-}
-.section-title {
-}
-.accent {
-}
+
 .lead-wardrobe {
   // .lead-wardrobe__container
 
@@ -171,6 +164,10 @@
     line-height: 1;
     position: sticky;
     top: 100px;
+
+    & .accent {
+      color: var(--accent);
+    }
 
     @media (max-width: toEm($tablet)) {
       position: static;
@@ -291,6 +288,10 @@
     line-height: 1;
     position: sticky;
     top: 100px;
+
+    & .accent {
+      color: var(--accent);
+    }
 
     @media (max-width: toEm($tablet)) {
       position: static;
