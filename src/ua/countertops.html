@@ -1,14 +1,14 @@
 <template
   src="@components/templates/main/main.html"
   locals='{
-		"title":"countertops", 
+		"title":"Стільниці на замовлення — HPL і штучний камінь | Fesmeble", 
 		"lang":"uk",
 		"preloader": {
 			"enable":"false",
 			"once":"false"
 		},
 		"keywords":"", 
-		"description":""
+		"description":"Виготовляємо стільниці на замовлення у комплекті з нашими кухнями: HPL компакт Fundermax, штучний камінь Corian, цільне дерево, постформінг. Вроцлав."
 	}'
 >
   <block name="header">
@@ -19,12 +19,15 @@
   </block>
   <block name="main">
     <include
-      src="@components/pages/countertops/countertops.html"
+      src="@components/pages/countertops/countertops-uk.html"
       locals="{}"
     ></include>
   </block>
   <block name="footer">
-    <include src="@components/layout/footer/footer.html" locals="{}"></include>
+    <include
+      src="@components/layout/footer/footer-uk.html"
+      locals="{}"
+    ></include>
   </block>
   <block name="popup"></block>
 </template>

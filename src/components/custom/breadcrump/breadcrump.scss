@@ -1,0 +1,46 @@
+.breadcrumb {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--ink-3);
+
+    // стрілка між елементами
+    &:not(:last-child)::after {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 1px;
+      background: var(--ink-3);
+      opacity: 0.4;
+    }
+
+    &--current {
+      color: var(--ink);
+    }
+  }
+
+  &__link {
+    color: var(--ink-3);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        // color: var(--ink);
+        color: var(--accent);
+      }
+    }
+  }
+}

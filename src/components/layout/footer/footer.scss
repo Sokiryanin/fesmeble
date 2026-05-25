@@ -47,7 +47,7 @@
   &__brand {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 54px;
 
     @media (max-width: toEm($tablet)) {
       grid-column: span 3;
@@ -91,15 +91,11 @@
   // .footer__contact-quick
 
   &__contact {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // @include adaptiveValue('gap', 20, 24);
-    // @include adaptiveValue('font-size', 17, 18);
+    @include adaptiveValue('font-size', 22, 16);
 
     display: flex;
     flex-direction: column;
     gap: 12px;
-
     max-width: 420px;
 
     @media (max-width: toEm($tablet)) {
@@ -110,7 +106,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
-      font-size: 15px;
     }
   }
 
@@ -125,7 +120,7 @@
   }
 
   &__contact .label {
-    font-size: 12px;
+    @include adaptiveValue('font-size', 18, 14);
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--ink-3);

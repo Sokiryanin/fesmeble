@@ -166,6 +166,10 @@
     position: sticky;
     top: 100px;
 
+    & .accent {
+      color: var(--accent);
+    }
+
     @media (max-width: toEm($tablet)) {
       position: static;
     }
@@ -288,6 +292,10 @@
     line-height: 1;
     position: sticky;
     top: 100px;
+
+    & .accent {
+      color: var(--accent);
+    }
 
     @media (max-width: toEm($tablet)) {
       position: static;

@@ -16,7 +16,28 @@
     <div class="hero-kitchen__container">
       <div class="hero-kitchen__inner">
         <div class="hero-kitchen__block">
-          <div class="section-label hero-kitchen__label">kuchnie na wymiar</div>
+          <div class="section-label hero-kitchen__label">
+            <nav
+              data-fls-breadcrump
+              class="breadcrumb service-kitchen__breadcrump"
+              aria-label="Nawigacja strony"
+            >
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a href="./index.html" class="breadcrumb__link">Główna</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a href="./services.html" class="breadcrumb__link">Usługi</a>
+                </li>
+                <li
+                  class="breadcrumb__item breadcrumb__item--current"
+                  aria-current="page"
+                >
+                  Kuchnie na wymiar
+                </li>
+              </ol>
+            </nav>
+          </div>
           <h1 class="section-title hero-kitchen__title">
             Kuchnia, która <span class="accent">zostaje na</span> lata.
           </h1>
@@ -636,6 +657,39 @@
       </div>
     </div>
   </section>
+
+  <!-- <nav class="services-nav" aria-label="Inne usługi">
+    <div class="container">
+      <span class="services-nav__label">Inne usługi:</span>
+      <ul class="services-nav__list">
+        <li class="services-nav__item">
+          <a href="./kitchen-service.html" class="services-nav__link">
+            Kuchnie
+          </a>
+        </li>
+        <li class="services-nav__item">
+          <a
+            href="./countertops-service.html"
+            class="services-nav__link services-nav__link--active"
+            aria-current="page"
+          >
+            Blaty
+            <span class="services-nav__dot" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li class="services-nav__item">
+          <a href="./wardrobe-service.html" class="services-nav__link">
+            Szafy
+          </a>
+        </li>
+        <li class="services-nav__item">
+          <a href="./commercial-service.html" class="services-nav__link">
+            Horeca
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
 
   <!-- CTA — окрема версія форми, текст специфічний для кухонь -->
   <section data-fls-cta class="section service-kitchen__cta cta">
