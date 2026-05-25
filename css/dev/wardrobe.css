@@ -67,6 +67,9 @@
   position: sticky;
   top: 6.25rem;
 }
+.lead-wardrobe__title .accent {
+  color: var(--accent);
+}
 .lead-wardrobe__body p {
   margin-bottom: 1.125rem;
   font-size: 1.1875rem;
@@ -122,6 +125,9 @@
   line-height: 1;
   position: sticky;
   top: 6.25rem;
+}
+.zones-wardrobe__title .accent {
+  color: var(--accent);
 }
 
 .materials-countertops__list {
