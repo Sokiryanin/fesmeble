@@ -543,7 +543,9 @@
       "Не підтверджено 673957.crdownload",
       "horeca.scss",
       "horeca.js",
-      "my-slider.js"
+      "my-slider.js",
+      "slider.js",
+      "slider.scss"
     ]
   }
 }

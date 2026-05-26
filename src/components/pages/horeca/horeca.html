@@ -149,7 +149,7 @@
         <div class="horeca-gallery__nav" aria-label="Nawigacja galerii">
           <button
             class="horeca-gallery__arrow"
-            id="horecaGalleryPrev"
+            id="GalleryPrev"
             type="button"
             aria-label="Poprzednie zdjęcie"
           >
@@ -159,7 +159,7 @@
           </button>
           <button
             class="horeca-gallery__arrow"
-            id="horecaGalleryNext"
+            id="GalleryNext"
             type="button"
             aria-label="Następne zdjęcie"
           >
@@ -171,7 +171,54 @@
       </div>
     </div>
 
-    <div class="horeca-gallery__track-wrap">
+    <div data-fls-slider class="horeca-gallery__slider swiper">
+      <div class="horeca-gallery__wrapper swiper-wrapper">
+        <figure class="horeca-gallery__slide swiper-slide">
+          <img width="640" height="380" src="@img/horeca/2.jpg" alt="Image" />
+          <figcaption class="horeca-gallery__slide-caption">
+            Kawiarnia · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="horeca-gallery__slide swiper-slide">
+          <img width="640" height="380" src="@img/horeca/3.jpg" alt="Image" />
+          <figcaption class="horeca-gallery__slide-caption">
+            Kawiarnia · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="horeca-gallery__slide swiper-slide">
+          <img width="640" height="380" src="@img/horeca/4.jpg" alt="Image" />
+          <figcaption class="horeca-gallery__slide-caption">
+            Kawiarnia · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="horeca-gallery__slide swiper-slide">
+          <img width="640" height="380" src="@img/horeca/5.jpg" alt="Image" />
+          <figcaption class="horeca-gallery__slide-caption">
+            Kawiarnia · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="horeca-gallery__slide swiper-slide">
+          <img width="640" height="380" src="@img/horeca/6.jpg" alt="Image" />
+          <figcaption class="horeca-gallery__slide-caption">
+            Kawiarnia · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="horeca-gallery__slide swiper-slide">
+          <img width="640" height="380" src="@img/horeca/2.jpg" alt="Image" />
+          <figcaption class="horeca-gallery__slide-caption">
+            Kawiarnia · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="horeca-gallery__slide swiper-slide">
+          <img width="640" height="380" src="@img/horeca/3.jpg" alt="Image" />
+          <figcaption class="horeca-gallery__slide-caption">
+            Kawiarnia · Wrocław
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- <div class="horeca-gallery__track-wrap">
       <div
         class="horeca-gallery__track"
         id="horecaGalleryTrack"
@@ -262,7 +309,7 @@
           </figcaption>
         </figure>
       </div>
-    </div>
+    </div> -->
   </section>
 
   <!-- ═══════════ 4. POSITIONING STATEMENT ═══════════ -->
@@ -1157,3 +1204,15 @@
     </div>
   </section>
 </main>
+
+&__slide-img { img { width: 100%; height: 100%; object-fit: cover; display:
+block; transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+pointer-events: none; } @media (any-hover: hover) { &:hover img { transform:
+scale(1.04); } &:hover .horeca-gallery__caption { opacity: 1; transform:
+translateY(0); } } } &__slide-caption { position: absolute; bottom: 16px; left:
+16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color:
+rgba(255, 255, 255, 0.9); background: rgba(0, 0, 0, 0.35); backdrop-filter:
+blur(8px); -webkit-backdrop-filter: blur(8px); padding: 5px 12px; border-radius:
+100px; opacity: 0; transform: translateY(6px); transition: opacity 0.3s,
+transform 0.3s; @media (max-width: toEm($tablet)) { opacity: 1; transform: none;
+} }

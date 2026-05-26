@@ -1,5 +1,4 @@
 import './horeca.scss';
-import { createSlider } from '../../../js/modules/my-slider';
 
 // ── Сегментні таби
 const initSegmentTabs = (containerId) => {
@@ -34,12 +33,3 @@ const initSegmentTabs = (containerId) => {
     });
   });
 };
-
-createSlider({
-  track: 'horecaGalleryTrack',
-  prev: 'horecaGalleryPrev',
-  next: 'horecaGalleryNext',
-  itemSelector: '.horeca-gallery__item',
-});
-initSegmentTabs('horecaTabs');
-initSegmentTabs('horecaMatTabs');

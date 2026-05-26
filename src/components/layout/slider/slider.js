@@ -18,91 +18,43 @@ EffectFade, Lazy, Manipulation
 
 // Стилі Swiper
 // Підключення базових стилів
-import "./slider.scss";
+import './slider.scss';
 // Повний набір стилів з node_modules
 // import 'swiper/css/bundle';
 
 // Ініціалізація слайдерів
 function initSliders() {
-	// Список слайдерів
-	// Перевіряємо, чи є слайдер на сторінці
-	if (document.querySelector('[data-fls-slider]')) { // <- Вказуємо склас потрібного слайдера
-		// Створюємо слайдер
-		new Swiper('[data-fls-slider]', { // <- Вказуємо склас потрібного слайдера
-			// Підключаємо модулі слайдера
-			// для конкретного випадку
-			modules: [Navigation],
-			observer: true,
-			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
-			//autoHeight: true,
-			speed: 800,
+  // Список слайдерів
+  // Перевіряємо, чи є слайдер на сторінці
+  if (document.querySelector('[data-fls-slider]')) {
+    // <- Вказуємо склас потрібного слайдера
+    // Створюємо слайдер
 
-			//touchRatio: 0,
-			//simulateTouch: false,
-			//loop: true,
-			//preloadImages: false,
-			//lazy: true,
+    new Swiper('[data-fls-slider]', {
+      modules: [Navigation],
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1,
+      spaceBetween: 16,
+      speed: 300,
 
-			/*
-			// Ефекти
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			*/
+      // Кнопки "вліво/вправо"
+      navigation: {
+        prevEl: '#GalleryPrev',
+        nextEl: '#GalleryNext'
+      },
 
-			// Пагінація
-			/*
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-			*/
+      // 769px+ — показываем несколько слайдов
+      breakpoints: {
+        769: {
+          slidesPerView: 'auto'
+        }
+      },
 
-			// Скроллбар
-			/*
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				draggable: true,
-			},
-			*/
-
-			// Кнопки "вліво/вправо"
-			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
-			},
-			/*
-			// Брейкпоінти
-			breakpoints: {
-				640: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
-				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
-			},
-			*/
-			// Події
-			on: {
-
-			}
-		});
-	}
+      on: {}
+    });
+  }
 }
-document.querySelector('[data-fls-slider]') ?
-	window.addEventListener("load", initSliders) : null
+document.querySelector('[data-fls-slider]')
+  ? window.addEventListener('load', initSliders)
+  : null;
