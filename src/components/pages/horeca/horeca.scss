@@ -502,8 +502,8 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(40px, 5vw, 100px);
+    grid-template-columns: minmax(280px, 0.9fr) 1.4fr;
+    gap: 80px;
     align-items: start;
 
     @media (max-width: toEm($tablet)) {
@@ -709,8 +709,8 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: minmax(260px, 0.8fr) 1.4fr;
-    gap: clamp(40px, 6vw, 100px);
+    grid-template-columns: minmax(280px, 0.9fr) 1.4fr;
+    gap: 80px;
     align-items: start;
 
     @media (max-width: toEm($tablet)) {
