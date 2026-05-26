@@ -545,7 +545,8 @@
       "horeca.js",
       "my-slider.js",
       "slider.js",
-      "slider.scss"
+      "slider.scss",
+      "horeca-uk.html"
     ]
   }
 }
