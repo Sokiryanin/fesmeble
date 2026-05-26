@@ -183,8 +183,6 @@
   flex-shrink: 0;
   width: clamp(17.5rem, 38vw, 35rem);
   height: clamp(12.5rem, 24vw, 22.5rem);
-}
-.horeca-gallery__item {
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
@@ -694,10 +692,6 @@
   .horeca-position__container {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-  }
-  .horeca-gallery__item {
-    width: calc(100vw - 2 * clamp(0.9375rem, 4vw, 3.75rem));
-    height: clamp(12.5rem, 56vw, 20rem);
   }
   .horeca-bento__grid {
     grid-template-columns: 1fr;
