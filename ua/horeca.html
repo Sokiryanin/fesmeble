@@ -21,16 +21,16 @@
 		<link rel="shortcut icon" href="/fesmeble/assets/img/fesmeble.png">
 		<meta name="description" content="Реалізуємо проєкти меблів для HORECA :ресторани, бари, офіси, готелі. Працюємо з документацією архітектора. Вроцлав і вся Польща. HPL, Corian, дуб.">
 		<title>Меблі HORECA на замовлення — Вроцлав, Польща | Fes meble</title>
-		<script type="module" crossorigin="" src="/fesmeble/js/horeca2.min.js?v=1779805174941"></script>
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779805174941">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779805174941">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/dynamic.min.js?v=1779805174941">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/spollers.min.js?v=1779805174941">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/horeca3.min.js?v=1779805174941">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779805174941">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/spollers.min.css?v=1779805174941">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/horeca.min.css?v=1779805174941">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779805174941">
+		<script type="module" crossorigin="" src="/fesmeble/js/horeca2.min.js?v=1779808079742"></script>
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779808079742">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779808079742">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/slider.min.js?v=1779808079742">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/dynamic.min.js?v=1779808079742">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/spollers.min.js?v=1779808079742">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779808079742">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/slider.min.css?v=1779808079742">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/spollers.min.css?v=1779808079742">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779808079742">
 	</head>
 	<body>
 		<svg width="0" height="0" style="position: absolute; overflow: hidden" aria-hidden="true" focusable="false">
@@ -265,12 +265,12 @@ decoding="async"
 						<div class="horeca-gallery__header">
 							<div class="section-label">realizacje</div>
 							<div class="horeca-gallery__nav" aria-label="Nawigacja galerii">
-								<button class="horeca-gallery__arrow" id="horecaGalleryPrev" type="button" aria-label="Poprzednie zdjęcie">
+								<button class="horeca-gallery__arrow" id="GalleryPrev" type="button" aria-label="Poprzednie zdjęcie">
 									<svg class="icon" aria-hidden="true">
 										<use href="#i-arrow-left"></use>
 									</svg>
 								</button>
-								<button class="horeca-gallery__arrow" id="horecaGalleryNext" type="button" aria-label="Następne zdjęcie">
+								<button class="horeca-gallery__arrow" id="GalleryNext" type="button" aria-label="Następne zdjęcie">
 									<svg class="icon" aria-hidden="true">
 										<use href="#i-arrow-right"></use>
 									</svg>
@@ -278,34 +278,127 @@ decoding="async"
 							</div>
 						</div>
 					</div>
-					<div class="horeca-gallery__track-wrap">
-						<div class="horeca-gallery__track" id="horecaGalleryTrack" tabindex="0" role="region" aria-label="Galeria realizacji HORECA">
-							<figure class="horeca-gallery__item">
-								<img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=900&q=80" alt="Wnętrze kawiarni z ladą barową na wymiar — realizacja FESMEBLE" width="640" height="380" decoding="async">
-								<figcaption class="horeca-gallery__caption">Kawiarnia · Wrocław</figcaption>
+					<div data-fls-slider="" class="horeca-gallery__slider swiper">
+						<div class="horeca-gallery__wrapper swiper-wrapper">
+							<figure class="horeca-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/horeca/2.jpg" alt="Image">
+								<figcaption class="horeca-gallery__slide-caption">Kawiarnia · Wrocław</figcaption>
 							</figure>
-							<figure class="horeca-gallery__item">
-								<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80" alt="Bar restauracyjny z blatem HPL i półkami na butelki" width="640" height="380" loading="lazy" decoding="async">
-								<figcaption class="horeca-gallery__caption">Restauracja · bar</figcaption>
+							<figure class="horeca-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/horeca/3.jpg" alt="Image">
+								<figcaption class="horeca-gallery__slide-caption">Kawiarnia · Wrocław</figcaption>
 							</figure>
-							<figure class="horeca-gallery__item">
-								<img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=900&q=80" alt="Recepcja hotelowa z zabudową na wymiar — meble HORECA" width="640" height="380" loading="lazy" decoding="async">
-								<figcaption class="horeca-gallery__caption">Hotel · recepcja</figcaption>
+							<figure class="horeca-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/horeca/4.jpg" alt="Image">
+								<figcaption class="horeca-gallery__slide-caption">Kawiarnia · Wrocław</figcaption>
 							</figure>
-							<figure class="horeca-gallery__item">
-								<img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?w=900&q=80" alt="Lady barowe z drewna litego i metalu w lokalu gastronomicznym" width="640" height="380" loading="lazy" decoding="async">
-								<figcaption class="horeca-gallery__caption">Bar · drewno + metal</figcaption>
+							<figure class="horeca-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/horeca/5.jpg" alt="Image">
+								<figcaption class="horeca-gallery__slide-caption">Kawiarnia · Wrocław</figcaption>
 							</figure>
-							<figure class="horeca-gallery__item">
-								<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" alt="Biuro open space z zabudową ścian i kontuarami — meble na wymiar" width="640" height="380" loading="lazy" decoding="async">
-								<figcaption class="horeca-gallery__caption">Biuro · open space</figcaption>
+							<figure class="horeca-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/horeca/6.jpg" alt="Image">
+								<figcaption class="horeca-gallery__slide-caption">Kawiarnia · Wrocław</figcaption>
 							</figure>
-							<figure class="horeca-gallery__item">
-								<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&q=80" alt="Showroom z zabudową ekspozycyjną i ladą obsługi klienta" width="640" height="380" loading="lazy" decoding="async">
-								<figcaption class="horeca-gallery__caption">Showroom · ekspozycja</figcaption>
+							<figure class="horeca-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/horeca/2.jpg" alt="Image">
+								<figcaption class="horeca-gallery__slide-caption">Kawiarnia · Wrocław</figcaption>
+							</figure>
+							<figure class="horeca-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/horeca/3.jpg" alt="Image">
+								<figcaption class="horeca-gallery__slide-caption">Kawiarnia · Wrocław</figcaption>
 							</figure>
 						</div>
 					</div>
+					<!--
+<div class="horeca-gallery__track-wrap">
+<div
+class="horeca-gallery__track"
+id="horecaGalleryTrack"
+tabindex="0"
+role="region"
+aria-label="Galeria realizacji HORECA"
+>
+<figure class="horeca-gallery__item">
+<img
+src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=900&q=80"
+alt="Wnętrze kawiarni z ladą barową na wymiar — realizacja FESMEBLE"
+width="640"
+height="380"
+decoding="async"
+/>
+<figcaption class="horeca-gallery__caption">
+Kawiarnia · Wrocław
+</figcaption>
+</figure>
+<figure class="horeca-gallery__item">
+<img
+src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80"
+alt="Bar restauracyjny z blatem HPL i półkami na butelki"
+width="640"
+height="380"
+loading="lazy"
+decoding="async"
+/>
+<figcaption class="horeca-gallery__caption">
+Restauracja · bar
+</figcaption>
+</figure>
+<figure class="horeca-gallery__item">
+<img
+src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=900&q=80"
+alt="Recepcja hotelowa z zabudową na wymiar — meble HORECA"
+width="640"
+height="380"
+loading="lazy"
+decoding="async"
+/>
+<figcaption class="horeca-gallery__caption">
+Hotel · recepcja
+</figcaption>
+</figure>
+<figure class="horeca-gallery__item">
+<img
+src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?w=900&q=80"
+alt="Lady barowe z drewna litego i metalu w lokalu gastronomicznym"
+width="640"
+height="380"
+loading="lazy"
+decoding="async"
+/>
+<figcaption class="horeca-gallery__caption">
+Bar · drewno + metal
+</figcaption>
+</figure>
+<figure class="horeca-gallery__item">
+<img
+src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80"
+alt="Biuro open space z zabudową ścian i kontuarami — meble na wymiar"
+width="640"
+height="380"
+loading="lazy"
+decoding="async"
+/>
+<figcaption class="horeca-gallery__caption">
+Biuro · open space
+</figcaption>
+</figure>
+<figure class="horeca-gallery__item">
+<img
+src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&q=80"
+alt="Showroom z zabudową ekspozycyjną i ladą obsługi klienta"
+width="640"
+height="380"
+loading="lazy"
+decoding="async"
+/>
+<figcaption class="horeca-gallery__caption">
+Showroom · ekspozycja
+</figcaption>
+</figure>
+</div>
+</div>
+-->
 				</section>
 				<!-- ═══════════ 4. POSITIONING STATEMENT ═══════════ -->
 				<section class="section service-horeca__positioning horeca-position">
@@ -901,6 +994,17 @@ decoding="async"
 					</div>
 				</section>
 			</main>
+			&__slide-img { img { width: 100%; height: 100%; object-fit: cover; display:
+block; transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+pointer-events: none; } @media (any-hover: hover) { &:hover img { transform:
+scale(1.04); } &:hover .horeca-gallery__caption { opacity: 1; transform:
+translateY(0); } } } &__slide-caption { position: absolute; bottom: 16px; left:
+16px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color:
+rgba(255, 255, 255, 0.9); background: rgba(0, 0, 0, 0.35); backdrop-filter:
+blur(8px); -webkit-backdrop-filter: blur(8px); padding: 5px 12px; border-radius:
+100px; opacity: 0; transform: translateY(6px); transition: opacity 0.3s,
+transform 0.3s; @media (max-width: toEm($tablet)) { opacity: 1; transform: none;
+} }
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container">
 					<div class="footer__top">
