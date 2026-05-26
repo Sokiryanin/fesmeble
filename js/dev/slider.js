@@ -20,10 +20,8 @@ var initSegmentTabs = (containerId) => {
 		});
 	});
 };
-document.addEventListener("DOMContentLoaded", () => {
-	initSegmentTabs("horecaTabs");
-	initSegmentTabs("horecaMatTabs");
-});
+initSegmentTabs("horecaTabs");
+initSegmentTabs("horecaMatTabs");
 //#endregion
 //#region node_modules/swiper/shared/ssr-window.esm.mjs
 /**
