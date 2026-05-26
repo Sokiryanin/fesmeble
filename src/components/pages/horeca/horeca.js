@@ -1,4 +1,5 @@
 import './horeca.scss';
+import { createSlider } from '../../../js/modules/my-slider';
 
 // ── Сегментні таби
 const initSegmentTabs = (containerId) => {
@@ -34,23 +35,11 @@ const initSegmentTabs = (containerId) => {
   });
 };
 
-// ── Таймлайн IntersectionObserver
-const initTimeline = (listId) => {
-  const items = document.querySelectorAll(`#${listId} .horeca-tl-item`);
-  if (!items.length) return;
-
-  const obs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) e.target.classList.add('--active');
-      });
-    },
-    { threshold: 0.35 }
-  );
-
-  items.forEach((item) => obs.observe(item));
-};
-
+createSlider({
+  track: 'horecaGalleryTrack',
+  prev: 'horecaGalleryPrev',
+  next: 'horecaGalleryNext',
+  itemSelector: '.horeca-gallery__item',
+});
 initSegmentTabs('horecaTabs');
 initSegmentTabs('horecaMatTabs');
-initTimeline('horecaTimeline');

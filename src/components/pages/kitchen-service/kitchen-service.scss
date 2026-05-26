@@ -217,7 +217,7 @@
     }
   }
   &__title {
-    @include adaptiveValue('margin-bottom', 64, 40);
+    @include adaptiveValue('font-size', 54, 36);
   }
 
   &__grid {
@@ -640,6 +640,7 @@
   }
 
   &__title {
+    @include adaptiveValue('font-size', 54, 36);
   }
 
   &__grid {

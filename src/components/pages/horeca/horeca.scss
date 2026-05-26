@@ -1,6 +1,7 @@
 .service-horeca {
   &__hero {
-    padding-top: 0;
+    @include adaptiveValue('padding-top', 160, 100);
+    @include adaptiveValue('padding-bottom', 100, 60);
   }
   &__services-nav {
   }
@@ -36,6 +37,10 @@
 .hero-horeca {
   &__container {
     width: 100%;
+    @media (max-width: toEm($mobile)) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   &__inner {
@@ -43,77 +48,41 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     @include adaptiveValue('padding-bottom', 100, 60);
-    border-bottom: 1px solid var(--line);
+    // border-bottom: 1px solid var(--line);
 
-    @media (max-width: toEm($tablet)) {
+    @media (max-width: toEm($mobile)) {
       grid-template-columns: 1fr;
     }
+  }
+
+  &__title {
+    @include adaptiveValue('font-size', 84, 54);
   }
 
   &__block {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: clamp(100px, 8vw, 160px);
   }
 
-  &__label {
-    margin-bottom: 20px;
-  }
-
-  &__title {
-    @include adaptiveValue('font-size', 84, 48);
-    font-weight: 400;
-    letter-spacing: -0.035em;
-    line-height: 1;
-    margin-bottom: 28px;
-  }
-
-  &__tagline {
-    @include adaptiveValue('font-size', 18, 14);
-    color: var(--ink-2);
-    line-height: 1.55;
-    max-width: 440px;
-    margin-bottom: 40px;
-  }
-
-  &__stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    padding-top: 40px;
-    border-top: 1px solid var(--line);
-  }
-
-  &__stat-num {
-    @include adaptiveValue('font-size', 72, 40);
-    font-weight: 350;
-    line-height: 1;
-    letter-spacing: -0.035em;
-    color: var(--accent);
-
-    span {
-      font-size: 0.5em;
-      margin-left: 6px;
+  &__img-mob {
+    display: none;
+    @media (max-width: toEm($mobile)) {
+      display: block;
+      @include adaptiveValue('margin-bottom', 64, 40);
     }
   }
 
-  &__stat-label {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--ink-3);
-    margin-top: 12px;
-    line-height: 1.4;
-  }
-
   &__img {
-    border-radius: 18px;
+    position: relative;
     overflow: hidden;
-    @media (max-width: toEm($tablet)) {
-      aspect-ratio: 4/3;
-      order: -1;
-      border-radius: 0;
+    border-radius: 18px;
+
+    transition: transform 0.5s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.02);
+      }
     }
 
     img {
@@ -124,12 +93,63 @@
       display: block;
     }
   }
-}
 
+  &__label {
+  }
+
+  &__text {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    gap: 40px;
+    @media (max-width: toEm($tablet)) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__text-promise {
+    @include adaptiveValue('font-size', 18, 14);
+    color: var(--ink-2);
+    line-height: 1.55;
+    max-width: 440px;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    @media (max-width: toEm($mobile)) {
+    }
+  }
+
+  &__stat-num {
+    @include adaptiveValue('font-size', 72, 40);
+    font-weight: 350;
+    line-height: 1;
+    letter-spacing: -0.035em;
+    color: var(--accent);
+  }
+
+  &__stat-num span {
+    font-size: 0.5em;
+    margin-left: 6px;
+  }
+  &__stat-label {
+    @include adaptiveValue('font-size', 12, 10);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-3);
+    margin-top: 12px;
+  }
+}
 // ── POSITIONING ──────────────────────────────────────────────────────
 .horeca-position {
   &__container {
     width: 100%;
+    @media (max-width: toEm($mobile)) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   &__inner {
@@ -201,6 +221,138 @@
   }
 }
 
+.service-horeca {
+  &__gallery {
+    padding-top: 0;
+    @include adaptiveValue('padding-bottom', 100, 60);
+    overflow: hidden;
+  }
+}
+
+.horeca-gallery {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__arrow {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: var(--bg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+    transition:
+      background 0.2s,
+      color 0.2s,
+      border-color 0.2s;
+    flex-shrink: 0;
+
+    .icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: var(--ink);
+        color: var(--bg);
+        border-color: var(--ink);
+      }
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+
+  &__track-wrap {
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  &__track {
+    display: flex;
+    gap: 16px;
+    padding: 0 var(--container-padding, clamp(15px, 4vw, 60px));
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+    outline: none;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    width: clamp(280px, 38vw, 560px);
+    height: clamp(200px, 24vw, 360px);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+      pointer-events: none;
+    }
+
+    @media (any-hover: hover) {
+      &:hover img {
+        transform: scale(1.04);
+      }
+
+      &:hover .horeca-gallery__caption {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 5px 12px;
+    border-radius: 100px;
+    opacity: 0;
+    transform: translateY(6px);
+    transition:
+      opacity 0.3s,
+      transform 0.3s;
+
+    @media (max-width: toEm($tablet)) {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
 // ── SEGMENTS TABS ────────────────────────────────────────────────────
 .horeca-segments {
   &__container {
@@ -208,6 +360,7 @@
   }
 
   &__title {
+    @include adaptiveValue('font-size', 54, 36);
     margin-bottom: clamp(36px, 3vw, 56px);
   }
 }
@@ -367,7 +520,8 @@
   }
 
   &__title {
-    margin-bottom: 20px;
+    @include adaptiveValue('font-size', 54, 36);
+    margin-bottom: clamp(36px, 3vw, 56px);
   }
 
   &__intro {
@@ -483,6 +637,7 @@
   }
 
   &__title {
+    @include adaptiveValue('font-size', 54, 36);
     margin-bottom: clamp(36px, 3vw, 56px);
   }
 
@@ -572,6 +727,7 @@
   }
 
   &__title {
+    @include adaptiveValue('font-size', 54, 36);
     margin-bottom: 16px;
   }
 
@@ -689,5 +845,133 @@
     strong {
       color: var(--ink);
     }
+  }
+}
+
+// faq
+
+.faq-service {
+  // .faq-service__container
+
+  &__container {
+    width: 100%;
+    @media (max-width: toEm($mobile)) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__title {
+    @include adaptiveValue('font-size', 54, 36);
+  }
+
+  // .faq-service__layout
+
+  &__layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) 1.4fr;
+    gap: 80px;
+    align-items: start;
+
+    @media (max-width: toEm($tablet)) {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    @media (max-width: toEm($mobile)) {
+    }
+  }
+
+  // .faq-service__intro
+
+  &__header {
+    position: sticky;
+
+    top: 24px;
+
+    align-self: start;
+
+    height: fit-content;
+
+    @media (max-width: toEm($tablet)) {
+      position: static;
+    }
+
+    &.section-label {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .faq-service__title
+
+  &__title {
+  }
+
+  // .faq-service__tagline
+
+  &__tagline {
+    @include adaptiveValue('font-size', 18, 15);
+    line-height: 1.55;
+    color: var(--ink-2);
+    margin: 0;
+    max-width: 380px;
+
+    @media (max-width: toEm($tablet)) {
+      max-width: 100%;
+    }
+  }
+
+  // .faq-service__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.faq-service__list .spollers__item {
+  border-top: 1px solid var(--line);
+}
+.faq-service__list .spollers__item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.faq-service__list .spollers__title {
+  list-style: none;
+  cursor: pointer;
+  padding: clamp(20px, 2vw, 30px) 0;
+
+  font-size: clamp(17px, 1.5vw, 22px);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  transition: color 0.25s;
+  @media (max-width: toEm($mobile)) {
+    padding-right: 34px;
+  }
+}
+.faq-service__list .spollers__title::-webkit-details-marker {
+  display: none;
+}
+
+.faq-service__list .spollers__title:hover {
+  color: var(--accent);
+}
+.faq-service__list .spollers__item[open] .spollers__title {
+  color: var(--accent);
+}
+.faq-service__list .spollers__body {
+  @include adaptiveValue('font-size', 17, 14);
+  padding: 0 0 clamp(22px, 2vw, 32px);
+
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 680px;
+
+  @media (max-width: toEm($mobile)) {
+    padding-bottom: 22px;
   }
 }
