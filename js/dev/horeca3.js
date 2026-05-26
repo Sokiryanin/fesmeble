@@ -17,10 +17,10 @@ var createSlider = ({ track, prev, next, itemSelector, gap = 16 }) => {
 	if (!items.length) return;
 	trackEl.style.touchAction = "pan-y";
 	let current = 0;
+	let activeId = null;
 	let startX = 0;
 	let startY = 0;
 	let startPos = 0;
-	let dragging = false;
 	let horizLocked = false;
 	const itemW = () => items[0].offsetWidth + gap;
 	const max = () => items.length - 1;
@@ -33,45 +33,56 @@ var createSlider = ({ track, prev, next, itemSelector, gap = 16 }) => {
 	goTo(0);
 	nextBtn?.addEventListener("click", () => goTo(current + 1));
 	prevBtn?.addEventListener("click", () => goTo(current - 1));
-	trackEl.addEventListener("pointerdown", (e) => {
-		startX = e.clientX;
-		startY = e.clientY;
-		startPos = current * itemW();
-		dragging = true;
+	const detach = () => {
+		activeId = null;
 		horizLocked = false;
-	});
-	trackEl.addEventListener("pointermove", (e) => {
-		if (!dragging) return;
+		document.removeEventListener("pointermove", onMove);
+		document.removeEventListener("pointerup", onUp);
+		document.removeEventListener("pointercancel", onCancel);
+	};
+	const onMove = (e) => {
+		if (e.pointerId !== activeId) return;
 		const dx = Math.abs(e.clientX - startX);
 		const dy = Math.abs(e.clientY - startY);
 		if (!horizLocked) {
 			if (dx < 5 && dy < 5) return;
 			if (dy > dx) {
-				dragging = false;
+				detach();
 				return;
 			}
 			horizLocked = true;
-			trackEl.setPointerCapture(e.pointerId);
 			trackEl.style.transition = "none";
 		}
+		e.preventDefault();
 		trackEl.style.transform = `translateX(${-startPos + (e.clientX - startX)}px)`;
-	});
-	trackEl.addEventListener("pointerup", (e) => {
-		if (!dragging) return;
-		const wasLocked = horizLocked;
-		dragging = false;
-		horizLocked = false;
-		if (!wasLocked) return;
+	};
+	const onUp = (e) => {
+		if (e.pointerId !== activeId) return;
 		trackEl.style.transition = "";
-		const diff = e.clientX - startX;
-		goTo(Math.abs(diff) > 60 ? diff < 0 ? current + 1 : current - 1 : current);
-	});
-	trackEl.addEventListener("pointercancel", () => {
-		if (!dragging) return;
-		dragging = false;
+		if (horizLocked) {
+			const diff = e.clientX - startX;
+			goTo(Math.abs(diff) > 60 ? diff < 0 ? current + 1 : current - 1 : current);
+		}
+		detach();
+	};
+	const onCancel = (e) => {
+		if (e.pointerId !== activeId) return;
+		if (horizLocked) {
+			trackEl.style.transition = "";
+			goTo(current);
+		}
+		detach();
+	};
+	trackEl.addEventListener("pointerdown", (e) => {
+		if (activeId !== null) return;
+		activeId = e.pointerId;
+		startX = e.clientX;
+		startY = e.clientY;
+		startPos = current * itemW();
 		horizLocked = false;
-		trackEl.style.transition = "";
-		goTo(current);
+		document.addEventListener("pointermove", onMove, { passive: false });
+		document.addEventListener("pointerup", onUp);
+		document.addEventListener("pointercancel", onCancel);
 	});
 	trackEl.addEventListener("keydown", (e) => {
 		if (e.key === "ArrowRight") goTo(current + 1);
