@@ -230,12 +230,12 @@ var initYearCounter = (selector = "[data-years]") => {
 item.style.setProperty('--tl-duration', '2s'); 
 * 
 */
-var initTimeline = () => {
-	const items = document.querySelectorAll(".kitchen-tl-item");
+var initTimelineItems = (selector, activeClass) => {
+	const items = document.querySelectorAll(selector);
 	if (!items.length) return;
 	const obs = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
-			if (entry.isIntersecting) entry.target.classList.add("kitchen-tl-item--active");
+			if (entry.isIntersecting) entry.target.classList.add(activeClass);
 		});
 	}, { threshold: .4 });
 	items.forEach((item) => {
@@ -243,6 +243,10 @@ var initTimeline = () => {
 		if (dur) item.style.setProperty("--tl-duration", dur);
 		obs.observe(item);
 	});
+};
+var initTimeline = () => {
+	initTimelineItems(".kitchen-tl-item", "kitchen-tl-item--active");
+	initTimelineItems(".horeca-tl-item", "horeca-tl-item--active");
 };
 //#endregion
 //#region src/js/app.js

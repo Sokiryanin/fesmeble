@@ -562,7 +562,7 @@
     font-size: 0.625rem;
   }
   .kitchen-why__title {
-    margin-bottom: 2.5rem;
+    font-size: 2.25rem;
   }
   .kitchen-why-card__title {
     font-size: 1.125rem;
@@ -575,6 +575,9 @@
   }
   .kitchen-tl-item__text {
     font-size: 0.875rem;
+  }
+  .kitchen-types__title {
+    font-size: 2.25rem;
   }
   .kitchen-type-card__name {
     font-size: 1.25rem;
@@ -644,7 +647,7 @@
     font-size: clamp( 0.625rem , 0.59138655461875rem  +  0.1680672269vw , 0.75rem );
   }
   .kitchen-why__title {
-    margin-bottom: clamp( 2.5rem , 2.0966386554625rem  +  2.0168067227vw , 4rem );
+    font-size: clamp( 2.25rem , 1.94747899159375rem  +  1.512605042vw , 3.375rem );
   }
   .kitchen-why-card__title {
     font-size: clamp( 1.125rem , 1.05777310924375rem  +  0.3361344538vw , 1.375rem );
@@ -657,6 +660,9 @@
   }
   .kitchen-tl-item__text {
     font-size: clamp( 0.875rem , 0.84138655461875rem  +  0.1680672269vw , 1rem );
+  }
+  .kitchen-types__title {
+    font-size: clamp( 2.25rem , 1.94747899159375rem  +  1.512605042vw , 3.375rem );
   }
   .kitchen-type-card__name {
     font-size: clamp( 1.25rem , 1.1155462184875rem  +  0.6722689076vw , 1.75rem );
@@ -731,7 +737,7 @@
     font-size: 0.75rem;
   }
   .kitchen-why__title {
-    margin-bottom: 4rem;
+    font-size: 3.375rem;
   }
   .kitchen-why-card__title {
     font-size: 1.375rem;
@@ -744,6 +750,9 @@
   }
   .kitchen-tl-item__text {
     font-size: 1rem;
+  }
+  .kitchen-types__title {
+    font-size: 3.375rem;
   }
   .kitchen-type-card__name {
     font-size: 1.75rem;
