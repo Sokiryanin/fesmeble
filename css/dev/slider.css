@@ -317,8 +317,8 @@
 }
 .horeca-timeline__inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(2.5rem, 5vw, 6.25rem);
+  grid-template-columns: minmax(17.5rem, 0.9fr) 1.4fr;
+  gap: 5rem;
   align-items: start;
 }
 .horeca-timeline__header {
@@ -453,8 +453,8 @@
 }
 .horeca-materials__inner {
   display: grid;
-  grid-template-columns: minmax(16.25rem, 0.8fr) 1.4fr;
-  gap: clamp(2.5rem, 6vw, 6.25rem);
+  grid-template-columns: minmax(17.5rem, 0.9fr) 1.4fr;
+  gap: 5rem;
   align-items: start;
 }
 .horeca-materials__header {
