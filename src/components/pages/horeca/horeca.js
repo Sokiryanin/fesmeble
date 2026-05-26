@@ -34,7 +34,5 @@ const initSegmentTabs = (containerId) => {
   });
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  initSegmentTabs('horecaTabs');
-  initSegmentTabs('horecaMatTabs');
-});
+initSegmentTabs('horecaTabs');
+initSegmentTabs('horecaMatTabs');
