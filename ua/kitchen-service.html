@@ -21,15 +21,18 @@
 		<link rel="shortcut icon" href="/fesmeble/assets/img/fesmeble.png">
 		<meta name="description" content="Проєктуємо й виготовляємо кухні на замовлення у Вроцлаві. Обмір, 3D-проєкт, фурнітура Blum, стільниці зі штучного каменю та HPL. Виконання 6 тижнів, гарантія 24 міс.">
 		<title>Кухні на замовлення у Вроцлаві — проєкт 3D, монтаж | Fes meble</title>
-		<script type="module" crossorigin="" src="/fesmeble/js/kitchen-service2.min.js?v=1779890157069"></script>
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779890157069">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779890157069">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/watcher.min.js?v=1779890157069">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/dynamic.min.js?v=1779890157069">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/spollers.min.js?v=1779890157069">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779890157069">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/spollers.min.css?v=1779890157069">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/kitchen-service.min.css?v=1779890157069">
+		<script type="module" crossorigin="" src="/fesmeble/js/kitchen-service2.min.js?v=1779893251307"></script>
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779893251307">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779893251307">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/slider.min.js?v=1779893251307">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/watcher.min.js?v=1779893251307">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/dynamic.min.js?v=1779893251307">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/spollers.min.js?v=1779893251307">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779893251307">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/slider.min.css?v=1779893251307">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/spollers.min.css?v=1779893251307">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779893251307">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/kitchen-service.min.css?v=1779893251307">
 	</head>
 	<body>
 		<svg width="0" height="0" style="position: absolute; overflow: hidden" aria-hidden="true" focusable="false">
@@ -135,13 +138,13 @@
 						<div class="hero-kitchen__inner">
 							<div class="hero-kitchen__block">
 								<div class="section-label hero-kitchen__label">
-									<nav class="breadcrumb service-kitchen__breadcrumb" aria-label="Nawigacja strony">
+									<nav data-fls-breadcrump="" class="breadcrumb service-kitchen__breadcrump" aria-label="Nawigacja strony">
 										<ol class="breadcrumb__list">
 											<li class="breadcrumb__item">
-												<a href="./index.html" class="breadcrumb__link">головна</a>
+												<a href="./index.html" class="breadcrumb__link">Головна</a>
 											</li>
 											<li class="breadcrumb__item">
-												<a href="./services-uk.html" class="breadcrumb__link">сервіси</a>
+												<a href="./services.html" class="breadcrumb__link">Сервіси</a>
 											</li>
 											<li class="breadcrumb__item breadcrumb__item--current" aria-current="page">Кухні під замовлення</li>
 										</ol>
@@ -240,30 +243,54 @@
 					</div>
 				</section>
 				<!-- GALLERY -->
-				<section class="section service-kitchen__gallery gallery-kitchen">
-					<div class="gallery-kitchen__container">
-						<div class="gallery-kitchen__items">
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/cook.jpg" alt="Готування на кухні від Fesmeble" loading="lazy" decoding="async" width="1200" height="900">
+				<section class="section service-kitchen__gallery kitchen-gallery">
+					<div class="kitchen-gallery__container">
+						<div class="kitchen-gallery__header">
+							<div class="section-label">галерея</div>
+							<div class="kitchen-gallery__nav" aria-label="Навігація галереї">
+								<button class="kitchen-gallery__arrow" id="GalleryPrev" type="button" aria-label="Попереднє фото">
+									<svg class="icon" aria-hidden="true">
+										<use href="#i-arrow-left"></use>
+									</svg>
+								</button>
+								<button class="kitchen-gallery__arrow" id="GalleryNext" type="button" aria-label="Наступне фото">
+									<svg class="icon" aria-hidden="true">
+										<use href="#i-arrow-right"></use>
+									</svg>
+								</button>
 							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/spices.jpg" alt="Полиця для спецій у кухонній шафі" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/goodies-counter.jpg" alt="Робоча зона кухні на замовлення" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/oranges.jpg" alt="Стільниця зі штучного каменю у кухні" loading="lazy" decoding="async" width="1200" height="500">
-							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/girl-cooking.jpg" alt="Кухня на замовлення" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/cozy-kitchen.jpg" alt="Затишна кухня на замовлення у Вроцлаві" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/bright-kitchen.jpg" alt="Світла кухня з вбудовою під стелю" loading="lazy" decoding="async" width="700" height="500">
-							</div>
+						</div>
+					</div>
+					<div data-fls-slider="" class="kitchen-gallery__slider swiper">
+						<div class="kitchen-gallery__wrapper swiper-wrapper">
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/cook.jpg" alt="Готування на кухні від Fesmeble">
+								<figcaption class="kitchen-gallery__slide-caption">Кухня · Вроцлав</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/spices.jpg" alt="Полиця для спецій у кухонній шафі">
+								<figcaption class="kitchen-gallery__slide-caption">Деталі · Вроцлав</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/goodies-counter.jpg" alt="Робоча зона кухні на замовлення">
+								<figcaption class="kitchen-gallery__slide-caption">Робоча зона · Вроцлав</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/oranges.jpg" alt="Стільниця зі штучного каменю у кухні">
+								<figcaption class="kitchen-gallery__slide-caption">Стільниця · Вроцлав</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/girl-cooking.jpg" alt="Кухня на замовлення">
+								<figcaption class="kitchen-gallery__slide-caption">Кухня на замовлення · Вроцлав</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/cozy-kitchen.jpg" alt="Затишна кухня на замовлення у Вроцлаві">
+								<figcaption class="kitchen-gallery__slide-caption">Затишна кухня · Вроцлав</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/bright-kitchen.jpg" alt="Світла кухня з вбудовою під стелю">
+								<figcaption class="kitchen-gallery__slide-caption">Світла кухня · Вроцлав</figcaption>
+							</figure>
 						</div>
 					</div>
 				</section>
