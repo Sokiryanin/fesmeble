@@ -1,14 +1,14 @@
 <template
   src="@components/templates/main/main.html"
   locals='{
-		"title":"contact", 
+		"title":"Контакти — меблі на замовлення у Вроцлаві | Fes meble", 
 		"lang":"uk",
 		"preloader": {
 			"enable":"false",
 			"once":"false"
 		},
 		"keywords":"", 
-		"description":""
+		"description":"Звяжіться з майстернею Fes meble. Безкоштовний обмір у Вроцлаві та околицях. Телефон, email, форма прорахунку. Передзвонимо протягом 2 годин."
 	}'
 >
   <block name="header">
@@ -18,10 +18,16 @@
     ></include>
   </block>
   <block name="main">
-    <include src="@components/pages/contact/contact.html" locals="{}"></include>
+    <include
+      src="@components/pages/contact/contact-uk.html"
+      locals="{}"
+    ></include>
   </block>
   <block name="footer">
-    <include src="@components/layout/footer/footer.html" locals="{}"></include>
+    <include
+      src="@components/layout/footer/footer-uk.html"
+      locals="{}"
+    ></include>
   </block>
   <block name="popup"></block>
 </template>
