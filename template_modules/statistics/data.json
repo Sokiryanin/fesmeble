@@ -394,6 +394,16 @@
         "date": "26.05.2026",
         "start": 1779799527894,
         "end": 1779799527894
+      },
+      {
+        "date": "26.05.2026",
+        "start": 1779818353749,
+        "end": 1779822731476
+      },
+      {
+        "date": "27.05.2026",
+        "start": 1779871214593,
+        "end": 1779871214593
       }
     ],
     "files": [
@@ -546,7 +556,19 @@
       "my-slider.js",
       "slider.js",
       "slider.scss",
-      "horeca-uk.html"
+      "horeca-uk.html",
+      "cafe.jpg",
+      "cafe-2.jpg",
+      "Не підтверджено 62836.crdownload",
+      "bar-1.jpg",
+      "office-1.jpg",
+      "reception-1.jpg",
+      "reception-2.jpg",
+      "Не підтверджено 774563.crdownload",
+      "reception-3.jpg",
+      "hotel-1.jpg",
+      "hotel-2.jpg",
+      "hotel-3.jpg"
     ]
   }
 }
