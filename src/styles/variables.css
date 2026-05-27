@@ -7,6 +7,7 @@
   --main-color: #000;
   --header-height: 73px;
   --bg: #fafaf8;
+  /* --bg: rgb(224, 225, 219); */
   --bg-2: #f2f1ed;
   --bg-3: #ececea;
   --ink: #000000;
@@ -14,7 +15,8 @@
   --ink-3: #8a8a86;
   --line: rgba(0, 0, 0, 0.1);
   --line-2: rgba(0, 0, 0, 0.18);
-  --accent: #c8451f;
+  /* --accent: #c8451f; */
+  --accent: #dc514c;
   --dark: #111111;
   --font: 'Inter', Helvetica, Arial, sans-serif;
   --pad-x: 3.1vw;
