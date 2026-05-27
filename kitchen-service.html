@@ -21,16 +21,17 @@
 		<link rel="shortcut icon" href="/fesmeble/assets/img/fesmeble.png">
 		<meta name="description" content="Projektujemy i wykonujemy kuchnie na wymiar we Wrocławiu. Pomiar laserowy, projekt 3D, okucia Blum, blaty Corian i ze spieku. Realizacja od 4 tygodni.">
 		<title>Kuchnie na wymiar Wrocław — projekt 3D, montaż | Fesmeble</title>
-		<script type="module" crossorigin="" src="/fesmeble/js/kitchen-service.min.js?v=1779893251306"></script>
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779893251306">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779893251306">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/watcher.min.js?v=1779893251306">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/dynamic.min.js?v=1779893251306">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/spollers.min.js?v=1779893251306">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779893251306">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/spollers.min.css?v=1779893251306">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779893251306">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/kitchen-service.min.css?v=1779893251306">
+		<script type="module" crossorigin="" src="/fesmeble/js/kitchen-service.min.js?v=1779893349232"></script>
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779893349232">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779893349232">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/dynamic.min.js?v=1779893349232">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/watcher.min.js?v=1779893349232">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/spollers.min.js?v=1779893349232">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779893349232">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/dynamic.min.css?v=1779893349232">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/spollers.min.css?v=1779893349232">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779893349232">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/kitchen-service.min.css?v=1779893349232">
 	</head>
 	<body>
 		<svg width="0" height="0" style="position: absolute; overflow: hidden" aria-hidden="true" focusable="false">
@@ -271,30 +272,54 @@ Czasem to znaczy kolejka 3 tygodnie do startu produkcji. Zazwyczaj —
 </section>
 -->
 				<!-- GALLERY -->
-				<section class="section service-kitchen__gallery gallery-kitchen">
-					<div class="gallery-kitchen__container">
-						<div class="gallery-kitchen__items">
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/cook.jpg" alt="Gotowanie domowe w kuchni na wymiar" loading="lazy" decoding="async" width="1200" height="900">
+				<section class="section service-kitchen__gallery kitchen-gallery">
+					<div class="kitchen-gallery__container">
+						<div class="kitchen-gallery__header">
+							<div class="section-label">galeria</div>
+							<div class="kitchen-gallery__nav" aria-label="Nawigacja galerii">
+								<button class="kitchen-gallery__arrow" id="GalleryPrev" type="button" aria-label="Poprzednie zdjęcie">
+									<svg class="icon" aria-hidden="true">
+										<use href="#i-arrow-left"></use>
+									</svg>
+								</button>
+								<button class="kitchen-gallery__arrow" id="GalleryNext" type="button" aria-label="Następne zdjęcie">
+									<svg class="icon" aria-hidden="true">
+										<use href="#i-arrow-right"></use>
+									</svg>
+								</button>
 							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/spices.jpg" alt="Półka na przyprawy w zabudowie kuchennej" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/goodies-counter.jpg" alt="Strefa robocza kuchni na zamówienie" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/oranges.jpg" alt="Blat ze sztucznego kamienia w kuchni Fes meble" decoding="async" width="1200" height="500">
-							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/girl-cooking.jpg" alt="dziewczyna w kuchni" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/cozy-kitchen.jpg" alt="Przytulna kuchnia na wymiar we Wrocławiu" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-kitchen__item">
-								<img src="/fesmeble/assets/img/kitchen-service/bright-kitchen.jpg" alt="Jasna kuchnia z zabudową pod sufit" decoding="async" width="700" height="500">
-							</div>
+						</div>
+					</div>
+					<div data-fls-slider="" class="kitchen-gallery__slider swiper">
+						<div class="kitchen-gallery__wrapper swiper-wrapper">
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/cook.jpg" alt="Gotowanie domowe w kuchni na wymiar">
+								<figcaption class="kitchen-gallery__slide-caption">Kuchnia · Wrocław</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/spices.jpg" alt="Półka na przyprawy w zabudowie kuchennej">
+								<figcaption class="kitchen-gallery__slide-caption">Detale · Wrocław</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/goodies-counter.jpg" alt="Strefa robocza kuchni na zamówienie">
+								<figcaption class="kitchen-gallery__slide-caption">Strefa robocza · Wrocław</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/oranges.jpg" alt="Blat ze sztucznego kamienia w kuchni Fes meble">
+								<figcaption class="kitchen-gallery__slide-caption">Blat · Wrocław</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/girl-cooking.jpg" alt="dziewczyna w kuchni">
+								<figcaption class="kitchen-gallery__slide-caption">Kuchnia na wymiar · Wrocław</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/cozy-kitchen.jpg" alt="Przytulna kuchnia na wymiar we Wrocławiu">
+								<figcaption class="kitchen-gallery__slide-caption">Przytulna kuchnia · Wrocław</figcaption>
+							</figure>
+							<figure class="kitchen-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/kitchen-service/bright-kitchen.jpg" alt="Jasna kuchnia z zabudową pod sufit">
+								<figcaption class="kitchen-gallery__slide-caption">Jasna kuchnia · Wrocław</figcaption>
+							</figure>
 						</div>
 					</div>
 				</section>

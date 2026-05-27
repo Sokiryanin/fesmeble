@@ -5,4 +5,3 @@ import "./spollers.min.js";
 import "./dynamic.min.js";
 import "./watcher.min.js";
 /* empty css                     */
-import "./slider.min.js";
