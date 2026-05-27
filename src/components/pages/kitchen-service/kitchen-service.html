@@ -176,74 +176,114 @@
   </section> -->
 
   <!-- GALLERY -->
-  <section class="section service-kitchen__gallery gallery-kitchen">
-    <div class="gallery-kitchen__container">
-      <div class="gallery-kitchen__items">
-        <div class="gallery-kitchen__item">
+  <section class="section service-kitchen__gallery kitchen-gallery">
+    <div class="kitchen-gallery__container">
+      <div class="kitchen-gallery__header">
+        <div class="section-label">galeria</div>
+        <div class="kitchen-gallery__nav" aria-label="Nawigacja galerii">
+          <button
+            class="kitchen-gallery__arrow"
+            id="GalleryPrev"
+            type="button"
+            aria-label="Poprzednie zdjęcie"
+          >
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-arrow-left" />
+            </svg>
+          </button>
+          <button
+            class="kitchen-gallery__arrow"
+            id="GalleryNext"
+            type="button"
+            aria-label="Następne zdjęcie"
+          >
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-arrow-right" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div data-fls-slider class="kitchen-gallery__slider swiper">
+      <div class="kitchen-gallery__wrapper swiper-wrapper">
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/cook.jpg"
             alt="Gotowanie domowe w kuchni na wymiar"
-            loading="lazy"
-            decoding="async"
-            width="1200"
-            height="900"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Kuchnia · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/spices.jpg"
             alt="Półka na przyprawy w zabudowie kuchennej"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Detale · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/goodies-counter.jpg"
             alt="Strefa robocza kuchni na zamówienie"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Strefa robocza · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/oranges.jpg"
             alt="Blat ze sztucznego kamienia w kuchni Fes meble"
-            decoding="async"
-            width="1200"
-            height="500"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Blat · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/girl-cooking.jpg"
             alt="dziewczyna w kuchni"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Kuchnia na wymiar · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/cozy-kitchen.jpg"
             alt="Przytulna kuchnia na wymiar we Wrocławiu"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Przytulna kuchnia · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/bright-kitchen.jpg"
             alt="Jasna kuchnia z zabudową pod sufit"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
+          <figcaption class="kitchen-gallery__slide-caption">
+            Jasna kuchnia · Wrocław
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
