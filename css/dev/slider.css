@@ -458,10 +458,6 @@
   gap: 5rem;
   align-items: start;
 }
-.horeca-materials__header {
-  position: sticky;
-  top: 6.25rem;
-}
 .horeca-materials__title {
   margin-bottom: 1rem;
 }
