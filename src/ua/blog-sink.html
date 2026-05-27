@@ -1,14 +1,14 @@
 <template
   src="@components/templates/main/main.html"
   locals='{
-		"title":"blogsink", 
+		"title":"Які є види мийок на кухню? | Fes meble", 
 		"lang":"uk",
 		"preloader": {
 			"enable":"false",
 			"once":"false"
 		},
 		"keywords":"", 
-		"description":""
+		"description":"Нержавіюча сталь, кераміка, штучний камінь — порівняння основних типів кухонних мийок. Як обрати найкращу для себе."
 	}'
 >
   <block name="header">
@@ -19,12 +19,15 @@
   </block>
   <block name="main">
     <include
-      src="@components/pages/blog-sink/blog-sink.html"
+      src="@components/pages/blog-sink/blog-sink-uk.html"
       locals="{}"
     ></include>
   </block>
   <block name="footer">
-    <include src="@components/layout/footer/footer.html" locals="{}"></include>
+    <include
+      src="@components/layout/footer/footer-uk.html"
+      locals="{}"
+    ></include>
   </block>
   <block name="popup"></block>
 </template>

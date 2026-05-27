@@ -18,17 +18,16 @@
         <div class="hero-kitchen__block">
           <div class="section-label hero-kitchen__label">
             <nav
-              class="breadcrumb service-kitchen__breadcrumb"
+              data-fls-breadcrump
+              class="breadcrumb service-kitchen__breadcrump"
               aria-label="Nawigacja strony"
             >
               <ol class="breadcrumb__list">
                 <li class="breadcrumb__item">
-                  <a href="./index.html" class="breadcrumb__link">головна</a>
+                  <a href="./index.html" class="breadcrumb__link">Головна</a>
                 </li>
                 <li class="breadcrumb__item">
-                  <a href="./services-uk.html" class="breadcrumb__link"
-                    >сервіси</a
-                  >
+                  <a href="./services.html" class="breadcrumb__link">Сервіси</a>
                 </li>
                 <li
                   class="breadcrumb__item breadcrumb__item--current"
@@ -146,79 +145,114 @@
   </section>
 
   <!-- GALLERY -->
-  <section class="section service-kitchen__gallery gallery-kitchen">
-    <div class="gallery-kitchen__container">
-      <div class="gallery-kitchen__items">
-        <div class="gallery-kitchen__item">
+  <section class="section service-kitchen__gallery kitchen-gallery">
+    <div class="kitchen-gallery__container">
+      <div class="kitchen-gallery__header">
+        <div class="section-label">галерея</div>
+        <div class="kitchen-gallery__nav" aria-label="Навігація галереї">
+          <button
+            class="kitchen-gallery__arrow"
+            id="GalleryPrev"
+            type="button"
+            aria-label="Попереднє фото"
+          >
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-arrow-left" />
+            </svg>
+          </button>
+          <button
+            class="kitchen-gallery__arrow"
+            id="GalleryNext"
+            type="button"
+            aria-label="Наступне фото"
+          >
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-arrow-right" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div data-fls-slider class="kitchen-gallery__slider swiper">
+      <div class="kitchen-gallery__wrapper swiper-wrapper">
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/cook.jpg"
             alt="Готування на кухні від Fesmeble"
-            loading="lazy"
-            decoding="async"
-            width="1200"
-            height="900"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Кухня · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/spices.jpg"
             alt="Полиця для спецій у кухонній шафі"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Деталі · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/goodies-counter.jpg"
             alt="Робоча зона кухні на замовлення"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Робоча зона · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/oranges.jpg"
-            alt="Стільниця зі штучного каменю у кухні "
-            loading="lazy"
-            decoding="async"
-            width="1200"
-            height="500"
+            alt="Стільниця зі штучного каменю у кухні"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Стільниця · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/girl-cooking.jpg"
             alt="Кухня на замовлення"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Кухня на замовлення · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/cozy-kitchen.jpg"
             alt="Затишна кухня на замовлення у Вроцлаві"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-kitchen__item">
+          <figcaption class="kitchen-gallery__slide-caption">
+            Затишна кухня · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="kitchen-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/kitchen-service/bright-kitchen.jpg"
             alt="Світла кухня з вбудовою під стелю"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
+          <figcaption class="kitchen-gallery__slide-caption">
+            Світла кухня · Вроцлав
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
