@@ -721,8 +721,8 @@
   }
 
   &__header {
-    position: sticky;
-    top: 100px;
+    // position: sticky;
+    // top: 100px;
 
     @media (max-width: toEm($tablet)) {
       position: static;

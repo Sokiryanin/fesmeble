@@ -1,14 +1,14 @@
 <template
   src="@components/templates/main/main.html"
   locals='{
-		"title":"blog", 
+		"title":"Блог про меблі на замовлення та інтерєри | Fes meble", 
 		"lang":"uk",
 		"preloader": {
 			"enable":"false",
 			"once":"false"
 		},
 		"keywords":"", 
-		"description":""
+		"description":"Практичні статті про кухні, стільниці, гардеробні та меблеві фасади. Що обрати, на що звертати увагу, як не пожалкувати через роки. Вроцлав, Fes meble."
 	}'
 >
   <block name="header">
@@ -18,10 +18,13 @@
     ></include>
   </block>
   <block name="main">
-    <include src="@components/pages/blog/blog.html" locals="{}"></include>
+    <include src="@components/pages/blog/blog-uk.html" locals="{}"></include>
   </block>
   <block name="footer">
-    <include src="@components/layout/footer/footer.html" locals="{}"></include>
+    <include
+      src="@components/layout/footer/footer-uk.html"
+      locals="{}"
+    ></include>
   </block>
   <block name="popup"></block>
 </template>
