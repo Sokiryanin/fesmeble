@@ -3275,7 +3275,9 @@ function initSliders() {
 		observeParents: true,
 		slidesPerView: 1,
 		spaceBetween: 16,
-		speed: 300,
+		speed: 400,
+		cssMode: false,
+		grabCursor: true,
 		navigation: {
 			prevEl: "#GalleryPrev",
 			nextEl: "#GalleryNext"
