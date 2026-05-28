@@ -71,6 +71,21 @@
     @media (max-width: toEm($mobile)) {
       grid-template-columns: 1fr;
     }
+
+    [data-fls-loaded] & {
+      animation: show-items 1s ease both 0.3s;
+    }
+
+    @keyframes show-items {
+      0% {
+        opacity: 0;
+        transform: translateY(10%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   }
 
   &__title {

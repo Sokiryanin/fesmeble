@@ -16,6 +16,21 @@
       padding-left: 15px;
       padding-right: 15px;
     }
+
+    [data-fls-loaded] & {
+      animation: show-items 1s ease both 0.3s;
+    }
+
+    @keyframes show-items {
+      0% {
+        opacity: 0;
+        transform: translateY(10%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   }
 
   // .contact__hero
@@ -27,22 +42,80 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 16px;
+
+    padding: 10px 18px;
+
     background: var(--accent);
     color: var(--bg);
-    border-radius: 100px;
+
+    border-radius: 999px;
+
     font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
     margin-bottom: 30px;
-    animation: bounce 2.4s infinite;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    will-change: transform;
+
+    animation: floatingBadge 4s ease-in-out infinite;
   }
 
   &__hero .badge .dot {
-    width: 8px;
-    height: 8px;
+    width: clamp(6px, 0.5vw, 9px);
+    height: clamp(6px, 0.5vw, 9px);
+
     border-radius: 50%;
-    background: #fff;
+    background: #4ade80;
+
+    box-shadow: 0 0 0 rgba(74, 222, 128, 0.5);
+
+    animation: pulseDot 2s infinite;
   }
 
+  @keyframes floatingBadge {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+
+    25% {
+      transform: translateY(-4px) rotate(-0.4deg);
+    }
+
+    50% {
+      transform: translateY(-8px) rotate(0deg);
+    }
+
+    75% {
+      transform: translateY(-4px) rotate(0.4deg);
+    }
+
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+
+  @keyframes pulseDot {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+      box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.6);
+    }
+
+    70% {
+      transform: scale(1.15);
+      opacity: 0.9;
+      box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+    }
+  }
   &__hero h1 {
     font-size: clamp(52px, 9vw, 140px);
     font-weight: 350;

@@ -42,11 +42,9 @@
   &__label {
   }
 
-  // .about__title
+  // .about__header
 
-  &__title {
-    opacity: 0;
-
+  &__header {
     [data-fls-loaded] & {
       animation: show-items 1s ease both 0.3s;
     }
@@ -61,6 +59,11 @@
         transform: translateY(0);
       }
     }
+  }
+
+  // .about__title
+
+  &__title {
   }
 
   // .about__intro
