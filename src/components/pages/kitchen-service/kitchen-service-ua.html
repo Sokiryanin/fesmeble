@@ -27,7 +27,9 @@
                   <a href="./index.html" class="breadcrumb__link">Головна</a>
                 </li>
                 <li class="breadcrumb__item">
-                  <a href="./services-uk.html" class="breadcrumb__link">Сервіси</a>
+                  <a href="./services-uk.html" class="breadcrumb__link"
+                    >Сервіси</a
+                  >
                 </li>
                 <li
                   class="breadcrumb__item breadcrumb__item--current"
@@ -78,12 +80,15 @@
 
   <section class="section service-kitchen__why kitchen-why">
     <div class="kitchen-why__container">
-      <div class="section-label" data-fls-watcher>чому так</div>
-      <h2 class="section-title kitchen-why__title" data-fls-watcher>
-        Чому варто <span class="accent">саме так</span> і не інакше.
-      </h2>
-      <div class="kitchen-why__grid">
-        <div class="kitchen-why-card" data-fls-watcher>
+      <div data-fls-watcher data-fls-watcher-once class="kitchen-why__header">
+        <div class="section-label">чому так</div>
+        <h2 class="section-title kitchen-why__title">
+          Чому варто <span class="accent">саме так</span> і не інакше.
+        </h2>
+      </div>
+
+      <div data-fls-watcher data-fls-watcher-once class="kitchen-why__grid">
+        <div class="kitchen-why-card">
           <div class="kitchen-why-card__icon" aria-hidden="true">
             <svg
               viewBox="0 0 48 48"
@@ -102,7 +107,7 @@
           </p>
         </div>
 
-        <div class="kitchen-why-card" data-fls-watcher>
+        <div class="kitchen-why-card">
           <div class="kitchen-why-card__icon" aria-hidden="true">
             <svg
               viewBox="0 0 48 48"
@@ -261,12 +266,14 @@
 
   <section class="section service-kitchen__timeline kitchen-timeline">
     <div class="kitchen-timeline__container">
-      <div class="kitchen-timeline__inner">
+      <div
+        data-fls-watcher
+        data-fls-watcher-once
+        class="kitchen-timeline__inner"
+      >
         <div class="kitchen-timeline__header">
-          <div class="section-label" data-fls-watcher>
-            Що входить у замовлення?
-          </div>
-          <h2 class="kitchen-timeline__title section-title" data-fls-watcher>
+          <div class="section-label">Що входить у замовлення?</div>
+          <h2 class="kitchen-timeline__title section-title">
             Від розмови<br /><span class="accent">до монтажу.</span>
           </h2>
         </div>
@@ -380,11 +387,14 @@
 
   <section class="section service-kitchen__types kitchen-types">
     <div class="kitchen-types__container">
-      <div class="section-label" data-fls-watcher>типи кухонь</div>
-      <h2 class="section-title kitchen-types__title" data-fls-watcher>
-        Які кухні<br /><span class="accent">ми робимо.</span>
-      </h2>
-      <div class="kitchen-types__grid">
+      <div data-fls-watcher data-fls-watcher-once class="kitchen-types__header">
+        <div class="section-label">типи кухонь</div>
+        <h2 class="section-title kitchen-types__title">
+          Які кухні<br /><span class="accent">ми робимо.</span>
+        </h2>
+      </div>
+
+      <div data-fls-watcher data-fls-watcher-once class="kitchen-types__grid">
         <article class="kitchen-type-card">
           <div class="kitchen-type-card__img">
             <img
@@ -521,9 +531,9 @@
   <!-- Faq-->
   <section class="section service-kitchen__faq service__faq faq-service">
     <div class="faq-service__container">
-      <div class="faq-service__layout">
+      <div data-fls-watcher data-fls-watcher-once class="faq-service__layout">
         <div class="faq-service__header">
-          <div class="section-label faq-service__label">częste pytania</div>
+          <div class="section-label faq-service__label">часті питання</div>
           <h2 class="section-title faq-service__title">
             Що варто<br /><span class="accent">знати?</span>
           </h2>

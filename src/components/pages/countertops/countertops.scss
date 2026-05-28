@@ -16,6 +16,7 @@
   // .service-countertops__lead
 
   &__lead {
+    @include adaptiveValue('padding-bottom', 100, 60);
   }
 
   // .service-countertops__gallery
@@ -46,8 +47,6 @@
 }
 
 .hero-countertops {
-  // .hero-countertops__container
-
   &__container {
     width: 100%;
     @media (max-width: toEm($mobile)) {
@@ -56,9 +55,17 @@
     }
   }
 
-  //.hero-countertops__inner
-
   &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    @include adaptiveValue('padding-bottom', 100, 60);
+    border-bottom: 1px solid var(--line);
+
+    @media (max-width: toEm($mobile)) {
+      grid-template-columns: 1fr;
+    }
+
     [data-fls-loaded] & {
       animation: show-items 1s ease both 0.3s;
     }
@@ -75,60 +82,75 @@
     }
   }
 
-  // .hero-countertops__label
+  &__title {
+    @include adaptiveValue('font-size', 84, 54);
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-mob {
+    display: none;
+    @media (max-width: toEm($mobile)) {
+      display: block;
+      @include adaptiveValue('margin-bottom', 64, 40);
+    }
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+
+    transition: transform 0.5s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+  }
 
   &__label {
   }
 
-  // .hero-countertops__title
-
-  &__title {
-    padding-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  // .hero-countertops__text
-
   &__text {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1fr;
     align-items: end;
-    padding-bottom: 60px;
-    border-bottom: 1px solid var(--line);
-
+    gap: 40px;
     @media (max-width: toEm($tablet)) {
       grid-template-columns: 1fr;
-      gap: 40px;
     }
   }
 
-  // .hero-countertops__text-promise
-
   &__text-promise {
-    font-size: 19px;
+    @include adaptiveValue('font-size', 18, 14);
     color: var(--ink-2);
     line-height: 1.55;
     max-width: 440px;
   }
 
-  // .hero-countertops__stats
-
   &__stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-
     @media (max-width: toEm($mobile)) {
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
     }
   }
 
-  // .hero-countertops__stat-num
-
   &__stat-num {
-    font-size: clamp(48px, 5vw, 72px);
+    @include adaptiveValue('font-size', 72, 40);
     font-weight: 350;
     line-height: 1;
     letter-spacing: -0.035em;
@@ -139,18 +161,14 @@
     font-size: 0.5em;
     margin-left: 6px;
   }
-
-  // .hero-countertops__stat-label
-
   &__stat-label {
-    font-size: 12px;
+    @include adaptiveValue('font-size', 12, 10);
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--ink-3);
     margin-top: 12px;
   }
 }
-
 .lead-countertops {
   // .lead-countertops__container
 
@@ -170,44 +188,62 @@
     gap: 80px;
     align-items: start;
 
+    translate: 0 20%;
+    transition-property: translate;
+    transition-duration: 0.6s;
+    &.--watcher-view {
+      translate: 0 0;
+    }
+
     @media (max-width: toEm($tablet)) {
       grid-template-columns: 1fr;
       gap: 40px;
     }
   }
 
-  // .lead-countertops__title
+  // .lead-countertops__header
 
-  &__title {
-    font-size: clamp(28px, 3.2vw, 48px);
-    font-weight: 400;
-    letter-spacing: -0.03em;
-    line-height: 1;
+  &__header {
     position: sticky;
     top: 100px;
-
-    & .accent {
-      color: var(--accent);
-    }
 
     @media (max-width: toEm($tablet)) {
       position: static;
     }
   }
 
+  // .lead-countertops__title
+
+  &__title {
+    @include adaptiveValue('font-size', 54, 36);
+
+    & .accent {
+      color: var(--accent);
+    }
+
+    @media (max-width: toEm($tablet)) {
+      margin-bottom: 0px;
+    }
+  }
+
   // .lead-countertops__body
 
   &__body {
+    @media (max-width: toEm($tablet)) {
+    }
   }
 
   &__body p {
     margin-bottom: 18px;
-    font-size: 19px;
+    @include adaptiveValue('font-size', 18, 14);
     color: var(--ink-2);
     line-height: 1.55;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @media (max-width: toEm($tablet)) {
     }
   }
 }
@@ -358,28 +394,41 @@
     gap: 80px;
     align-items: start;
 
+    translate: 0 20%;
+    transition-property: translate;
+    transition-duration: 0.6s;
+    &.--watcher-view {
+      translate: 0 0;
+    }
+
     @media (max-width: toEm($tablet)) {
       grid-template-columns: 1fr;
       gap: 40px;
     }
   }
 
+  // . materials-countertops__header
+
+  &__header {
+    position: sticky;
+    top: 100px;
+
+    @media (max-width: toEm($tablet)) {
+      position: static;
+    }
+  }
+
   // .materials-countertops__title
 
   &__title {
-    font-size: clamp(28px, 3.2vw, 48px);
-    font-weight: 400;
-    letter-spacing: -0.03em;
-    line-height: 1;
-    position: sticky;
-    top: 100px;
+    @include adaptiveValue('font-size', 54, 36);
 
     & .accent {
       color: var(--accent);
     }
 
     @media (max-width: toEm($tablet)) {
-      position: static;
+      margin-bottom: 0px;
     }
   }
 
@@ -406,6 +455,13 @@
   @media (max-width: toEm($tablet)) {
     grid-template-columns: 1fr;
     gap: 20px;
+
+    translate: 0 20%;
+    transition-property: translate;
+    transition-duration: 0.6s;
+    &.--watcher-view {
+      translate: 0 0;
+    }
   }
 
   @media (max-width: toEm($mobile)) {

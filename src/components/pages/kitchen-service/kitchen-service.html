@@ -81,12 +81,15 @@
 
   <section class="section service-kitchen__why kitchen-why">
     <div class="kitchen-why__container">
-      <div class="section-label" data-fls-watcher>dlaczego tak</div>
-      <h2 class="section-title kitchen-why__title" data-fls-watcher>
-        Dlaczego <span class="accent">tak</span> i nie inaczej.
-      </h2>
-      <div class="kitchen-why__grid">
-        <div class="kitchen-why-card" data-fls-watcher>
+      <div data-fls-watcher data-fls-watcher-once class="kitchen-why__header">
+        <div class="section-label">dlaczego tak</div>
+        <h2 class="section-title kitchen-why__title">
+          Dlaczego <span class="accent">tak</span> i nie inaczej.
+        </h2>
+      </div>
+
+      <div data-fls-watcher data-fls-watcher-once class="kitchen-why__grid">
+        <div class="kitchen-why-card">
           <div class="kitchen-why-card__icon" aria-hidden="true">
             <svg
               viewBox="0 0 48 48"
@@ -292,12 +295,14 @@
 
   <section class="section service-kitchen__timeline kitchen-timeline">
     <div class="kitchen-timeline__container">
-      <div class="kitchen-timeline__inner">
+      <div
+        data-fls-watcher
+        data-fls-watcher-once
+        class="kitchen-timeline__inner"
+      >
         <div class="kitchen-timeline__header">
-          <div class="section-label" data-fls-watcher>
-            co wchodzi w zamówienie
-          </div>
-          <h2 class="kitchen-timeline__title section-title" data-fls-watcher>
+          <div class="section-label">co wchodzi w zamówienie</div>
+          <h2 class="kitchen-timeline__title section-title">
             Od rozmowy<br /><span class="accent">do montażu.</span>
           </h2>
         </div>
@@ -404,85 +409,17 @@
     </div>
   </section>
 
-  <!-- <section class="section service-kitchen__includes includes-kitchen">
-    <div class="includes-kitchen__container">
-      <div class="includes-kitchen__content">
-        <h2 class="includes-kitchen__title">Co wchodzi <br />w zamówienie.</h2>
-        <div class="includes-kitchen__items">
-          <div class="includes-kitchen__item">
-            <div class="includes-kitchen__item-num">01</div>
-            <div>
-              <div class="includes-kitchen__item-name">Pomiar</div>
-              <div class="includes-kitchen__item-desc">
-                Pomiar z fiksacją instalacji, gniazdek i nierówności ścian.
-                Bezpłatny.
-              </div>
-            </div>
-          </div>
-          <div class="includes-kitchen__item">
-            <div class="includes-kitchen__item-num">02</div>
-            <div>
-              <div class="includes-kitchen__item-name">Projekt 3D</div>
-              <div class="includes-kitchen__item-desc">
-                Realistyczna wizualizacja z materiałami i oświetleniem.
-                Poprawiamy razem aż do pełnego „tak".
-              </div>
-            </div>
-          </div>
-          <div class="includes-kitchen__item">
-            <div class="includes-kitchen__item-num">03</div>
-            <div>
-              <div class="includes-kitchen__item-name">Materiały</div>
-              <div class="includes-kitchen__item-desc">
-                Płyty Egger, Kronospan, Swiss Krono. Blaty ze sztucznego
-                kamienia akrylowego, HPL kompakt, płyta wiórowa. Drewno lite
-                wyceniamy indywidualnie.
-              </div>
-            </div>
-          </div>
-          <div class="includes-kitchen__item">
-            <div class="includes-kitchen__item-num">04</div>
-            <div>
-              <div class="includes-kitchen__item-name">Okucia</div>
-              <div class="includes-kitchen__item-desc">
-                Blum, Häfele, GTV, PEKA — ciche domyki, prowadnice z pełnym
-                wysuwem, systemy push-to-open.
-              </div>
-            </div>
-          </div>
-          <div class="includes-kitchen__item">
-            <div class="includes-kitchen__item-num">05</div>
-            <div>
-              <div class="includes-kitchen__item-name">Produkcja</div>
-              <div class="includes-kitchen__item-desc">
-                Cięcie, oklejanie krawędzi, frezowanie na maszynach CNC.
-                Kontrola jakości na każdym etapie.
-              </div>
-            </div>
-          </div>
-          <div class="includes-kitchen__item">
-            <div class="includes-kitchen__item-num">06</div>
-            <div>
-              <div class="includes-kitchen__item-name">Montaż</div>
-              <div class="includes-kitchen__item-desc">
-                Dostawa, montaż, podłączenie sprzętu. Po montażu sprzątamy po
-                sobie i zostawiamy instrukcję pielęgnacji.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <!-- Kitchen types -->
   <section class="section service-kitchen__types kitchen-types">
     <div class="kitchen-types__container">
-      <div class="section-label" data-fls-watcher>rodzaje kuchni</div>
-      <h2 class="section-title kitchen-types__title" data-fls-watcher>
-        Jakie kuchnie<br /><span class="accent">robimy.</span>
-      </h2>
-      <div class="kitchen-types__grid">
+      <div data-fls-watcher data-fls-watcher-once class="kitchen-types__header">
+        <div class="section-label">rodzaje kuchni</div>
+        <h2 class="section-title kitchen-types__title">
+          Jakie kuchnie<br /><span class="accent">robimy.</span>
+        </h2>
+      </div>
+
+      <div data-fls-watcher data-fls-watcher-once class="kitchen-types__grid">
         <article class="kitchen-type-card">
           <div class="kitchen-type-card__img">
             <img
@@ -618,7 +555,7 @@
   <!-- Faq-->
   <section class="section service-kitchen__faq service__faq faq-service">
     <div class="faq-service__container">
-      <div class="faq-service__layout">
+      <div data-fls-watcher data-fls-watcher-once class="faq-service__layout">
         <div class="faq-service__header">
           <div class="section-label faq-service__label">częste pytania</div>
           <h2 class="section-title faq-service__title">

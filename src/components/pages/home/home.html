@@ -286,7 +286,7 @@
 
   <section class="section home__works-preview works-preview">
     <div class="works-preview__container">
-      <div data-fls-watcher class="works-preview__header">
+      <div data-fls-watcher data-fls-watcher-once class="works-preview__header">
         <div class="section-label">wybrane realizacje</div>
         <h2 class="section-title">
           Każdy element mebla <br /><span class="accent"
@@ -430,10 +430,8 @@
 
   <section class="section home__faq faq-home">
     <div class="section faq-home__container">
-      <div data-fls-watcher class="works-preview__header"></div>
-
       <div class="faq-home__layout">
-        <div class="faq-home__header">
+        <div data-fls-watcher data-fls-watcher-once class="faq-home__header">
           <div class="section-label faq-home__label">częste pytania</div>
           <h2 class="section-title faq-home__title">
             Najczęstsze<br /><span class="accent">pytania</span>
@@ -447,6 +445,8 @@
 
         <div
           class="faq-home__list spollers"
+          data-fls-watcher
+          data-fls-watcher-once
           data-fls-spollers-one
           data-fls-spollers
         >

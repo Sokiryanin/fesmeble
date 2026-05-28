@@ -11,62 +11,69 @@
 >
   <!-- HERO -->
   <section class="section service-countertops__hero hero-countertops">
-    <div class="hero-countertops__container container">
+    <div class="hero-countertops__container">
       <div class="hero-countertops__inner">
-        <div class="section-label hero-countertops__label">
-          <nav
-            data-fls-breadcrump
-            class="breadcrumb service-kitchen__breadcrumb"
-            aria-label="Nawigacja strony"
-          >
-            <ol class="breadcrumb__list">
-              <li class="breadcrumb__item">
-                <a href="./index.html" class="breadcrumb__link">Główna</a>
-              </li>
-              <li class="breadcrumb__item">
-                <a href="./services.html" class="breadcrumb__link">Usługi</a>
-              </li>
-              <li
-                class="breadcrumb__item breadcrumb__item--current"
-                aria-current="page"
-              >
-                Blaty
-              </li>
-            </ol>
-          </nav>
-        </div>
-
-        <h1 class="section-title hero-countertops__title">
-          Blat, który <span class="accent">wytrzyma wszystko</span><br />i z
-          czasem wygląda lepiej.
-        </h1>
-
-        <div class="hero-countertops__text">
-          <p class="hero-countertops__text-promise">
-            Dwa materiały, które polecamy najczęściej: HPL kompakt i sztuczny
-            kamień akrylowy (Corian). Oba nie wymagają specjalnej pielęgnacji,
-            nie chłoną wilgoci i nie tracą wyglądu od codziennego użytkowania.
-            Plus drewno lite i płyta wiórowa z postformingiem — tam, gdzie
-            potrzebne jest ciepło drewna albo konkretny budżet.
-          </p>
-          <div class="hero-countertops__stats">
-            <div>
-              <div class="hero-countertops__stat-num">
-                6<span>tygodni</span>
+        <div class="hero-countertops__block">
+          <div class="section-label hero-countertops__label">
+            <nav
+              data-fls-breadcrump
+              class="breadcrumb service-kitchen__breadcrumb"
+              aria-label="Nawigacja strony"
+            >
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a href="./index.html" class="breadcrumb__link">Główna</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a href="./services.html" class="breadcrumb__link">Usługi</a>
+                </li>
+                <li
+                  class="breadcrumb__item breadcrumb__item--current"
+                  aria-current="page"
+                >
+                  Blaty
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <h1 class="section-title hero-countertops__title">
+            Blat, który <span class="accent">wytrzyma wszystko</span><br />i z
+            czasem wygląda lepiej.
+          </h1>
+          <div class="hero-countertops__img-mob"></div>
+          <div class="hero-countertops__text">
+            <p class="hero-countertops__text-promise">
+              Dwa materiały, które polecamy najczęściej: HPL kompakt i sztuczny
+              kamień akrylowy (Corian). Oba nie wymagają specjalnej pielęgnacji,
+              nie chłoną wilgoci i nie tracą wyglądu od codziennego użytkowania.
+              Plus drewno lite i płyta wiórowa z postformingiem — tam, gdzie
+              potrzebne jest ciepło drewna albo konkretny budżet.
+            </p>
+            <div class="hero-countertops__stats">
+              <div>
+                <div class="hero-countertops__stat-num">
+                  6<span>tygodni</span>
+                </div>
+                <div class="hero-countertops__stat-label">
+                  od projektu do montażu (razem z kuchnią)
+                </div>
               </div>
-              <div class="hero-countertops__stat-label">
-                od projektu do montażu (razem z kuchnią)
-              </div>
-            </div>
-            <div>
-              <div class="hero-countertops__stat-num">
-                24<span>miesiące</span>
-              </div>
-              <div class="hero-countertops__stat-label">
-                gwarancja na materiał i wykonanie
+              <div>
+                <div class="hero-countertops__stat-num">
+                  24<span>miesiące</span>
+                </div>
+                <div class="hero-countertops__stat-label">
+                  gwarancja na materiał i wykonanie
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div
+          class="hero-countertops__img"
+          data-fls-dynamic=".hero-countertops__img-mob,768"
+        >
+          <img src="@img/countertop/1.jpg" alt="Image" />
         </div>
       </div>
     </div>
@@ -75,12 +82,20 @@
   <!-- LEAD -->
   <section class="section service-countertops__lead lead-countertops">
     <div class="lead-countertops__container container">
-      <div class="lead-countertops__content">
-        <h2 class="lead-countertops__title">
-          HPL i kamień sztuczny —<br /><span class="accent"
-            >dlaczego właśnie oni</span
-          >.
-        </h2>
+      <div
+        data-fls-watcher
+        data-fls-watcher-once
+        class="lead-countertops__content"
+      >
+        <div class="lead-countertops__header">
+          <div class="section-label">różnorodność</div>
+          <h2 class="section-title lead-countertops__title">
+            HPL i kamień sztuczny —<br /><span class="accent"
+              >dlaczego właśnie oni.</span
+            >
+          </h2>
+        </div>
+
         <div class="lead-countertops__body">
           <p>
             HPL to prasowany materiał wielowarstwowy o gęstości do 1450 kg/m³.
@@ -228,12 +243,20 @@
   <!-- MATERIALS -->
   <section class="section service-countertops__includes materials-countertops">
     <div class="materials-countertops__container container">
-      <div class="materials-countertops__content">
-        <h2 class="materials-countertops__title">
-          Materiały<br />i ich <span class="accent">zalety</span>.
-        </h2>
+      <div
+        data-fls-watcher
+        data-fls-watcher-once
+        class="materials-countertops__content"
+      >
+        <div class="materials-countertops__header">
+          <div class="section-label">zalety</div>
+          <h2 class="materials-countertops__title section-title">
+            Materiały<br />i ich <span class="accent">zalety</span>.
+          </h2>
+        </div>
+
         <ul class="materials-countertops__list">
-          <li class="mat-item">
+          <li data-fls-watcher data-fls-watcher-once class="mat-item">
             <div class="mat-item__head">
               <div class="mat-item__badge">kuchnia · HoReCa · ulica</div>
               <h3 class="mat-item__name">HPL-płyta</h3>
@@ -259,7 +282,7 @@
             </ul>
           </li>
 
-          <li class="mat-item">
+          <li data-fls-watcher data-fls-watcher-once class="mat-item">
             <div class="mat-item__head">
               <div class="mat-item__badge">kuchnia · łazienka · bar</div>
               <h3 class="mat-item__name">Sztuczny kamień — kwarc</h3>
@@ -285,7 +308,7 @@
             </ul>
           </li>
 
-          <li class="mat-item">
+          <li data-fls-watcher data-fls-watcher-once class="mat-item">
             <div class="mat-item__head">
               <div class="mat-item__badge">niestandardowe formy</div>
               <h3 class="mat-item__name">Sztuczny kamień — akryl</h3>
@@ -310,7 +333,7 @@
             </ul>
           </li>
 
-          <li class="mat-item">
+          <li data-fls-watcher data-fls-watcher-once class="mat-item">
             <div class="mat-item__head">
               <div class="mat-item__badge">
                 drewno naturalne · płyta wiórowa
