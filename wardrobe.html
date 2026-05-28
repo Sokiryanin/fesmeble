@@ -21,12 +21,13 @@
 		<link rel="shortcut icon" href="/fesmeble/assets/img/fesmeble.png">
 		<meta name="description" content="Projektujemy i wykonujemy szafy pod zabudowę i garderoby na wymiar we Wrocławiu. Wykorzystanie pełnej wysokości, okucia Blum, ciche domyki. Pomiar bezpłatny.">
 		<title>Szafy na wymiar i garderoby — Wrocław | Fesmeble</title>
-		<script type="module" crossorigin="" src="/fesmeble/js/wardrobe.min.js?v=1779964662650"></script>
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779964662650">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779964662650">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779964662650">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779964662650">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/wardrobe.min.css?v=1779964662650">
+		<script type="module" crossorigin="" src="/fesmeble/js/wardrobe.min.js?v=1779965614218"></script>
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779965614218">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779965614218">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/breadcrump.min.js?v=1779965614218">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779965614218">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779965614218">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/wardrobe.min.css?v=1779965614218">
 	</head>
 	<body>
 		<svg width="0" height="0" style="position: absolute; overflow: hidden" aria-hidden="true" focusable="false">
@@ -213,30 +214,54 @@
 					</div>
 				</section>
 				<!-- GALLERY -->
-				<section class="section service-wardrobe__gallery gallery-wardrobe">
-					<div class="gallery-wardrobe__container container">
-						<div class="gallery-wardrobe__items">
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/7.jpg" alt="System garderoby na wymiar" loading="lazy" decoding="async" width="1200" height="900">
+				<section class="section service-wardrobe__gallery wardrobe-gallery">
+					<div class="wardrobe-gallery__container">
+						<div class="wardrobe-gallery__header">
+							<div class="section-label">galeria</div>
+							<div class="wardrobe-gallery__nav" aria-label="Nawigacja galerii">
+								<button class="wardrobe-gallery__arrow" id="GalleryPrev" type="button" aria-label="Poprzednie zdjęcie">
+									<svg class="icon" aria-hidden="true">
+										<use href="#i-arrow-left"></use>
+									</svg>
+								</button>
+								<button class="wardrobe-gallery__arrow" id="GalleryNext" type="button" aria-label="Następne zdjęcie">
+									<svg class="icon" aria-hidden="true">
+										<use href="#i-arrow-right"></use>
+									</svg>
+								</button>
 							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/2.jpg" alt="Detal wyposażenia garderoby — szuflady i półki" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/4.jpg" alt="Szafa pod zabudowę we wnęce" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/8.jpg" alt="Garderoba od ściany do ściany" loading="lazy" decoding="async" width="1200" height="500">
-							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/SIM_6892.jpg" alt="Sekcja na obuwie i akcesoria w garderobie" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/6.jpg" alt="System garderoby na wymiar" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/5.jpg" alt="Otwarta strefa garderoby z podświetleniem" loading="lazy" decoding="async" width="700" height="500">
-							</div>
+						</div>
+					</div>
+					<div data-fls-slider="" class="wardrobe-gallery__slider swiper">
+						<div class="wardrobe-gallery__wrapper swiper-wrapper">
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/7.jpg" alt="System garderoby na wymiar">
+								<figcaption class="wardrobe-gallery__slide-caption">Garderoba · Wrocław</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/2.jpg" alt="Detal wyposażenia garderoby — szuflady i półki">
+								<figcaption class="wardrobe-gallery__slide-caption">Detale · Wrocław</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/4.jpg" alt="Szafa pod zabudowę we wnęce">
+								<figcaption class="wardrobe-gallery__slide-caption">Zabudowa wnęki · Wrocław</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/8.jpg" alt="Garderoba od ściany do ściany">
+								<figcaption class="wardrobe-gallery__slide-caption">Ściana do ściany · Wrocław</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/SIM_6892.jpg" alt="Sekcja na obuwie i akcesoria w garderobie">
+								<figcaption class="wardrobe-gallery__slide-caption">Akcesoria · Wrocław</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/6.jpg" alt="System garderoby na wymiar">
+								<figcaption class="wardrobe-gallery__slide-caption">System · Wrocław</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/5.jpg" alt="Otwarta strefa garderoby z podświetleniem">
+								<figcaption class="wardrobe-gallery__slide-caption">Otwarta strefa · Wrocław</figcaption>
+							</figure>
 						</div>
 					</div>
 				</section>

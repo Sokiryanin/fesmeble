@@ -21,12 +21,13 @@
 		<link rel="shortcut icon" href="/fesmeble/assets/img/fesmeble.png">
 		<meta name="description" content="Проєктуємо і виготовляємо вбудовані шафи та гардеробні на замовлення у Вроцлаві. Використання повної висоти, фурнітура Blum, тихі доводчики. Обмір безкоштовний.">
 		<title>Шафи на замовлення і гардеробні — Вроцлав | Fesmeble</title>
-		<script type="module" crossorigin="" src="/fesmeble/js/wardrobe2.min.js?v=1779964662649"></script>
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779964662649">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779964662649">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779964662649">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779964662649">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/wardrobe.min.css?v=1779964662649">
+		<script type="module" crossorigin="" src="/fesmeble/js/wardrobe2.min.js?v=1779965614218"></script>
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779965614218">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779965614218">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/breadcrump.min.js?v=1779965614218">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779965614218">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779965614218">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/wardrobe.min.css?v=1779965614218">
 	</head>
 	<body>
 		<svg width="0" height="0" style="position: absolute; overflow: hidden" aria-hidden="true" focusable="false">
@@ -133,10 +134,10 @@
 							<nav data-fls-breadcrump="" class="breadcrumb service-kitchen__breadcrump" aria-label="Nawigacja strony">
 								<ol class="breadcrumb__list">
 									<li class="breadcrumb__item">
-										<a href="./index.html" class="breadcrumb__link">Голшовна</a>
+										<a href="./index.html" class="breadcrumb__link">Головна</a>
 									</li>
 									<li class="breadcrumb__item">
-										<a href="./services.html" class="breadcrumb__link">Сервіси</a>
+										<a href="./services-uk.html" class="breadcrumb__link">Сервіси</a>
 									</li>
 									<li class="breadcrumb__item breadcrumb__item--current" aria-current="page">Гардеробні та вбудовані шафи</li>
 								</ol>
@@ -215,30 +216,54 @@
 					</div>
 				</section>
 				<!-- GALLERY -->
-				<section class="section service-wardrobe__gallery gallery-wardrobe">
-					<div class="gallery-wardrobe__container container">
-						<div class="gallery-wardrobe__items">
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/7.jpg" alt="Гардеробна система" loading="lazy" decoding="async" width="1200" height="900">
+				<section class="section service-wardrobe__gallery wardrobe-gallery">
+					<div class="wardrobe-gallery__container">
+						<div class="wardrobe-gallery__header">
+							<div class="section-label">галерея</div>
+							<div class="wardrobe-gallery__nav" aria-label="Навігація галереї">
+								<button class="wardrobe-gallery__arrow" id="GalleryPrev" type="button" aria-label="Попереднє фото">
+									<svg class="icon" aria-hidden="true">
+										<use href="#i-arrow-left"></use>
+									</svg>
+								</button>
+								<button class="wardrobe-gallery__arrow" id="GalleryNext" type="button" aria-label="Наступне фото">
+									<svg class="icon" aria-hidden="true">
+										<use href="#i-arrow-right"></use>
+									</svg>
+								</button>
 							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/2.jpg" alt="Деталь наповнення гардеробної" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/4.jpg" alt="Вбудована шафа в нішу" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/8.jpg" alt="Гардеробна від стіни до стіни" loading="lazy" decoding="async" width="1200" height="500">
-							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/SIM_6892.jpg" alt="Секція для взуття та аксесуарів" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/6.jpg" alt="Розсувні двері шафи" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-wardrobe__item">
-								<img src="/fesmeble/assets/img/wardrobes/5.jpg" alt="Відкрита гардеробна зона" loading="lazy" decoding="async" width="700" height="500">
-							</div>
+						</div>
+					</div>
+					<div data-fls-slider="" class="wardrobe-gallery__slider swiper">
+						<div class="wardrobe-gallery__wrapper swiper-wrapper">
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/7.jpg" alt="Гардеробна система">
+								<figcaption class="wardrobe-gallery__slide-caption">Гардеробна · Вроцлав</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/2.jpg" alt="Деталь наповнення гардеробної">
+								<figcaption class="wardrobe-gallery__slide-caption">Деталі · Вроцлав</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/4.jpg" alt="Вбудована шафа в нішу">
+								<figcaption class="wardrobe-gallery__slide-caption">Вбудована шафа · Вроцлав</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/8.jpg" alt="Гардеробна від стіни до стіни">
+								<figcaption class="wardrobe-gallery__slide-caption">Від стіни до стіни · Вроцлав</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/SIM_6892.jpg" alt="Секція для взуття та аксесуарів">
+								<figcaption class="wardrobe-gallery__slide-caption">Аксесуари · Вроцлав</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/6.jpg" alt="Розсувні двері шафи">
+								<figcaption class="wardrobe-gallery__slide-caption">Розсувні двері · Вроцлав</figcaption>
+							</figure>
+							<figure class="wardrobe-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/wardrobes/5.jpg" alt="Відкрита гардеробна зона">
+								<figcaption class="wardrobe-gallery__slide-caption">Відкрита зона · Вроцлав</figcaption>
+							</figure>
 						</div>
 					</div>
 				</section>

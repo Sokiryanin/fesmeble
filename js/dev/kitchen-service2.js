@@ -1,6 +1,6 @@
 import "./main.min.js";
 import "./common.min.js";
-/* empty css               */
+import "./breadcrump.min.js";
 import "./spollers.min.js";
 import "./dynamic.min.js";
 import "./watcher.min.js";

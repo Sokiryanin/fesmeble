@@ -21,12 +21,13 @@
 		<link rel="shortcut icon" href="/fesmeble/assets/img/fesmeble.png">
 		<meta name="description" content="Wykonujemy blaty kuchenne na wymiar w komplecie z naszymi kuchniami: HPL kompakt Fundermax, sztuczny kamień Corian, drewno lite, postforming. Wrocław.">
 		<title>Blaty kuchenne na wymiar — HPL i Corian | Fes meble</title>
-		<script type="module" crossorigin="" src="/fesmeble/js/countertops.min.js?v=1779964662648"></script>
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779964662648">
-		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779964662648">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779964662648">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779964662648">
-		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/countertops.min.css?v=1779964662648">
+		<script type="module" crossorigin="" src="/fesmeble/js/countertops.min.js?v=1779965614215"></script>
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/common.min.js?v=1779965614215">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/main.min.js?v=1779965614215">
+		<link rel="modulepreload" crossorigin="" href="/fesmeble/js/breadcrump.min.js?v=1779965614215">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/main.min.css?v=1779965614215">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/breadcrump.min.css?v=1779965614215">
+		<link rel="stylesheet" crossorigin="" href="/fesmeble/css/countertops.min.css?v=1779965614215">
 	</head>
 	<body>
 		<svg width="0" height="0" style="position: absolute; overflow: hidden" aria-hidden="true" focusable="false">
@@ -217,30 +218,54 @@
 					</div>
 				</section>
 				<!-- GALLERY -->
-				<section class="section service-countertops__gallery gallery-countertops">
-					<div class="gallery-countertops__container container">
-						<div class="gallery-countertops__items">
-							<div class="gallery-countertops__item">
-								<img src="/fesmeble/assets/img/countertop/4.jpg" alt="artificial stone" loading="lazy" decoding="async" width="1200" height="900">
+				<section class="section service-countertops__gallery countertops-gallery">
+					<div class="countertops-gallery__container">
+						<div class="countertops-gallery__header">
+							<div class="section-label">galeria</div>
+							<div class="countertops-gallery__nav" aria-label="Nawigacja galerii">
+								<button class="countertops-gallery__arrow" id="GalleryPrev" type="button" aria-label="Poprzednie zdjęcie">
+									<svg class="icon" aria-hidden="true">
+										<use href="#i-arrow-left"></use>
+									</svg>
+								</button>
+								<button class="countertops-gallery__arrow" id="GalleryNext" type="button" aria-label="Następne zdjęcie">
+									<svg class="icon" aria-hidden="true">
+										<use href="#i-arrow-right"></use>
+									</svg>
+								</button>
 							</div>
-							<div class="gallery-countertops__item">
-								<img src="/fesmeble/assets/img/countertop/5.jpg" alt="Деталь кварцової стільниці" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-countertops__item">
-								<img src="/fesmeble/assets/img/countertop/2.jpg" alt="Дубова стільниця" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-countertops__item">
-								<img src="/fesmeble/assets/img/countertop/1.jpg" alt="Барна стільниця в ресторані" loading="lazy" decoding="async" width="1200" height="500">
-							</div>
-							<div class="gallery-countertops__item">
-								<img src="/fesmeble/assets/img/countertop/SIM_0121.jpg" alt="Мармурова стільниця з мийкою" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-countertops__item">
-								<img src="/fesmeble/assets/img/countertop/8.jpg" alt="Крайка керамічної стільниці" loading="lazy" decoding="async" width="700" height="500">
-							</div>
-							<div class="gallery-countertops__item">
-								<img src="/fesmeble/assets/img/countertop/K_0203.jpg" alt="Стільниця у ресторані" loading="lazy" decoding="async" width="700" height="500">
-							</div>
+						</div>
+					</div>
+					<div data-fls-slider="" class="countertops-gallery__slider swiper">
+						<div class="countertops-gallery__wrapper swiper-wrapper">
+							<figure class="countertops-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/countertop/4.jpg" alt="Blat z kamienia sztucznego">
+								<figcaption class="countertops-gallery__slide-caption">Kamień sztuczny · Wrocław</figcaption>
+							</figure>
+							<figure class="countertops-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/countertop/5.jpg" alt="Detal blatu kwarcowego">
+								<figcaption class="countertops-gallery__slide-caption">Kwarc · Wrocław</figcaption>
+							</figure>
+							<figure class="countertops-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/countertop/2.jpg" alt="Blat dębowy na wymiar">
+								<figcaption class="countertops-gallery__slide-caption">Dąb · Wrocław</figcaption>
+							</figure>
+							<figure class="countertops-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/countertop/1.jpg" alt="Blat barowy w restauracji">
+								<figcaption class="countertops-gallery__slide-caption">Blat barowy · Wrocław</figcaption>
+							</figure>
+							<figure class="countertops-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/countertop/SIM_0121.jpg" alt="Blat marmurowy ze zlewem">
+								<figcaption class="countertops-gallery__slide-caption">Marmur · Wrocław</figcaption>
+							</figure>
+							<figure class="countertops-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/countertop/8.jpg" alt="Krawędź blatu ceramicznego">
+								<figcaption class="countertops-gallery__slide-caption">Ceramika · Wrocław</figcaption>
+							</figure>
+							<figure class="countertops-gallery__slide swiper-slide">
+								<img width="640" height="380" src="/fesmeble/assets/img/countertop/K_0203.jpg" alt="Blat w restauracji">
+								<figcaption class="countertops-gallery__slide-caption">Realizacja · Wrocław</figcaption>
+							</figure>
 						</div>
 					</div>
 				</section>
