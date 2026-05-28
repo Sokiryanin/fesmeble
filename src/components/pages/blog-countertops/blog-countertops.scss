@@ -345,6 +345,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
+
+    @media (max-width: toEm($tablet)) {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: toEm($mobile)) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
   }
 }
 

@@ -78,8 +78,10 @@
 
 .hero-home {
   // .hero-home__container
+
   &__container {
     width: 100%;
+
     @media (max-width: toEm($mobile)) {
       padding-left: 15px;
       padding-right: 15px;
@@ -321,6 +323,8 @@
     }
   }
 
+  // .hero-home__container
+
   // .hero-home__bottom
 
   &__bottom {
@@ -333,6 +337,21 @@
       grid-template-columns: 1fr;
       gap: 80px;
       align-items: start;
+    }
+
+    // translate: 0 30%;
+    // transition-property: translate;
+    // transition-duration: 1s;
+    // &.--watcher-view {
+    //   translate: 0 0;
+    // }
+
+    opacity: 0;
+    translate: 0 100%;
+    &.--watcher-view {
+      transition: all 0.8s;
+      opacity: 1;
+      translate: 0 0;
     }
   }
 
@@ -482,13 +501,6 @@
 .work-card {
   cursor: pointer;
   transition: transform 0.4s;
-
-  // translate: 0 20%;
-  // transition-property: translate;
-  // transition-duration: 0.8s;
-  // &.--watcher-view {
-  //   translate: 0 0;
-  // }
 }
 
 .work-card:hover {
@@ -637,6 +649,14 @@
       gap: 20px;
     }
 
+    opacity: 0;
+    translate: 0 100%;
+    &.--watcher-view {
+      transition: all 0.8s;
+      opacity: 1;
+      translate: 0 0;
+    }
+
     // .partners__head h2
     & h2 {
       font-size: clamp(28px, 3.2vw, 48px);
@@ -781,12 +801,6 @@
   &__container {
     width: 100%;
 
-    translate: 0 20%;
-    transition-property: translate;
-    transition-duration: 1s;
-    &.--watcher-view {
-      translate: 0 0;
-    }
     @media (max-width: toEm($mobile)) {
       padding-left: 15px;
       padding-right: 15px;
@@ -794,12 +808,26 @@
   }
 
   &__header {
+    opacity: 0;
+    translate: 0 100%;
+    &.--watcher-view {
+      transition: all 0.8s;
+      opacity: 1;
+      translate: 0 0;
+    }
   }
 
   // .services-preview__list
 
   &__list {
     border-top: 1px solid var(--line);
+
+    translate: 0 20%;
+    transition-property: translate;
+    transition-duration: 0.8s;
+    &.--watcher-view {
+      translate: 0 0;
+    }
   }
 
   // .services-preview__row
@@ -910,7 +938,7 @@
 
   &__layout {
     display: grid;
-    grid-template-columns: minmax(280px, 0.9fr) 1.4fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
     gap: clamp(40px, 6vw, 100px);
     align-items: start;
 
@@ -928,13 +956,12 @@
   &__header {
     position: sticky;
     top: 24px;
-
     align-self: start;
-
-    height: fit-content;
+    width: fit-content;
 
     @media (max-width: toEm($tablet)) {
       position: static;
+      width: auto;
     }
 
     &.section-label {
@@ -966,6 +993,7 @@
   &__list {
     display: flex;
     flex-direction: column;
+    min-width: 0;
   }
 }
 
