@@ -109,79 +109,114 @@
   </section>
 
   <!-- GALLERY -->
-  <section class="section service-countertops__gallery gallery-countertops">
-    <div class="gallery-countertops__container container">
-      <div class="gallery-countertops__items">
-        <div class="gallery-countertops__item">
+  <section class="section service-countertops__gallery countertops-gallery">
+    <div class="countertops-gallery__container">
+      <div class="countertops-gallery__header">
+        <div class="section-label">galeria</div>
+        <div class="countertops-gallery__nav" aria-label="Nawigacja galerii">
+          <button
+            class="countertops-gallery__arrow"
+            id="GalleryPrev"
+            type="button"
+            aria-label="Poprzednie zdjęcie"
+          >
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-arrow-left" />
+            </svg>
+          </button>
+          <button
+            class="countertops-gallery__arrow"
+            id="GalleryNext"
+            type="button"
+            aria-label="Następne zdjęcie"
+          >
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-arrow-right" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div data-fls-slider class="countertops-gallery__slider swiper">
+      <div class="countertops-gallery__wrapper swiper-wrapper">
+        <figure class="countertops-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/countertop/4.jpg"
-            alt="artificial stone"
-            loading="lazy"
-            decoding="async"
-            width="1200"
-            height="900"
+            alt="Blat z kamienia sztucznego"
           />
-        </div>
-        <div class="gallery-countertops__item">
+          <figcaption class="countertops-gallery__slide-caption">
+            Kamień sztuczny · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="countertops-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/countertop/5.jpg"
-            alt="Деталь кварцової стільниці"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
+            alt="Detal blatu kwarcowego"
           />
-        </div>
-        <div class="gallery-countertops__item">
+          <figcaption class="countertops-gallery__slide-caption">
+            Kwarc · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="countertops-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/countertop/2.jpg"
-            alt="Дубова стільниця"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
+            alt="Blat dębowy na wymiar"
           />
-        </div>
-        <div class="gallery-countertops__item">
+          <figcaption class="countertops-gallery__slide-caption">
+            Dąb · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="countertops-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/countertop/1.jpg"
-            alt="Барна стільниця в ресторані"
-            loading="lazy"
-            decoding="async"
-            width="1200"
-            height="500"
+            alt="Blat barowy w restauracji"
           />
-        </div>
-        <div class="gallery-countertops__item">
+          <figcaption class="countertops-gallery__slide-caption">
+            Blat barowy · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="countertops-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/countertop/SIM_0121.jpg"
-            alt="Мармурова стільниця з мийкою"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
+            alt="Blat marmurowy ze zlewem"
           />
-        </div>
-        <div class="gallery-countertops__item">
+          <figcaption class="countertops-gallery__slide-caption">
+            Marmur · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="countertops-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/countertop/8.jpg"
-            alt="Крайка керамічної стільниці"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
+            alt="Krawędź blatu ceramicznego"
           />
-        </div>
-        <div class="gallery-countertops__item">
+          <figcaption class="countertops-gallery__slide-caption">
+            Ceramika · Wrocław
+          </figcaption>
+        </figure>
+        <figure class="countertops-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/countertop/K_0203.jpg"
-            alt="Стільниця у ресторані"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
+            alt="Blat w restauracji"
           />
-        </div>
+          <figcaption class="countertops-gallery__slide-caption">
+            Realizacja · Wrocław
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>

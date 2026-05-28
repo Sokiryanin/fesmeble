@@ -17,10 +17,10 @@
         >
           <ol class="breadcrumb__list">
             <li class="breadcrumb__item">
-              <a href="./index.html" class="breadcrumb__link">Голшовна</a>
+              <a href="./index.html" class="breadcrumb__link">Головна</a>
             </li>
             <li class="breadcrumb__item">
-              <a href="./services.html" class="breadcrumb__link">Сервіси</a>
+              <a href="./services-uk.html" class="breadcrumb__link">Сервіси</a>
             </li>
             <li
               class="breadcrumb__item breadcrumb__item--current"
@@ -93,79 +93,114 @@
   </section>
 
   <!-- GALLERY -->
-  <section class="section service-wardrobe__gallery gallery-wardrobe">
-    <div class="gallery-wardrobe__container container">
-      <div class="gallery-wardrobe__items">
-        <div class="gallery-wardrobe__item">
+  <section class="section service-wardrobe__gallery wardrobe-gallery">
+    <div class="wardrobe-gallery__container">
+      <div class="wardrobe-gallery__header">
+        <div class="section-label">галерея</div>
+        <div class="wardrobe-gallery__nav" aria-label="Навігація галереї">
+          <button
+            class="wardrobe-gallery__arrow"
+            id="GalleryPrev"
+            type="button"
+            aria-label="Попереднє фото"
+          >
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-arrow-left" />
+            </svg>
+          </button>
+          <button
+            class="wardrobe-gallery__arrow"
+            id="GalleryNext"
+            type="button"
+            aria-label="Наступне фото"
+          >
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-arrow-right" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div data-fls-slider class="wardrobe-gallery__slider swiper">
+      <div class="wardrobe-gallery__wrapper swiper-wrapper">
+        <figure class="wardrobe-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/wardrobes/7.jpg"
             alt="Гардеробна система"
-            loading="lazy"
-            decoding="async"
-            width="1200"
-            height="900"
           />
-        </div>
-        <div class="gallery-wardrobe__item">
+          <figcaption class="wardrobe-gallery__slide-caption">
+            Гардеробна · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="wardrobe-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/wardrobes/2.jpg"
             alt="Деталь наповнення гардеробної"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-wardrobe__item">
+          <figcaption class="wardrobe-gallery__slide-caption">
+            Деталі · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="wardrobe-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/wardrobes/4.jpg"
             alt="Вбудована шафа в нішу"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-wardrobe__item">
+          <figcaption class="wardrobe-gallery__slide-caption">
+            Вбудована шафа · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="wardrobe-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/wardrobes/8.jpg"
             alt="Гардеробна від стіни до стіни"
-            loading="lazy"
-            decoding="async"
-            width="1200"
-            height="500"
           />
-        </div>
-        <div class="gallery-wardrobe__item">
+          <figcaption class="wardrobe-gallery__slide-caption">
+            Від стіни до стіни · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="wardrobe-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/wardrobes/SIM_6892.jpg"
             alt="Секція для взуття та аксесуарів"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-wardrobe__item">
+          <figcaption class="wardrobe-gallery__slide-caption">
+            Аксесуари · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="wardrobe-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/wardrobes/6.jpg"
             alt="Розсувні двері шафи"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
-        <div class="gallery-wardrobe__item">
+          <figcaption class="wardrobe-gallery__slide-caption">
+            Розсувні двері · Вроцлав
+          </figcaption>
+        </figure>
+        <figure class="wardrobe-gallery__slide swiper-slide">
           <img
+            width="640"
+            height="380"
             src="@img/wardrobes/5.jpg"
             alt="Відкрита гардеробна зона"
-            loading="lazy"
-            decoding="async"
-            width="700"
-            height="500"
           />
-        </div>
+          <figcaption class="wardrobe-gallery__slide-caption">
+            Відкрита зона · Вроцлав
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
