@@ -1,0 +1,1 @@
+import './blog-price.scss';

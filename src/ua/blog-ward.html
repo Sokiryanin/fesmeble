@@ -1,14 +1,14 @@
 <template
   src="@components/templates/main/main.html"
   locals='{
-		"title":"blog-ward", 
+		"title":"5 помилок при плануванні гардеробної | Fes meble", 
 		"lang":"uk",
 		"preloader": {
 			"enable":"false",
 			"once":"false"
 		},
 		"keywords":"", 
-		"description":""
+		"description":"Найпоширеніші помилки у плануванні гардеробної, які видно лише через рік: висота штанг, однакові полиці, слабке освітлення, брак резерву, неправильне дзеркало."
 	}'
 >
   <block name="header">
@@ -19,12 +19,15 @@
   </block>
   <block name="main">
     <include
-      src="@components/pages/blog-ward/blog-ward.html"
+      src="@components/pages/blog-ward/blog-ward-uk.html"
       locals="{}"
     ></include>
   </block>
   <block name="footer">
-    <include src="@components/layout/footer/footer.html" locals="{}"></include>
+    <include
+      src="@components/layout/footer/footer-uk.html"
+      locals="{}"
+    ></include>
   </block>
   <block name="popup"></block>
 </template>

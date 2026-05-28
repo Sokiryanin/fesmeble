@@ -413,7 +413,12 @@
       {
         "date": "27.05.2026",
         "start": 1779900519239,
-        "end": 1779900519239
+        "end": 1779901098773
+      },
+      {
+        "date": "28.05.2026",
+        "start": 1779957878373,
+        "end": 1779957878373
       }
     ],
     "files": [
@@ -584,7 +589,13 @@
       "blog-countertops-uk.html",
       "blog-sink-uk.html",
       "blog-fronts-uk.html",
-      "contact-uk.html"
+      "contact-uk.html",
+      "blog-ward-uk.html",
+      "about-uk.html",
+      "blog-price.html",
+      "blog-price.js",
+      "blog-price.scss",
+      "blog-price-uk.html"
     ]
   }
 }

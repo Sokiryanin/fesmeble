@@ -1,8 +1,8 @@
 <template
   src="@components/templates/main/main.html"
   locals='{
-		"title":"about", 
-		"lang":"uk",
+		"title":"blog-price", 
+		"lang":"pl",
 		"preloader": {
 			"enable":"false",
 			"once":"false"
@@ -14,17 +14,17 @@
   <block name="header">
     <include
       src="@components/layout/header/header.html"
-      locals='{"active":"about", "lang": "uk", "altHref":"../about.html"}'
+      locals='{"active":"blog", "lang": "pl", "altHref":"./ua/blog-price.html"}'
     ></include>
   </block>
   <block name="main">
-    <include src="@components/pages/about/about-uk.html" locals="{}"></include>
-  </block>
-  <block name="footer">
     <include
-      src="@components/layout/footer/footer-uk.html"
+      src="@components/pages/blog-price/blog-price.html"
       locals="{}"
     ></include>
+  </block>
+  <block name="footer">
+    <include src="@components/layout/footer/footer.html" locals="{}"></include>
   </block>
   <block name="popup"></block>
 </template>
