@@ -82,6 +82,14 @@
 .horeca-position__container {
   width: 100%;
 }
+.horeca-position__container {
+  translate: 0 30%;
+  transition-property: translate;
+  transition-duration: 0.6s;
+}
+.horeca-position__container.--watcher-view {
+  translate: 0 0;
+}
 .horeca-position__inner {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -226,10 +234,27 @@
 .horeca-segments__container {
   width: 100%;
 }
+.horeca-segments__header {
+  opacity: 0;
+  translate: 0 100%;
+}
+.horeca-segments__header.--watcher-view {
+  transition: all 0.8s;
+  opacity: 1;
+  translate: 0 0;
+}
 .horeca-segments__title {
   margin-bottom: clamp(2.25rem, 3vw, 3.5rem);
 }
 
+.horeca-tabs {
+  translate: 0 30%;
+  transition-property: translate;
+  transition-duration: 0.6s;
+}
+.horeca-tabs.--watcher-view {
+  translate: 0 0;
+}
 .horeca-tabs__nav {
   display: flex;
   gap: 0.5rem;
@@ -334,6 +359,12 @@
   grid-template-columns: minmax(17.5rem, 0.9fr) 1.4fr;
   gap: 5rem;
   align-items: start;
+  translate: 0 30%;
+  transition-property: translate;
+  transition-duration: 0.6s;
+}
+.horeca-timeline__inner.--watcher-view {
+  translate: 0 0;
 }
 .horeca-timeline__header {
   position: sticky;
@@ -470,6 +501,12 @@
   grid-template-columns: minmax(17.5rem, 0.9fr) 1.4fr;
   gap: 5rem;
   align-items: start;
+  translate: 0 30%;
+  transition-property: translate;
+  transition-duration: 0.6s;
+}
+.horeca-materials__inner.--watcher-view {
+  translate: 0 0;
 }
 .horeca-materials__title {
   margin-bottom: 1rem;
@@ -572,6 +609,12 @@
   grid-template-columns: minmax(17.5rem, 0.9fr) 1.4fr;
   gap: 5rem;
   align-items: start;
+  translate: 0 30%;
+  transition-property: translate;
+  transition-duration: 0.6s;
+}
+.faq-service__layout.--watcher-view {
+  translate: 0 0;
 }
 .faq-service__header {
   position: sticky;
