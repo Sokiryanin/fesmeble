@@ -15,22 +15,6 @@
     transform: translateY(0);
   }
 }
-.blog__title {
-  opacity: 0;
-}
-[data-fls-loaded] .blog__title {
-  animation: show-items 1s ease both 0.3s;
-}
-@keyframes show-items {
-  0% {
-    opacity: 0;
-    transform: translateY(10%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .blog__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -23,6 +23,19 @@
 .hero-kitchen__inner {
   border-bottom: 0.0625rem solid var(--line);
 }
+[data-fls-loaded] .hero-kitchen__inner {
+  animation: show-items 1s ease both 0.3s;
+}
+@keyframes show-items {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .hero-kitchen__block {
   display: flex;
   flex-direction: column;

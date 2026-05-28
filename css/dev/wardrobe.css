@@ -14,6 +14,19 @@
 .hero-wardrobe__container {
   width: 100%;
 }
+[data-fls-loaded] .hero-wardrobe__container {
+  animation: show-items 1s ease both 0.3s;
+}
+@keyframes show-items {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .hero-wardrobe__title {
   padding-top: 2.5rem;
   margin-bottom: 2.5rem;

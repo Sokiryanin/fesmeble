@@ -7,10 +7,7 @@
   background: var(--ink);
   color: var(--bg);
 }
-.about__title {
-  opacity: 0;
-}
-[data-fls-loaded] .about__title {
+[data-fls-loaded] .about__header {
   animation: show-items 1s ease both 0.3s;
 }
 @keyframes show-items {
