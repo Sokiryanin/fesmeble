@@ -255,6 +255,10 @@
   .blog-sink__cta {
     padding: 4.375rem 0;
   }
+  .article-sink__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
 }
 @media (max-width: 48em){
   .hero-sink__container {
@@ -268,6 +272,10 @@
   .article-sink__container {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
+  }
+  .article-sink__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 }
 @media (width < 20em){

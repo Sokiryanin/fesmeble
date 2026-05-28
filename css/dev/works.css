@@ -39,7 +39,7 @@
   font-weight: 400;
   background: transparent;
   color: var(--ink-2);
-  border: 0.0625rem solid transparent;
+  border: 0.0625rem solid var(--line);
   cursor: pointer;
   transition: all 0.25s;
   white-space: nowrap;
@@ -47,11 +47,6 @@
 .works-tabs__tab.works-tabs__tab--active {
   background: var(--ink);
   color: var(--bg);
-}
-.works-tabs__count {
-  font-size: 0.6875rem;
-  opacity: 0.6;
-  margin-left: 0.25rem;
 }
 
 .works-grid {

@@ -807,7 +807,6 @@ body {
   display: grid;
   grid-template-columns: 1.6fr 1fr 1fr 1fr;
   gap: 3.75rem;
-  margin-bottom: 5rem;
   align-items: start;
 }
 .footer__brand {
@@ -848,11 +847,11 @@ body {
   transition: color 0.2s;
 }
 .footer__col h5 {
+  margin-bottom: 0.75rem;
   font-size: 0.8125rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--ink-3);
-  margin-bottom: 1.375rem;
   font-weight: 400;
 }
 .footer__col ul {
@@ -965,7 +964,6 @@ body {
   .footer__top {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3.125rem 1.875rem;
-    margin-bottom: 3.75rem;
   }
   .footer__brand {
     grid-column: span 3;
@@ -1248,7 +1246,6 @@ body {
   .footer__top {
     grid-template-columns: 1fr 1fr;
     gap: 1.75rem 1.25rem;
-    margin-bottom: 1.75rem;
   }
   .footer__brand {
     grid-column: span 2;
@@ -1307,8 +1304,14 @@ body {
   .contact-info__row span:first-child {
     font-size: 0.75rem;
   }
+  .footer__top {
+    margin-bottom: 1.75rem;
+  }
   .footer__contact {
     font-size: 1rem;
+  }
+  .footer__contact {
+    margin-bottom: 1.75rem;
   }
   .footer__contact .label {
     font-size: 0.875rem;
@@ -1332,8 +1335,14 @@ body {
   .contact-info__row span:first-child {
     font-size: clamp( 0.75rem , 0.6491596638625rem  +  0.5042016807vw , 1.125rem );
   }
+  .footer__top {
+    margin-bottom: clamp( 1.75rem , 1.54831932773125rem  +  1.0084033613vw , 2.5rem );
+  }
   .footer__contact {
     font-size: clamp( 1rem , 0.8991596638625rem  +  0.5042016807vw , 1.375rem );
+  }
+  .footer__contact {
+    margin-bottom: clamp( 1.75rem , 1.54831932773125rem  +  1.0084033613vw , 2.5rem );
   }
   .footer__contact .label {
     font-size: clamp( 0.875rem , 0.80777310924375rem  +  0.3361344538vw , 1.125rem );
@@ -1361,8 +1370,14 @@ body {
   .contact-info__row span:first-child {
     font-size: 1.125rem;
   }
+  .footer__top {
+    margin-bottom: 2.5rem;
+  }
   .footer__contact {
     font-size: 1.375rem;
+  }
+  .footer__contact {
+    margin-bottom: 2.5rem;
   }
   .footer__contact .label {
     font-size: 1.125rem;
